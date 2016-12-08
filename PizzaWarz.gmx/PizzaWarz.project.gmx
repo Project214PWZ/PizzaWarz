@@ -12,6 +12,10 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\object_Enviroment</object>
+    <object>objects\object_HUD</object>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
