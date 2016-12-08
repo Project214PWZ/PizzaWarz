@@ -9,6 +9,7 @@
     <sprite>sprites\sprite_TestBuilding</sprite>
     <sprite>sprites\sprite_DeliveryCar</sprite>
     <sprite>sprites\sprite_RandomVehicleOne</sprite>
+    <sprite>sprites\sprite_DeliveryDirection</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
