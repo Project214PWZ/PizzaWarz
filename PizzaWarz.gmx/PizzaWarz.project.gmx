@@ -13,6 +13,8 @@
     <sprite>sprites\sprite_BlockOne</sprite>
     <sprite>sprites\sprite_BlockTwo</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
+    <sprite>sprites\sprite_RandomVehicleTwo</sprite>
+    <sprite>sprites\sprite_RandomVehicleThree</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
