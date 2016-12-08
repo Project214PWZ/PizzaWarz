@@ -16,6 +16,7 @@
     <sprite>sprites\sprite_RandomVehicleTwo</sprite>
     <sprite>sprites\sprite_RandomVehicleThree</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
+    <sprite>sprites\sprite11</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
