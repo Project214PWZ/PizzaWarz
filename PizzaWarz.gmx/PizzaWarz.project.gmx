@@ -10,6 +10,7 @@
     <sprite>sprites\sprite_DeliveryCar</sprite>
     <sprite>sprites\sprite_RandomVehicleOne</sprite>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
+    <sprite>sprites\sprite_BlockOne</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
