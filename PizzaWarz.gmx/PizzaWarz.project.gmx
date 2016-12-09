@@ -23,7 +23,12 @@
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
+    <object>objects\objMainCar</object>
+    <object>objects\objRandomGreen</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
