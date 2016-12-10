@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite_TestBuilding</sprite>
     <sprite>sprites\sprite_DeliveryCar</sprite>
     <sprite>sprites\sprite_RandomVehicleOne</sprite>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
