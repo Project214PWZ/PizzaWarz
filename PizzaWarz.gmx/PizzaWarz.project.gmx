@@ -17,16 +17,21 @@
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_Font</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bckLevel1</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
     <object>objects\objMainCar</object>
     <object>objects\objRandomGreen</object>
+    <object>objects\objBlock1</object>
+    <object>objects\objBlock2</object>
+    <object>objects\objDeliveryDestinationMarker</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rmLevel1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

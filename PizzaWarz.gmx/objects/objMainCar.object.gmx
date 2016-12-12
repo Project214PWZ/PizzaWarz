@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>object_Enviroment</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -244,7 +244,7 @@ hspeed= 2;
             <string>vspeed= -3;
 image_angle = 0;
 
-if(point ==1)
+/*if(point ==1)
 {
     if(x&gt;=352 &amp;&amp; y&lt;=288)
     {
@@ -287,6 +287,13 @@ if(number == true)
 vspeed= -3;
 image_angle = 0;
 }
+
+*/
+if position_meeting(736,150,objDeliveryDestinationMarker)
+{
+    show_message("Destination Reached");
+}
+
 
 </string>
           </argument>

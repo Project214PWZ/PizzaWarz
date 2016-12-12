@@ -3,13 +3,13 @@
   <type>0</type>
   <xorig>61</xorig>
   <yorigin>33</yorigin>
-  <colkind>1</colkind>
+  <colkind>0</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
+  <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>122</bbox_right>
-  <bbox_top>1</bbox_top>
+  <bbox_top>0</bbox_top>
   <bbox_bottom>66</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -21,5 +21,12 @@
   <height>67</height>
   <frames>
     <frame index="0">images\sprite_DeliveryDesinationMarker_0.png</frame>
+    <frame index="1">images\sprite_DeliveryDesinationMarker_1.png</frame>
+    <frame index="2">images\sprite_DeliveryDesinationMarker_2.png</frame>
+    <frame index="3">images\sprite_DeliveryDesinationMarker_3.png</frame>
+    <frame index="4">images\sprite_DeliveryDesinationMarker_4.png</frame>
+    <frame index="5">images\sprite_DeliveryDesinationMarker_5.png</frame>
+    <frame index="6">images\sprite_DeliveryDesinationMarker_6.png</frame>
+    <frame index="7">images\sprite_DeliveryDesinationMarker_7.png</frame>
   </frames>
 </sprite>
