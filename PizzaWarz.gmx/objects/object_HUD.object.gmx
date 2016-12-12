@@ -99,8 +99,8 @@ customFont = font_add_sprite(sprite_FontDoubleHalfSize,36,false,1);
 cashTotal = 500;
 //draws the players total cash
 draw_set_font(sprite_FontDoubleHalfSize);
-draw_text_colour(20,HEIGHT-87,"$",c_orange,c_yellow,c_yellow,c_orange,1);
-draw_text_colour(40,HEIGHT-87,cashTotal,c_orange,c_yellow,c_yellow,c_orange,1);
+draw_text_colour(20,HEIGHT-87,"$ STUVWXYZ 0123456789",c_orange,c_yellow,c_yellow,c_orange,1);
+//draw_text_colour(40,HEIGHT-87,cashTotal,c_orange,c_yellow,c_yellow,c_orange,1);
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, 120, c_gray, c_red, c_blue, 0, true, true);
 
