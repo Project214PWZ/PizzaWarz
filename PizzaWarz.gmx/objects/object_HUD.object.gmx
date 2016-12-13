@@ -86,27 +86,35 @@ initiateSurface = 1;
             <kind>1</kind>
             <string>var mapLeft = WIDTH - mapSize;
 var mapTop = HEIGHT - mapSize;
-if surface_exists(mapSurface)
-{
+//if surface_exists(mapSurface)
+//{
     draw_surface(mapSurface,mapLeft,mapTop);
-}
-else
-{
-    mapSurface = surface_create(mapSize, mapSize);
-    initiateSurface = 1;
-}
+//}
+//else
+//{
+//    mapSurface = surface_create(mapSize, mapSize);
+//    initiateSurface = 1;
+//}
 customFont = font_add_sprite(sprite_FontDoubleHalfSize,36,false,1);
 cashTotal = 500;
 //draws the players total cash
 draw_set_font(sprite_FontDoubleHalfSize);
-draw_text_colour(20,HEIGHT-87,"$ STUVWXYZ 0123456789",c_orange,c_yellow,c_yellow,c_orange,1);
-//draw_text_colour(40,HEIGHT-87,cashTotal,c_orange,c_yellow,c_yellow,c_orange,1);
+draw_text_colour(20,HEIGHT-87,"$",c_orange,c_yellow,c_yellow,c_orange,1);
+draw_text_colour(40,HEIGHT-87,cashTotal,c_orange,c_yellow,c_yellow,c_orange,1);
+
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, 120, c_gray, c_red, c_blue, 0, true, true);
 
+
 //draw the view rectangle on the minimap
-draw_set_colour(c_ltgray);
-draw_rectangle(mapLeft + view_xview*mapScale, mapTop + view_yview*mapScale, mapLeft + (view_xview+view_wview)*mapScale, mapTop + (view_yview+view_hview)*mapScale, true);
+surface_set_target(mapSurface);
+//draw_clear(c_black);
+draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
+with(object_Enviroment)
+{
+    draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
+}
+surface_reset_target();
 </string>
           </argument>
         </arguments>
@@ -129,18 +137,18 @@ draw_rectangle(mapLeft + view_xview*mapScale, mapTop + view_yview*mapScale, mapL
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if initiateSurface == 1
-{
-    surface_set_target(mapSurface);
-    draw_clear(c_black);
-    draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
-    with(object_Enviroment)
-    {
-        draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
-    }
-    surface_reset_target();
-    initiateSurface =0;   
-}
+            <string>//if initiateSurface == 1
+//{
+//    surface_set_target(mapSurface);
+//    draw_clear(c_black);
+//    draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
+//    with(object_Enviroment)
+//    {
+//        draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
+//    }
+//    surface_reset_target();
+//    initiateSurface =0;   
+//}
 </string>
           </argument>
         </arguments>
