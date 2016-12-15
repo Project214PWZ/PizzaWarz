@@ -26,10 +26,12 @@
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
     <object>objects\objMainCar</object>
+    <object>objects\object_TestCar</object>
     <object>objects\objRandomGreen</object>
     <object>objects\objBlock1</object>
     <object>objects\objBlock2</object>
     <object>objects\objDeliveryDestinationMarker</object>
+    <object>objects\object_PlayerMovement</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmLevel1</room>
