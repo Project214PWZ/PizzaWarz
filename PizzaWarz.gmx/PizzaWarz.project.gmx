@@ -24,6 +24,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scriptTipCalculation.gml</script>
+    <script>scripts\scriptSelectRandomDeliveries.gml</script>
+    <script>scripts\scriptApplyDamage.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>

@@ -13,7 +13,7 @@
   <code>global.intScore = 0;
 global.intTipEarned = 0;
 global.intClockTimer = 0;
-global.intHealth = 0;
+global.intHealth = 120;
 global.intPizzasToDeliver = 0;
 global.intPizzaTimer = 0;
 global.intMinutes = 5;
