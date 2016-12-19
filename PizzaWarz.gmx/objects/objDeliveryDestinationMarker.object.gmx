@@ -51,7 +51,7 @@
             <string>if(object_PlayerMovement.vspeed = 0 &amp;&amp; object_PlayerMovement.hspeed = 0)
 {
     instance_destroy();
-    global.intScore = global.intScore + 100;
+    global.intScore = global.intScore + scriptTipCalculation();
 }
 </string>
           </argument>

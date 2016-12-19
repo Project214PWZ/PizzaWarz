@@ -62,6 +62,16 @@ initiateSurface = 1;
 //if view_xview + view_wview &gt; room_width view_xview = room_width - view_wview;
 //if view_yview &lt; 0 view_yview = 0;
 //if view_yview + view_hview &gt; room_height view_yview = room_height - view_hview;
+
+if(global.bolCount == true)
+{
+    global.intSeconds -= 1/room_speed;
+}
+if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
+{
+    global.intMinutes -= 1;
+    global.intSeconds = 60;
+}
 </string>
           </argument>
         </arguments>
@@ -86,6 +96,7 @@ initiateSurface = 1;
             <kind>1</kind>
             <string>var mapLeft = WIDTH - mapSize;
 var mapTop = HEIGHT - mapSize;
+var intSingleSeconds = floor(global.intSeconds);
 //if surface_exists(mapSurface)
 //{
     draw_surface(mapSurface,mapLeft,mapTop);
@@ -98,8 +109,20 @@ var mapTop = HEIGHT - mapSize;
 font_add_sprite(sprite_FontDoubleHalfSize,36,false,1);
 //draws the players total cash
 draw_set_font(sprite_FontDoubleHalfSize);
-draw_text_colour(20,HEIGHT-107,"$",c_orange,c_yellow,c_yellow,c_orange,1);
-draw_text_colour(40,HEIGHT-107,global.intScore,c_orange,c_yellow,c_yellow,c_orange,1);
+draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_orange,c_yellow,c_yellow,c_orange,1);
+//draw_text_colour(40,HEIGHT-107,global.intScore,c_orange,c_yellow,c_yellow,c_orange,1);
+
+//draws the 5 minute timer for level
+//draw_text_colour((WIDTH/2)-30,20,global.intMinutes,c_orange,c_yellow,c_yellow,c_orange,1);
+if(global.intSeconds&lt;10)
+{
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":0" + string(intSingleSeconds),c_orange,c_yellow,c_yellow,c_orange,1);      
+}
+else
+{
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_orange,c_yellow,c_yellow,c_orange,1);
+}
+//draw_text_colour((WIDTH/2)+40,20,global.intSeconds,c_orange,c_yellow,c_yellow,c_orange,1);
 
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, 120, c_gray, c_red, c_blue, 0, true, true);

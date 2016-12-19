@@ -22,6 +22,9 @@
     <background>background\bckLevel1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scriptTipCalculation.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
