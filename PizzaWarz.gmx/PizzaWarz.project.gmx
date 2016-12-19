@@ -17,6 +17,7 @@
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_Font</sprite>
     <sprite>sprites\sprite_FontDoubleHalfSize</sprite>
+    <sprite>sprites\sprite_GoodFont</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
