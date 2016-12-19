@@ -12,13 +12,13 @@
   <showcolour>-1</showcolour>
   <code>global.intScore = 0;
 global.intTipEarned = 0;
-global.intClockTimer = 0;
 global.intHealth = 120;
 global.intPizzasToDeliver = 0;
-global.intPizzaTimer = 0;
+global.intPizzaTimer = 30;
 global.intMinutes = 5;
 global.intSeconds = 00.1;
-global.bolCount = false;</code>
+global.bolCount = false;
+global.intPlayerSpeed = 0;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

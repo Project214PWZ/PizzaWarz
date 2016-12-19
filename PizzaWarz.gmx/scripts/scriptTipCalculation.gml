@@ -1,2 +1,3 @@
-global.intTipEarned = global.intPizzaTimer * 1.5;
+var intSingleDollars = floor(global.intPizzaTimer);
+global.intTipEarned = intSingleDollars * 1.5;
 return global.intTipEarned;

@@ -72,6 +72,14 @@ if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
     global.intMinutes -= 1;
     global.intSeconds = 60;
 }
+if(global.intPizzaTimer == 0)
+{
+    global.intPizzaTimer = 1;
+}
+else
+{
+global.intPizzaTimer -= 1/room_speed;
+}
 </string>
           </argument>
         </arguments>

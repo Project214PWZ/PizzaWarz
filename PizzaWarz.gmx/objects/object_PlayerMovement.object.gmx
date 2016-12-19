@@ -30,6 +30,30 @@ hspeed = 0;
 image_angle = 360;
 canIncrease=true;
 canDecrease=true;
+canAcceptDamage=true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canAcceptDamage = true;
 </string>
           </argument>
         </arguments>
@@ -158,6 +182,35 @@ canDecrease=true;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objRandomGreen">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(canAcceptDamage = true){
+    scriptApplyDamage();
+    canAcceptDamage=false;
+    move_bounce_all(true);
+    alarm[2]=20;
+    friction = global.intPlayerSpeed * -.25;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="68">
       <action>
         <libid>1</libid>
@@ -266,6 +319,7 @@ else if(image_angle == 360){
         alarm[1]=10;
     }
 }
+global.intPlayerSpeed = vspeed;
 </string>
           </argument>
         </arguments>
@@ -307,6 +361,7 @@ else if(image_angle == 90){
         alarm[1]=10;
     }
 }
+global.intPlayerSpeed = hspeed;
 </string>
           </argument>
         </arguments>
@@ -348,6 +403,7 @@ else if(image_angle == 180){
         alarm[1]=10;
     }
 }
+global.intPlayerSpeed = vspeed;
 </string>
           </argument>
         </arguments>
@@ -389,6 +445,7 @@ else if(image_angle == 270){
         alarm[1]=10;
     }
 }
+global.intPlayerSpeed = hspeed;
 </string>
           </argument>
         </arguments>
@@ -431,6 +488,7 @@ else if (image_angle == 270){
     image_angle=180;
     hspeed=0;
 }
+global.intPlayerSpeed = vspeed;
 </string>
           </argument>
         </arguments>
@@ -473,6 +531,7 @@ else if(image_angle == 180){
     image_angle=270;
     vspeed=0;
 }
+global.intPlayerSpeed = hspeed;
 </string>
           </argument>
         </arguments>
@@ -515,6 +574,7 @@ else if(image_angle == 270){
     image_angle=360;
     hspeed=0;
 }
+global.intPlayerSpeed = vspeed;
 </string>
           </argument>
         </arguments>
@@ -557,7 +617,7 @@ else if(image_angle == 180){
     image_angle=90;
     vspeed=0;
 }
-
+global.intPlayerSpeed = hspeed;
 </string>
           </argument>
         </arguments>
@@ -661,6 +721,7 @@ else if(image_angle == 270 || image_angle == 90){
             <kind>1</kind>
             <string>if (vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
     vspeed = 0;
+    global.intPlayerSpeed = vspeed;
 }
 </string>
           </argument>
@@ -686,6 +747,7 @@ else if(image_angle == 270 || image_angle == 90){
             <kind>1</kind>
             <string>if (hspeed &gt;= -5 &amp;&amp; hspeed &lt;= 5){
     hspeed = 0;
+    global.intPlayerSpeed = hspeed;
 }
 </string>
           </argument>
@@ -711,6 +773,7 @@ else if(image_angle == 270 || image_angle == 90){
             <kind>1</kind>
             <string>if (vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
     vspeed = 0;
+    global.intPlayerSpeed = vspeed;
 }
 </string>
           </argument>
@@ -736,6 +799,7 @@ else if(image_angle == 270 || image_angle == 90){
             <kind>1</kind>
             <string>if (hspeed &gt;= -5 &amp;&amp; hspeed &lt;= 5){
     hspeed = 0;
+    global.intPlayerSpeed = hspeed;
 }
 </string>
           </argument>
