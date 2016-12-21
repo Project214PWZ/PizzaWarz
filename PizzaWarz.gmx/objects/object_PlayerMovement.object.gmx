@@ -199,13 +199,27 @@ canAcceptDamage=true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(canAcceptDamage = true){
+            <string>///Collision
+/*
+if(canAcceptDamage = true){
     scriptApplyDamage();
     canAcceptDamage=false;
     move_bounce_all(true);
     alarm[2]=20;
-    friction = global.intPlayerSpeed * -.25;
+    friction = global.intPlayerSpeed * 0.25;    
+    
+    
+    //Physics world stuff
+    //fix_CarBounce = physics_fixture_create();
+    //physics_fixture_bind(fix_CarBounce, objMainCar) 
+    //physics_fixture_set_restitution(fix_CarBounce, 0.5); 
+    
+    
 }
+//Setting friction back to 0 after the collision so the "brakes" are not on
+friction = 0;
+move_bounce_all(false);
+*/
 </string>
           </argument>
         </arguments>
