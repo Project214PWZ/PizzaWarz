@@ -21,7 +21,13 @@
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
-    <sprite>sprites\sprite_FontSize_81</sprite>
+    <sprite>sprites\sprite_FontSize_98</sprite>
+    <sprite>sprites\sprite_FontSize_60</sprite>
+    <sprite>sprites\sprite_FontSize_45</sprite>
+    <sprite>sprites\sprite_FontSize_33</sprite>
+    <sprite>sprites\sprite_FontSize_25</sprite>
+    <sprite>sprites\sprite_FontSize_19</sprite>
+    <sprite>sprites\sprite_FontSize_75</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>

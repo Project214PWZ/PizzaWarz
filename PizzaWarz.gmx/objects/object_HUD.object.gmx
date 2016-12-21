@@ -114,9 +114,9 @@ var intSingleSeconds = floor(global.intSeconds);
 //    mapSurface = surface_create(mapSize, mapSize);
 //    initiateSurface = 1;
 //}
-font_add_sprite(sprite_GoodFont,36,false,1);
+font_add_sprite(sprite_FontSize_19,36,false,1);
 //draws the players total cash
-draw_set_font(sprite_GoodFont);
+draw_set_font(sprite_FontSize_19);
 draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_orange,c_yellow,c_yellow,c_orange,1);
 
 
