@@ -30,9 +30,12 @@
     <sprite>sprites\sprite_FontSize_19</sprite>
     <sprite>sprites\sprite_FontSize_13</sprite>
     <sprite>sprites\sprite_FontSize_9</sprite>
+    <sprite>sprites\sprite_bullethole1</sprite>
+    <sprite>sprites\sprite_MainPizza</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
+    <background>background\bckSky</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -61,8 +64,12 @@
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
     <object>objects\object_Tutorial</object>
+    <object>objects\obj_BulletHoleGenerator</object>
+    <object>objects\obj_Pizza</object>
+    <object>objects\obj_RoomMoving1</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_pizza</room>
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_PlayAreaLevelOne</room>
   </rooms>
