@@ -1,7 +1,6 @@
 var intSingleDollars=0;
 intSingleDollars = global.intPizzaTimer * 1.5;
 global.intTipEarned = floor(intSingleDollars);
-global.intTipEarned = intSingleDollars;
 return global.intTipEarned;;
 
 //var intSingleDollars = floor(global.intTipEarned);
