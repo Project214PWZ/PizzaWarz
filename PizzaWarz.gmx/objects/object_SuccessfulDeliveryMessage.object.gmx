@@ -3,11 +3,63 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>text1="SUCCESSFUL";
+text2=" DELIVERY ";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>y-=4;
+image_alpha-=0.025;
+if(image_alpha=0)
+{
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,45 +77,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>font_add_sprite(sprite_FontSize_13,36,false,1);
-draw_set_font(sprite_FontSize_13);
-draw_text_colour(20,20,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
-
-font_add_sprite(sprite_FontSize_9,36,false,1);
+            <string>font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(20,100,"USE THE ARROW KEYS TO MOVE AROUND THE MAP.",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,140,"USE THE 'A' KEY TO CHANGE TO THE LEFT LANE",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,180,"USE THE 'D' KEY TO CHNAGE TO THE RIGHT LANE",c_white,c_lime,c_white,c_lime,1);
-
-draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,300,"DIRECTION NEEDED TO GO TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT TIPS WILL",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,380,"BE AWARDED",c_white,c_lime,c_white,c_lime,1);
-
-draw_text_colour(20,window_get_height()-50,"PRESS SPACE BER TO GO BACK TO MAIN SCREEN",c_white,c_teal,c_white,c_teal,1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(2);
+draw_text_colour(x,y,text1,c_silver,c_silver,c_silver,c_silver,1);
+draw_text_colour(x,y+30,text2,c_silver,c_silver,c_silver,c_silver,1);
 </string>
           </argument>
         </arguments>

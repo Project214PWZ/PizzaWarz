@@ -123,7 +123,7 @@ canAcceptDamage=true;
           <argument>
             <kind>1</kind>
             <string>if(vspeed = 0 &amp;&amp; hspeed = 0){
-    show_message("Successful Delivery")
+    instance_create(x,y,object_SuccessfulDeliveryMessage);
 }
 </string>
           </argument>
