@@ -32,6 +32,7 @@
     <sprite>sprites\sprite_FontSize_9</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_MainPizza</sprite>
+    <sprite>sprites\sprite_Invisible</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
@@ -67,6 +68,7 @@
     <object>objects\object_BulletHoleGenerator</object>
     <object>objects\object_Pizza</object>
     <object>objects\object_RoomMoving1</object>
+    <object>objects\object_Invisible</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pizza</room>

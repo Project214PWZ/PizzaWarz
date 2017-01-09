@@ -343,7 +343,7 @@ hspeed= 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>vspeed= -3;
+            <string>vspeed= -2;
 image_angle = 0;
 
 /*if(point ==1)
