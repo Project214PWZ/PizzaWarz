@@ -64,9 +64,9 @@
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
     <object>objects\object_Tutorial</object>
-    <object>objects\obj_BulletHoleGenerator</object>
-    <object>objects\obj_Pizza</object>
-    <object>objects\obj_RoomMoving1</object>
+    <object>objects\object_BulletHoleGenerator</object>
+    <object>objects\object_Pizza</object>
+    <object>objects\object_RoomMoving1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_pizza</room>

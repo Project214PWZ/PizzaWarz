@@ -32,8 +32,36 @@ draw_text_colour(20,20,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
 font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
 draw_text_colour(20,100,"USE THE ARROW KEYS TO MOVE AROUND THE MAP.",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,140,"PRESSING THE OPPOSITE DIRECTION WILL RESULT",c_white,c_olive,c_white,c_olive,1);
-draw_text_colour(20,180,"IN GOING BACKWARDS.",c_white,c_olive,c_white,c_olive,1);
+draw_text_colour(20,140,"USE THE 'A' KEY TO CHANGE TO THE LEFT LANE",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,180,"USE THE 'D' KEY TO CHNAGE TO THE RIGHT LANE",c_white,c_lime,c_white,c_lime,1);
+
+draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,300,"DIRECTION NEEDED TO GO TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT TIPS WILL",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,380,"BE AWARDED",c_white,c_lime,c_white,c_lime,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(2);
 </string>
           </argument>
         </arguments>
