@@ -34,6 +34,11 @@
     <sprite>sprites\sprite_MainPizza</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\bckSB_5</background>
+    <background>background\bckSB_4</background>
+    <background>background\bckSB_3</background>
+    <background>background\bckSB_2</background>
+    <background>background\bckSB_1</background>
     <background>background\bckLevel1</background>
     <background>background\bckSky</background>
   </backgrounds>
@@ -68,9 +73,17 @@
     <object>objects\object_Pizza</object>
     <object>objects\object_RoomMoving1</object>
     <object>objects\object_SuccessfulDeliveryMessage</object>
+    <object>objects\object_StoryBoard</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_pizza</room>
+    <rooms name="StoryBoard">
+      <room>rooms\room_StoryBoard1</room>
+      <room>rooms\room_StoryBoard2</room>
+      <room>rooms\room_StoryBoard3</room>
+      <room>rooms\room_StoryBoard4</room>
+      <room>rooms\room_StoryBoard5</room>
+      <room>rooms\room_pizza</room>
+    </rooms>
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_PlayAreaLevelOne</room>
   </rooms>
