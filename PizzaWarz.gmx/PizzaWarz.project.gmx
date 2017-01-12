@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite_PlayerVehicle</sprite>
     <sprite>sprites\sprite_BlockOneSizeOne</sprite>
     <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
     <sprite>sprites\sprite_BlockThreeSizeOne</sprite>
@@ -16,6 +15,7 @@
     <sprite>sprites\sprite_BlockSevenSizeTwo</sprite>
     <sprite>sprites\sprite_BlockEightSizeTwo</sprite>
     <sprite>sprites\sprite_BlockHQSizeOne</sprite>
+    <sprite>sprites\sprite_PlayerVehicle</sprite>
     <sprite>sprites\sprite_RandomVehicleOne</sprite>
     <sprite>sprites\sprite_RandomVehicleTwo</sprite>
     <sprite>sprites\sprite_RandomVehicleThree</sprite>
