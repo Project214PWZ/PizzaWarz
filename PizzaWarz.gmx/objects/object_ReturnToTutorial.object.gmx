@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(6);
+            <string>room_set_persistent( 7, true);
+room_goto(6);
+
 </string>
           </argument>
         </arguments>
