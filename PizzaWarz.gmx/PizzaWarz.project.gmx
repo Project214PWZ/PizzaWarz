@@ -10,14 +10,22 @@
     <sprite>sprites\sprite_BlockOneSizeOne</sprite>
     <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
     <sprite>sprites\sprite_BlockThreeSizeOne</sprite>
+    <sprite>sprites\sprite_BlockFourSizeOne</sprite>
     <sprite>sprites\sprite_BlockFiveSizeTwo</sprite>
     <sprite>sprites\sprite_BlockSixSizeTwo</sprite>
     <sprite>sprites\sprite_BlockSevenSizeTwo</sprite>
+    <sprite>sprites\sprite_BlockEightSizeTwo</sprite>
+    <sprite>sprites\sprite_BlockHQSizeOne</sprite>
     <sprite>sprites\sprite_RandomVehicleOne</sprite>
     <sprite>sprites\sprite_RandomVehicleTwo</sprite>
     <sprite>sprites\sprite_RandomVehicleThree</sprite>
     <sprite>sprites\sprite_RandomVehicleFour</sprite>
     <sprite>sprites\sprite_RandomVehicleFive</sprite>
+    <sprite>sprites\sprite_Reema</sprite>
+    <sprite>sprites\sprite_Amanda</sprite>
+    <sprite>sprites\sprite_James</sprite>
+    <sprite>sprites\sprite_KevinOne</sprite>
+    <sprite>sprites\sprite_KevinTwo</sprite>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
