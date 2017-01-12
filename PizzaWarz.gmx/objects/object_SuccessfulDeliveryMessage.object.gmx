@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,13 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=200;
+            <string>text1="SUCCESSFUL";
+text2=" DELIVERY ";
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,13 +49,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
+            <string>y-=4;
+image_alpha-=0.025;
+if(image_alpha=0)
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -71,7 +77,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto_next();
+            <string>font_add_sprite(sprite_FontSize_9,36,false,1);
+draw_set_font(sprite_FontSize_9);
+draw_text_colour(x,y,text1,c_silver,c_silver,c_silver,c_silver,1);
+draw_text_colour(x,y+30,text2,c_silver,c_silver,c_silver,c_silver,1);
 </string>
           </argument>
         </arguments>

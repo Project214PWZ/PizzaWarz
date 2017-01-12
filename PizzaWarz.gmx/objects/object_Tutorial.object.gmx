@@ -39,6 +39,10 @@ draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,
 draw_text_colour(20,300,"DIRECTION NEEDED TO GO TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT TIPS WILL",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,380,"BE AWARDED",c_white,c_lime,c_white,c_lime,1);
+
+
+draw_text_colour(20,window_get_height()-80,"PRESS F1 TO RETURN TO TUTORIAL",c_white,c_teal,c_white,c_teal,1);
+draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN SCREEN",c_white,c_teal,c_white,c_teal,1);
 </string>
           </argument>
         </arguments>
@@ -61,7 +65,7 @@ draw_text_colour(20,380,"BE AWARDED",c_white,c_lime,c_white,c_lime,1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(2);
+            <string>room_goto_next();
 </string>
           </argument>
         </arguments>
