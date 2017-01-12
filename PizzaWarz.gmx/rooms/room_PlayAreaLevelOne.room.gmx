@@ -18,7 +18,8 @@ global.intPizzaTimer = 30;
 global.intMinutes = 5;
 global.intSeconds = 00.1;
 global.bolCount = false;
-global.intPlayerSpeed = 0;</code>
+global.intPlayerSpeed = 0;
+global.bolPlacedHQ = false;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

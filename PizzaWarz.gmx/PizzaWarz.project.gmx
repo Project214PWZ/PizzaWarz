@@ -72,9 +72,12 @@
     <object>objects\object_BlockOneSizeOne</object>
     <object>objects\object_BlockTwoSizeOne</object>
     <object>objects\object_BlockThreeSizeOne</object>
+    <object>objects\object_BlockFourSizeOne</object>
     <object>objects\object_BlockFiveSizeTwo</object>
     <object>objects\object_BlockSixSizeTwo</object>
     <object>objects\object_BlockSevenSizeTwo</object>
+    <object>objects\object_BlockEightSizeTwo</object>
+    <object>objects\object_BlockHQSizeOne</object>
     <object>objects\object_BlockParent</object>
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
