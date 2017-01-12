@@ -77,13 +77,10 @@ global.intPlayerSpeed = 0;</code>
     <instance objName="object_DeliveryDestinationMarker" x="320" y="1856" name="inst_9750E340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_DeliveryDestinationMarker" x="224" y="224" name="inst_E9B49021" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_TestPlayerVehicle" x="992" y="1792" name="inst_2D5734DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-<<<<<<< HEAD
     <instance objName="object_RandomVehicleThree" x="864" y="1824" name="inst_E0CDA93E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Invisible" x="544" y="608" name="inst_A02CCA8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Invisible" x="576" y="608" name="inst_D78FF02D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-=======
     <instance objName="object_ReturnToTutorial" x="0" y="0" name="inst_347E6777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
->>>>>>> 9b61ccab9231dd20196c80d465227b53451fac06
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

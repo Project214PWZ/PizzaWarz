@@ -73,13 +73,10 @@
     <object>objects\object_BulletHoleGenerator</object>
     <object>objects\object_Pizza</object>
     <object>objects\object_RoomMoving1</object>
-<<<<<<< HEAD
     <object>objects\object_Invisible</object>
-=======
     <object>objects\object_SuccessfulDeliveryMessage</object>
     <object>objects\object_StoryBoard</object>
     <object>objects\object_ReturnToTutorial</object>
->>>>>>> 9b61ccab9231dd20196c80d465227b53451fac06
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
