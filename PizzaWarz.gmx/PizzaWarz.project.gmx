@@ -56,6 +56,7 @@
     <script>scripts\scriptTipCalculation.gml</script>
     <script>scripts\scriptSelectRandomDeliveries.gml</script>
     <script>scripts\scriptApplyDamage.gml</script>
+    <script>scripts\scriptGenerateMap.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -85,8 +86,10 @@
     <object>objects\object_SuccessfulDeliveryMessage</object>
     <object>objects\object_StoryBoard</object>
     <object>objects\object_ReturnToTutorial</object>
+    <object>objects\object_Generator</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_PlayAreaLevelOne</room>
     <rooms name="StoryBoard">
       <room>rooms\room_StoryBoard1</room>
       <room>rooms\room_StoryBoard2</room>
@@ -96,7 +99,6 @@
       <room>rooms\room_pizza</room>
     </rooms>
     <room>rooms\room_Tutorial</room>
-    <room>rooms\room_PlayAreaLevelOne</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
