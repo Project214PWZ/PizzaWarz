@@ -1,29 +1,47 @@
 #define scriptGenerateMap
 for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
+    if(global.intSizeOneBlocks == 5 && global.intSizeTwoBlocks == 5){
+        global.intSizeOneBlocks = 0;
+        global.intSizeTwoBlocks = 0;
+        global.intYBuildingPlacement = 208;
+    }
     numSelectBlock = irandom(1);
-    if(numSelectBlock == 0){
-        random_block = scriptPickBlockSizeOne();
+    if(numSelectBlock == 0 && global.intSizeOneBlocks<5){
+        random_Block = scriptPickBlockSizeOne();
+    }
+    else if(numSelectBlock == 1 && global.intSizeTwoBlocks<5){
+        random_Block = scriptPickBlockSizeTwo();
     }
     else if(numSelectBlock == 1){
-        random_block = scriptPickBlockSizeTwo();
+        random_Block = scriptPickBlockSizeOne();
     }
-    grid[# xx, yy] = instance_create(global.XBuildingPlacement,global.YBuildingPlacement,random_block);    
+    else if(numSelectBlock == 0){
+        random_Block = scriptPickBlockSizeTwo();
+    }
+    //grid[# xx,yy] = instance_create(global.XBuildingPlacement, global.YBuildingPlacement, random_block);
+    //show_message(intBlockCount);
+    instance_create(global.intXBuildingPlacement, global.intYBuildingPlacement, random_Block);
+    global.intYBuildingPlacement += global.intYBuildingPlacementNext;
+    switch (intBlockCount){
+        case 11:
+        case 21:
+        case 31:
+        case 41:
+        case 51:
+        case 61:
+        case 71:
+        case 81:
+        case 91:
+            global.intXBuildingPlacement += global.intXBuildingPlacementNext;       
+            break;
+    }
 }
-    
-    grid[# xx, yy] = instance_create(208,208,random_block);
-    grid[# xx, yy] = instance_create(1052,208,random_block);
-    grid[# xx, yy] = instance_create(1896,208,random_block);
-    grid[# xx, yy] = instance_create(2740,208,random_block);
-    grid[# xx, yy] = instance_create(3584,208,random_block);
-    grid[# xx, yy] = instance_create(4428,208,random_block);
-    grid[# xx, yy] = instance_create(5272,208,random_block);
-    grid[# xx, yy] = instance_create(6116,208,random_block);
-    grid[# xx, yy] = instance_create(6960,208,random_block);
-    grid[# xx, yy] = instance_create(7804,208,random_block);
+
 
 
 #define scriptPickBlockSizeOne
 numSelectBlock = irandom(4);
+global.intYBuildingPlacementNext = 1098;
 if(numSelectBlock == 0){
     if(global.intBlockOneCounter<19){
         global.intBlockOneCounter++;
@@ -68,6 +86,7 @@ else if(numSelectBlock == 4){
 
 #define scriptPickBlockSizeTwo
 numSelectBlock = irandom(3);
+global.intYBuildingPlacementNext = 627;
 if(numSelectBlock == 0){
     if(global.intBlockFiveCounter<19){
         global.intBlockFiveCounter++;
