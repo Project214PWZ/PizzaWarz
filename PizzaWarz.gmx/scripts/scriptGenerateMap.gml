@@ -1,34 +1,14 @@
 #define scriptGenerateMap
-
-num = irandom(9);
 for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
-    if(num == 1){
-        random_block = object_BlockOneSizeOne;
+    numSelectBlock = irandom(1);
+    if(numSelectBlock == 0){
+        random_block = scriptPickBlockSizeOne();
     }
-    else if(num == 2){
-        random_block = scriptPickBlock();
+    else if(numSelectBlock == 1){
+        random_block = scriptPickBlockSizeTwo();
     }
-    else if(num == 3){
-        random_block = object_BlockThreeSizeOne;
-    }
-    else if(num == 4){
-        random_block = object_BlockFourSizeOne;
-    }
-    else if(num == 5){
-        random_block = object_BlockHQSizeOne;
-    }
-    else if(num == 6){
-        random_block = object_BlockFiveSizeTwo;
-    }
-    else if(num == 7){
-        random_block = object_BlockSixSizeTwo;
-    }
-    else if(num == 8){
-        random_block = object_BlockSevenSizeTwo;
-    }
-    else if(num == 9){
-        random_block = object_BlockEightSizeTwo;
-    }
+    grid[# xx, yy] = instance_create(global.XBuildingPlacement,global.YBuildingPlacement,random_block);    
+}
     
     grid[# xx, yy] = instance_create(208,208,random_block);
     grid[# xx, yy] = instance_create(1052,208,random_block);
@@ -40,40 +20,83 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     grid[# xx, yy] = instance_create(6116,208,random_block);
     grid[# xx, yy] = instance_create(6960,208,random_block);
     grid[# xx, yy] = instance_create(7804,208,random_block);
+
+
+#define scriptPickBlockSizeOne
+numSelectBlock = irandom(4);
+if(numSelectBlock == 0){
+    if(global.intBlockOneCounter<19){
+        global.intBlockOneCounter++;
+        global.intSizeOneBlocks++;
+        return object_BlockOneSizeOne;}
+    else
+        return scriptPickBlockSizeOne();
+}
+else if(numSelectBlock == 1 ){
+    if(global.intBlockTwoCounter<14){
+        global.intBlockTwoCounter++;
+        global.intSizeOneBlocks++;
+        return object_BlockTwoSizeOne;}
+    else
+        return scriptPickBlockSizeOne();
+}
+else if(numSelectBlock == 2){
+    if(global.intBlockThreeCounter<9){
+        global.intBlockThreeCounter++;
+        global.intSizeOneBlocks++;
+        return object_BlockThreeSizeOne;}
+    else
+        return scriptPickBlockSizeOne();
+}
+else if(numSelectBlock == 3){
+    if(global.intBlockFourCounter<7){
+        global.intBlockFourCounter++;
+        global.intSizeOneBlocks++;
+        return object_BlockFourSizeOne;}
+    else
+        return scriptPickBlockSizeOne();
+}
+else if(numSelectBlock == 4){
+    if(!global.bolPlacedHQ){
+        global.bolPlacedHQ = true;
+        global.intSizeOneBlocks++;
+        return object_BlockHQSizeOne;}
+    else{
+        return scriptPickBlockSizeOne();
+    }
 }
 
-#define scriptPickBlock
-numSelectBlock = irandom(99);
-if(numSelectBlock >= 0 && numSelectBlock <= 18){
-return object_BlockOneSizeOne;
+#define scriptPickBlockSizeTwo
+numSelectBlock = irandom(3);
+if(numSelectBlock == 0){
+    if(global.intBlockFiveCounter<19){
+        global.intBlockFiveCounter++;
+        global.intSizeTwoBlocks++;
+        return object_BlockFiveSizeTwo;}
+     else
+        return scriptPickBlockSizeTwo();
 }
-else if(numSelectBlock >= 19 && numSelectBlock <= 32 ){
-return object_BlockTwoSizeOne;
+else if(numSelectBlock == 1){
+    if(global.intBlockSixCounter<19){
+        global.intBlockSixCounter++;
+        global.intSizeTwoBlocks++;
+        return object_BlockSixSizeTwo;}
+     else
+        return scriptPickBlockSizeTwo();
 }
-else if(numSelectBlock >= 33 && numSelectBlock <= 41){
-return object_BlockThreeSizeOne;
+else if(numSelectBlock == 2){
+    if(global.intBlockSevenCounter<19){
+        global.intBlockSevenCounter++;
+        global.intSizeTwoBlocks++;
+        return object_BlockSevenSizeTwo;}
+     else
+        return scriptPickBlockSizeTwo();
 }
-else if(numSelectBlock >= 42 && numSelectBlock <= 48){
-return object_BlockFourSizeOne;
-}
-else if(numSelectBlock >= 49 && numSelectBlock < 50){
-    if(!global.bolPlacedHQ){
-        return object_BlockHQSizeOne;
-        global.bolPlacedHQ = true;
-    }
-    else{
-        return scriptPickBlock();
-    }
-}
-else if(numSelectBlock >= 50 && numSelectBlock <= 68){
-return object_BlockFiveSizeTwo;
-}
-else if(numSelectBlock >= 69 && numSelectBlock <= 82){
-return object_BlockSixSizeTwo;
-}
-else if(numSelectBlock >= 83 && numSelectBlock <= 92){
-return object_BlockSevenSizeTwo;
-}
-else if(numSelectBlock >= 93 && numSelectBlock <= 99){
-return object_BlockEightSizeTwo;
+else if(numSelectBlock == 3){
+    if(global.intBlockEightCounter<19){
+        global.intBlockEightCounter++;
+        global.intSizeTwoBlocks++;
+        return object_BlockEightSizeTwo;}
+     else
+        return scriptPickBlockSizeTwo();
 }

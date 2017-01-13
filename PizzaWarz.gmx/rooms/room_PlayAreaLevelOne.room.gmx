@@ -14,12 +14,26 @@
 global.intTipEarned = 0;
 global.intHealth = 120;
 global.intPizzasToDeliver = 0;
-global.intPizzaTimer = 30;
+global.intPizzaTimer = 45;
 global.intMinutes = 5;
 global.intSeconds = 00.1;
 global.bolCount = false;
 global.intPlayerSpeed = 0;
-global.bolPlacedHQ = false;</code>
+global.bolPlacedHQ = false;
+global.intYBuildingPlacement = 208;
+global.intXBuildingPlacement = 208;
+global.intYBuildingPlacementNext = 0;
+global.intXBuildingPlacementNext = 0;
+global.intSizeOneBlocks = 0;
+global.intSizeTwoBlocks = 0;
+global.intBlockOneCounter = 0;
+global.intBlockTwoCounter = 0;
+global.intBlockThreeCounter = 0;
+global.intBlockFourCounter = 0;
+global.intBlockFiveCounter = 0;
+global.intBlockSixCounter = 0;
+global.intBlockSevenCounter = 0;
+global.intBlockEightCounter = 0;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
