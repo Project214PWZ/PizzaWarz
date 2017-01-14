@@ -4,6 +4,7 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
         global.intSizeOneBlocks = 0;
         global.intSizeTwoBlocks = 0;
         global.intYBuildingPlacement = 208;
+        global.intXBuildingPlacement += global.intXBuildingPlacementNext;       
     }
     numSelectBlock = irandom(1);
     if(numSelectBlock == 0 && global.intSizeOneBlocks<5){
@@ -19,22 +20,25 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
         random_Block = scriptPickBlockSizeTwo();
     }
     //grid[# xx,yy] = instance_create(global.XBuildingPlacement, global.YBuildingPlacement, random_block);
-    //show_message(intBlockCount);
+    //message = "For block " + intBlockCount + ": Xcoor " + global.intXBuildingPlacement + ", Ycoor " + global.intYBuildingPlacement;
+    //message = global.intXBuildingPlacement & ":" & global.intYBuildingPlacement;
+    //show_message(global.intXBuildingPlacement);
+    //show_message(global.intYBuildingPlacement);
     instance_create(global.intXBuildingPlacement, global.intYBuildingPlacement, random_Block);
     global.intYBuildingPlacement += global.intYBuildingPlacementNext;
-    switch (intBlockCount){
-        case 11:
-        case 21:
-        case 31:
-        case 41:
-        case 51:
-        case 61:
-        case 71:
-        case 81:
-        case 91:
-            global.intXBuildingPlacement += global.intXBuildingPlacementNext;       
-            break;
-    }
+    //switch (intBlockCount){
+    //    case 10:
+    //    case 20:
+    //    case 30:
+    //    case 40:
+    //    case 50:
+    //    case 60:
+    //    case 70:
+    //    case 80:
+    //    case 90:
+    //        global.intXBuildingPlacement += global.intXBuildingPlacementNext;              
+    //        break;
+    //}
 }
 
 

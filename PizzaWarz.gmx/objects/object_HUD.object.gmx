@@ -31,7 +31,7 @@ HEIGHT = window_get_height();
 //the size of the minimap, may need to change to xSize and ySize if using rectangular map
 mapSize = 200;
 //scaling the the full map to fit into the minimap
-mapScale = 200/room_width;
+mapScale = 200/2600; //room_width;
 //Draws the map to scale
 mapSurface = surface_create(mapSize, mapSize);
 initiateSurface = 1;

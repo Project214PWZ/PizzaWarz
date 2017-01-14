@@ -92,7 +92,6 @@
     <object>objects\object_Generator</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_PlayAreaLevelOne</room>
     <rooms name="StoryBoard">
       <room>rooms\room_StoryBoard1</room>
       <room>rooms\room_StoryBoard2</room>
@@ -102,6 +101,7 @@
       <room>rooms\room_pizza</room>
     </rooms>
     <room>rooms\room_Tutorial</room>
+    <room>rooms\room_PlayAreaLevelOne</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
