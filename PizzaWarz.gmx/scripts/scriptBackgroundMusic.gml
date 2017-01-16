@@ -1,5 +1,5 @@
 //Random number to select a song
-var selectSong = 6;//irandom(5);
+var selectSong = irandom(5);
 
 //Song that plays is dependant on random variable
 if(selectSong == 0){
