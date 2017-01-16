@@ -35,6 +35,8 @@ global.intBlockSixCounter = 0;
 global.intBlockSevenCounter = 0;
 global.intBlockEightCounter = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
+global.arrayDeliveryPoints[];
+global.arrayLengthCounter = 0;
 scriptGenerateMap();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
