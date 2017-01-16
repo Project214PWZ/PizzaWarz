@@ -3,16 +3,6 @@
   <type>0</type>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>1</colkind>
-  <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
-  <bboxmode>2</bboxmode>
-  <bbox_left>59</bbox_left>
-  <bbox_right>582</bbox_right>
-  <bbox_top>53</bbox_top>
-  <bbox_bottom>836</bbox_bottom>
-  <HTile>-1</HTile>
-  <VTile>-1</VTile>
   <colkind>0</colkind>
   <coltolerance>1</coltolerance>
   <sepmasks>-1</sepmasks>

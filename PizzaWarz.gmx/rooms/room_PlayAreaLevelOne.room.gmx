@@ -36,9 +36,9 @@ global.intBlockSevenCounter = 0;
 global.intBlockEightCounter = 0;
 global.intSongSelect = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
-global.arrayDeliveryPoints[];
 global.arrayLengthCounter = 0;
-scriptGenerateMap();</code>
+scriptGenerateMap();
+scriptGenerateDeliveryPoints();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -69,7 +69,7 @@ scriptGenerateMap();</code>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="object_TestPlayerVehicle" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="510" vborder="380" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="object_PlayerMovement" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="510" vborder="380" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>

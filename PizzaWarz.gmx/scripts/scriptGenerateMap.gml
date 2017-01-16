@@ -53,9 +53,9 @@ if(numSelectBlock == 0){
     if(global.intBlockOneCounter<7){
         global.intBlockOneCounter++;
         global.intSizeOneBlocks++;
-        scriptArrayListDeliveryDetinationPoints(32,118);
-        scriptArrayListDeliveryDetinationPoints(608,379);
-        scriptArrayListDeliveryDetinationPoints(136,860);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+118);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+379);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+136,global.intYBuildingPlacement+880);
         return object_BlockOneSizeOne;}
     else
         return scriptPickBlockSizeOne();
@@ -64,11 +64,11 @@ else if(numSelectBlock == 1 ){
     if(global.intBlockTwoCounter<14){
         global.intBlockTwoCounter++;
         global.intSizeOneBlocks++;
-        scriptArrayListDeliveryDetinationPoints(27,148);
-        scriptArrayListDeliveryDetinationPoints(27,413);
-        scriptArrayListDeliveryDetinationPoints(607,488);
-        scriptArrayListDeliveryDetinationPoints(27,678);
-        scriptArrayListDeliveryDetinationPoints(607,786);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+148);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+413);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+488);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+678);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+786);
         return object_BlockTwoSizeOne;}
     else
         return scriptPickBlockSizeOne();
@@ -77,11 +77,11 @@ else if(numSelectBlock == 2){
     if(global.intBlockThreeCounter<19){
         global.intBlockThreeCounter++;
         global.intSizeOneBlocks++;
-        scriptArrayListDeliveryDetinationPoints(38,241);
-        scriptArrayListDeliveryDetinationPoints(605,267);
-        scriptArrayListDeliveryDetinationPoints(605,432);
-        scriptArrayListDeliveryDetinationPoints(38,530);
-        scriptArrayListDeliveryDetinationPoints(605,752);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+241);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+267);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+432);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+530);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+752);
         return object_BlockThreeSizeOne;}
     else
         return scriptPickBlockSizeOne();
@@ -90,10 +90,10 @@ else if(numSelectBlock == 3){
     if(global.intBlockFourCounter<9){
         global.intBlockFourCounter++;
         global.intSizeOneBlocks++;
-        scriptArrayListDeliveryDetinationPoints(28,146);
-        scriptArrayListDeliveryDetinationPoints(612,278);
-        scriptArrayListDeliveryDetinationPoints(28,717);
-        scriptArrayListDeliveryDetinationPoints(612,720);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+146);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+278);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+12,global.intYBuildingPlacement+717);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+720);
         return object_BlockFourSizeOne;}
     else
         return scriptPickBlockSizeOne();
@@ -102,6 +102,8 @@ else if(numSelectBlock == 4){
     if(!global.bolPlacedHQ){
         global.bolPlacedHQ = true;
         global.intSizeOneBlocks++;
+        global.HQDeliveryCoor[0] = global.intXBuildingPlacement + 606;
+        global.HQDeliveryCoor[1] = global.intYBuildingPlacement + 699;
         return object_BlockHQSizeOne;}
     else{
         return scriptPickBlockSizeOne();
@@ -115,7 +117,7 @@ if(numSelectBlock == 0){
     if(global.intBlockFiveCounter<19){
         global.intBlockFiveCounter++;
         global.intSizeTwoBlocks++;
-        scriptArrayListDeliveryDetinationPoints(319,386);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+319,global.intYBuildingPlacement+409);
         return object_BlockFiveSizeTwo;}
      else
         return scriptPickBlockSizeTwo();
@@ -124,7 +126,7 @@ else if(numSelectBlock == 1){
     if(global.intBlockSixCounter<10){
         global.intBlockSixCounter++;
         global.intSizeTwoBlocks++;
-        scriptArrayListDeliveryDetinationPoints(297,30);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+297,global.intYBuildingPlacement+12);
         return object_BlockSixSizeTwo;}
      else
         return scriptPickBlockSizeTwo();
@@ -141,7 +143,7 @@ else if(numSelectBlock == 3){
     if(global.intBlockEightCounter<7){
         global.intBlockEightCounter++;
         global.intSizeTwoBlocks++;
-        scriptArrayListDeliveryDetinationPoints(165,384);
+        scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+165,global.intYBuildingPlacement+409);
         return object_BlockEightSizeTwo;}
      else
         return scriptPickBlockSizeTwo();
