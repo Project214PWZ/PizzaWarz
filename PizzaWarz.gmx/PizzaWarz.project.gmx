@@ -4,7 +4,21 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_GameStart</sound>
+    <sound>sound\sound_FailedDelivery</sound>
+    <sound>sound\sound_MoneyEarned</sound>
+    <sound>sound\sound_SuccessfulDelivery</sound>
+    <sound>sound\sound_TireScreech</sound>
+    <sound>sound\sound_CarEngine</sound>
+    <sound>sound\sound_CarCrash</sound>
+    <sound>sound\music_DubstepOne</sound>
+    <sound>sound\music_DubstepTwo</sound>
+    <sound>sound\music_Running</sound>
+    <sound>sound\music_ClassicOne</sound>
+    <sound>sound\music_ClassicalTwo</sound>
+    <sound>sound\music_EminemOne</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_BlockOneSizeOne</sprite>
     <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
@@ -59,6 +73,7 @@
     <script>scripts\scriptGenerateMap.gml</script>
     <script>scripts\scriptArrayListDeliveryDetinationPoints.gml</script>
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
+    <script>scripts\scriptLogging.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
