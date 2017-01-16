@@ -19,28 +19,10 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     else if(numSelectBlock == 0){
         random_Block = scriptPickBlockSizeTwo();
     }
-    //grid[# xx,yy] = instance_create(global.XBuildingPlacement, global.YBuildingPlacement, random_block);
-    //message = "For block " + intBlockCount + ": Xcoor " + global.intXBuildingPlacement + ", Ycoor " + global.intYBuildingPlacement;
-    //message = global.intXBuildingPlacement & ":" & global.intYBuildingPlacement;
-    //show_message(global.intXBuildingPlacement);
-    //show_message(global.intYBuildingPlacement);
     instance_create(global.intXBuildingPlacement, global.intYBuildingPlacement, random_Block);
     global.intYBuildingPlacement += global.intYBuildingPlacementNext;
-    //switch (intBlockCount){
-    //    case 10:
-    //    case 20:
-    //    case 30:
-    //    case 40:
-    //    case 50:
-    //    case 60:
-    //    case 70:
-    //    case 80:
-    //    case 90:
-    //        global.intXBuildingPlacement += global.intXBuildingPlacementNext;              
-    //        break;
-    //}
-
 }
+instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_TestPlayerVehicle);
 scriptLogging();
 
 

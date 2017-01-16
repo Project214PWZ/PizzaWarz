@@ -14,6 +14,7 @@
 global.intTipEarned = 0;
 global.intHealth = 120;
 global.intPizzasToDeliver = 0;
+global.intDeliveriesMade = 0;
 global.intPizzaTimer = 45;
 global.intMinutes = 5;
 global.intSeconds = 00.1;
@@ -84,7 +85,6 @@ scriptGenerateDeliveryPoints();</code>
     <instance objName="object_Invisible" x="576" y="608" name="inst_D78FF02D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_ReturnToTutorial" x="0" y="0" name="inst_347E6777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="0" y="0" name="inst_0C07CB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_TestPlayerVehicle" x="736" y="32" name="inst_054F6806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="192" y="160" name="inst_5571CAAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Music" x="0" y="0" name="inst_6CE45920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

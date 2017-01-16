@@ -41,6 +41,7 @@
     <sprite>sprites\sprite_KevinOne</sprite>
     <sprite>sprites\sprite_KevinTwo</sprite>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
+    <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_FontSize_98</sprite>
@@ -102,6 +103,7 @@
     <object>objects\object_Tutorial</object>
     <object>objects\object_BulletHoleGenerator</object>
     <object>objects\object_Pizza</object>
+    <object>objects\object_PickUpMoreDeliveries</object>
     <object>objects\object_RoomMoving1</object>
     <object>objects\object_Invisible</object>
     <object>objects\object_SuccessfulDeliveryMessage</object>
