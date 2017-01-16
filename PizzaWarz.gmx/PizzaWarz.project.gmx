@@ -15,7 +15,7 @@
     <sound>sound\music_DubstepOne</sound>
     <sound>sound\music_DubstepTwo</sound>
     <sound>sound\music_Running</sound>
-    <sound>sound\music_ClassicOne</sound>
+    <sound>sound\music_ClassicalOne</sound>
     <sound>sound\music_ClassicalTwo</sound>
     <sound>sound\music_EminemOne</sound>
   </sounds>
@@ -74,6 +74,7 @@
     <script>scripts\scriptArrayListDeliveryDetinationPoints.gml</script>
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
+    <script>scripts\scriptBackgroundMusic.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -107,6 +108,7 @@
     <object>objects\object_StoryBoard</object>
     <object>objects\object_ReturnToTutorial</object>
     <object>objects\object_Generator</object>
+    <object>objects\object_Music</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">

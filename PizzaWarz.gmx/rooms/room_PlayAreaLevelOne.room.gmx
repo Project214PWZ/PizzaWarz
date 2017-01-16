@@ -34,6 +34,7 @@ global.intBlockFiveCounter = 0;
 global.intBlockSixCounter = 0;
 global.intBlockSevenCounter = 0;
 global.intBlockEightCounter = 0;
+global.intSongSelect = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
 global.arrayDeliveryPoints[];
 global.arrayLengthCounter = 0;
@@ -85,6 +86,7 @@ scriptGenerateMap();</code>
     <instance objName="object_Enviroment" x="0" y="0" name="inst_0C07CB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_TestPlayerVehicle" x="736" y="32" name="inst_054F6806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="192" y="160" name="inst_5571CAAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Music" x="0" y="0" name="inst_6CE45920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

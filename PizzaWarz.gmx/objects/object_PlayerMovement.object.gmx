@@ -124,6 +124,8 @@ canAcceptDamage=true;
             <kind>1</kind>
             <string>if(vspeed = 0 &amp;&amp; hspeed = 0){
     instance_create(x,y,object_SuccessfulDeliveryMessage);
+    audio_play_sound(sound_SuccessfulDelivery, 10, false);
+    
 }
 </string>
           </argument>
@@ -175,8 +177,10 @@ canAcceptDamage=true;
 if(canAcceptDamage = true){
     scriptApplyDamage();
     canAcceptDamage=false;
-    alarm[2]=20;    
+    alarm[2]=20;   
+    audio_play_sound(sound_CarCrash, 10, false);
 }
+
 </string>
           </argument>
         </arguments>
@@ -204,6 +208,7 @@ if(canAcceptDamage = true){
     scriptApplyDamage();
     canAcceptDamage=false;
     alarm[2]=20;    
+    audio_play_sound(sound_CarCrash, 10, false);
 }
 </string>
           </argument>
@@ -470,6 +475,7 @@ global.intPlayerSpeed = hspeed;
             <string>if(image_angle == 90){
     if(hspeed &gt;=+12){
         vspeed = (hspeed*(-1))-6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         vspeed = hspeed*(-1);
@@ -480,6 +486,7 @@ global.intPlayerSpeed = hspeed;
 else if (image_angle == 270){
     if(hspeed&lt;=-12){
         vspeed = hspeed+6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         vspeed = hspeed;
@@ -513,6 +520,7 @@ global.intPlayerSpeed = vspeed;
             <string>if(image_angle == 360){
     if(vspeed&gt;=+12){
         hspeed = (vspeed*(-1))-6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         hspeed = vspeed*(-1);
@@ -523,6 +531,7 @@ global.intPlayerSpeed = vspeed;
 else if(image_angle == 180){
     if(vspeed&lt;=-12){
         hspeed = vspeed+6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         hspeed = vspeed;
@@ -556,6 +565,7 @@ global.intPlayerSpeed = hspeed;
             <string>if(image_angle == 90){
     if(hspeed&lt;=-12){
         vspeed = hspeed+6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         vspeed = hspeed;
@@ -566,6 +576,7 @@ global.intPlayerSpeed = hspeed;
 else if(image_angle == 270){
     if(hspeed&gt;=+12){
         vspeed = (hspeed*(-1))-6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         vspeed = hspeed*(-1);
@@ -599,6 +610,7 @@ global.intPlayerSpeed = vspeed;
             <string>if(image_angle == 360){
     if(vspeed&lt;=-12){
     hspeed = vspeed+6;
+    audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         hspeed = vspeed
@@ -609,6 +621,7 @@ global.intPlayerSpeed = vspeed;
 else if(image_angle == 180){
     if(vspeed&gt;=+12){
         hspeed = (vspeed*(-1))-6;
+        audio_play_sound(sound_TireScreech, 10, false);
     }
     else{
         hspeed = vspeed*(-1);
