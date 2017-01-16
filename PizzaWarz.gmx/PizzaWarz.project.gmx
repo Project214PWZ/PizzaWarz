@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_GameStart</sound>
+    <sound>sound\sound_FailedDelivery</sound>
+    <sound>sound\sound_MoneyEarned</sound>
+    <sound>sound\sound_SuccessfulDelivery</sound>
+    <sound>sound\sound_TireScreech</sound>
+    <sound>sound\sound_CarEngine</sound>
+    <sound>sound\sound_CarCrash</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_BlockOneSizeOne</sprite>
     <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
@@ -57,6 +65,7 @@
     <script>scripts\scriptSelectRandomDeliveries.gml</script>
     <script>scripts\scriptApplyDamage.gml</script>
     <script>scripts\scriptGenerateMap.gml</script>
+    <script>scripts\scriptLogging.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>

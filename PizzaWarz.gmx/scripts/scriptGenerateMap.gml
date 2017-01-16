@@ -39,7 +39,10 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     //        global.intXBuildingPlacement += global.intXBuildingPlacementNext;              
     //        break;
     //}
+
 }
+scriptLogging();
+
 
 
 
