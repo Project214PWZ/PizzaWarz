@@ -12,6 +12,12 @@
     <sound>sound\sound_TireScreech</sound>
     <sound>sound\sound_CarEngine</sound>
     <sound>sound\sound_CarCrash</sound>
+    <sound>sound\music_DubstepOne</sound>
+    <sound>sound\music_DubstepTwo</sound>
+    <sound>sound\music_Running</sound>
+    <sound>sound\music_ClassicOne</sound>
+    <sound>sound\music_ClassicalTwo</sound>
+    <sound>sound\music_EminemOne</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_BlockOneSizeOne</sprite>
