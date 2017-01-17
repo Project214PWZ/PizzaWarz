@@ -38,6 +38,7 @@ global.intBlockEightCounter = 0;
 global.intSongSelect = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
 global.arrayLengthCounter = 0;
+global.bolMoreDeliveries = false;
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();</code>
   <enableViews>-1</enableViews>

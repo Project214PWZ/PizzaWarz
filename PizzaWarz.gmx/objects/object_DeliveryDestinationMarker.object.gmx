@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.75
+            <string>image_speed = 0.75;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="object_TestPlayerVehicle">
+    <event eventtype="4" ename="object_PlayerMovement">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -50,8 +50,12 @@
             <kind>1</kind>
             <string>if(object_PlayerMovement.vspeed = 0 &amp;&amp; object_PlayerMovement.hspeed = 0)
 {
+    global.intDeliveriesMade++;
     instance_destroy();
     global.intScore = global.intScore + scriptTipCalculation();
+    if(global.intDeliveriesMade == global.intPizzasToDeliver){
+        global.bolMoreDeliveries = true;
+    }
 }
 </string>
           </argument>

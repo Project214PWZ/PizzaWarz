@@ -123,8 +123,9 @@ audio_play_sound(sound_CarEngine, 10, false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.intDeliveriesMade == global.intPizzasToDeliver){
+            <string>if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries = true){
     instance_create(global.HQDeliveryCoor[0],global.HQDeliveryCoor[1],object_PickUpMoreDeliveries);
+    global.bolMoreDeliveries = false;
 }
 </string>
           </argument>
@@ -150,7 +151,6 @@ audio_play_sound(sound_CarEngine, 10, false);
             <kind>1</kind>
             <string>if(vspeed = 0 &amp;&amp; hspeed = 0){
     global.intDeliveriesMade = 0;
-    scriptGenerateDeliveryPoints();
 }
 </string>
           </argument>
@@ -177,7 +177,6 @@ audio_play_sound(sound_CarEngine, 10, false);
             <string>if(vspeed = 0 &amp;&amp; hspeed = 0){
     instance_create(x,y,object_SuccessfulDeliveryMessage);
     audio_play_sound(sound_SuccessfulDelivery, 10, false);
-    global.intDeliveriesMade++;
 }
 </string>
           </argument>
