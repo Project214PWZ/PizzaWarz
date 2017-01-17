@@ -57,11 +57,11 @@ initiateSurface = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Stop viwew from going outside room
-//if view_xview &lt; 0 view_xview = 0;
-//if view_xview + view_wview &gt; room_width view_xview = room_width - view_wview;
-//if view_yview &lt; 0 view_yview = 0;
-//if view_yview + view_hview &gt; room_height view_yview = room_height - view_hview;
+            <string>//Stop view from going outside room
+if view_xview &lt; 0 view_xview = 0;
+if view_xview + view_wview &gt; room_width view_xview = room_width - view_wview;
+if view_yview &lt; 0 view_yview = 0;
+if view_yview + view_hview &gt; room_height view_yview = room_height - view_hview;
 
 if(global.bolCount == true)
 {
@@ -105,15 +105,15 @@ global.intPizzaTimer -= 1/room_speed;
             <string>var mapLeft = WIDTH - mapSize;
 var mapTop = HEIGHT - mapSize;
 var intSingleSeconds = floor(global.intSeconds);
-//if surface_exists(mapSurface)
-//{
+if surface_exists(mapSurface)
+{
     draw_surface(mapSurface,mapLeft,mapTop);
-//}
-//else
-//{
-//    mapSurface = surface_create(mapSize, mapSize);
-//    initiateSurface = 1;
-//}
+}
+else
+{
+    mapSurface = surface_create(mapSize, mapSize);
+    initiateSurface = 1;
+}
 font_add_sprite(sprite_FontSize_19,36,false,1);
 //draws the players total cash
 draw_set_font(sprite_FontSize_19);
@@ -161,6 +161,35 @@ surface_reset_target();
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(initiateSurface == 1){
+    surface_set_target(mapSurface);
+    draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
+
+    surface_reset_target();
+    initiateSurface = 0;
+}
 </string>
           </argument>
         </arguments>
