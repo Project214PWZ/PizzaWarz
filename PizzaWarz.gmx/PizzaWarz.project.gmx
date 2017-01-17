@@ -146,6 +146,8 @@
     </rooms>
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_PlayAreaLevelOne</room>
+    <room>rooms\Room_Credit</room>
+    <room>rooms\Room_Start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
