@@ -143,6 +143,17 @@ with(object_Enviroment)
 {
     draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
 }
+
+//Drawing the directional arrow
+var offset_x = 35;
+var offset_y = 35;
+xx=view_xview[0]+offset_x;
+yy=view_yview[0]+offset_y;
+instance_create(xx,yy,object_DeliveryPointer);
+
+
+
+
 surface_reset_target();
 
 
