@@ -28,6 +28,7 @@
             <string>WIDTH = window_get_width();
 HEIGHT = window_get_height();
 
+
 //the size of the minimap, may need to change to xSize and ySize if using rectangular map
 mapSize = 200;
 //scaling the the full map to fit into the minimap
@@ -80,6 +81,7 @@ else
 {
 global.intPizzaTimer -= 1/room_speed;
 }
+
 </string>
           </argument>
         </arguments>
@@ -107,6 +109,7 @@ var mapTop = HEIGHT - mapSize;
 var intSingleSeconds = floor(global.intSeconds);
 if surface_exists(mapSurface)
 {
+    
     draw_surface(mapSurface,mapLeft,mapTop);
 }
 else
@@ -128,7 +131,31 @@ if(global.intSeconds&lt;10)
 else
 {
     draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_orange,c_yellow,c_yellow,c_orange,1);
+}//intPizzasToDeliver
+var offset_x = 50;
+var offset_y = 50;
+if(global.intPizzasToDeliver != 0){
+//Draw Direction arrow
+    
+    xx=view_xview[0]+offset_x;
+    yy=view_yview[0]+offset_y;
+    if(instance_exists(object_DeliveryPointer)){
+        with(object_DeliveryPointer){
+            instance_destroy();
+        }
+        instance_create(xx,yy,object_DeliveryPointer);
+    }
+    else{
+        instance_create(xx,yy,object_DeliveryPointer);
+    }
 }
+else{
+    with(object_DeliveryPointer){
+            instance_destroy();
+        }
+}
+
+
 
 
 //draws the healthbar
@@ -143,14 +170,6 @@ with(object_Enviroment)
 {
     draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
 }
-
-//Drawing the directional arrow
-var offset_x = 35;
-var offset_y = 35;
-xx=view_xview[0]+offset_x;
-yy=view_yview[0]+offset_y;
-instance_create(xx,yy,object_DeliveryPointer);
-
 
 
 
@@ -186,7 +205,15 @@ surface_reset_target();
             <string>if(initiateSurface == 1){
     surface_set_target(mapSurface);
     draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
-
+    /*
+    //Drawing the directional arrow
+    var offset_x = 35;
+    var offset_y = 35;
+    xx=view_xview[0]+offset_x;
+    yy=view_yview[0]+offset_y;
+    instance_create(xx,yy,object_DeliveryPointer);
+    */
+    
     surface_reset_target();
     initiateSurface = 0;
 }

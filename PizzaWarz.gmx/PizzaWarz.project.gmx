@@ -5,54 +5,66 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound_GameStart</sound>
-    <sound>sound\sound_FailedDelivery</sound>
-    <sound>sound\sound_MoneyEarned</sound>
-    <sound>sound\sound_SuccessfulDelivery</sound>
-    <sound>sound\sound_TireScreech</sound>
-    <sound>sound\sound_CarEngine</sound>
-    <sound>sound\sound_CarCrash</sound>
-    <sound>sound\music_DubstepOne</sound>
-    <sound>sound\music_DubstepTwo</sound>
-    <sound>sound\music_Running</sound>
-    <sound>sound\music_ClassicalOne</sound>
-    <sound>sound\music_ClassicalTwo</sound>
-    <sound>sound\music_EminemOne</sound>
+    <sounds name="Sounds">
+      <sound>sound\sound_FailedDelivery</sound>
+      <sound>sound\sound_MoneyEarned</sound>
+      <sound>sound\sound_GameStart</sound>
+      <sound>sound\sound_TireScreech</sound>
+      <sound>sound\sound_CarCrash</sound>
+      <sound>sound\sound_SuccessfulDelivery</sound>
+      <sound>sound\sound_CarEngine</sound>
+      <sound>sound\sound_Whaa</sound>
+      <sound>sound\sound_Gunfire</sound>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\music_DubstepOne</sound>
+      <sound>sound\music_Running</sound>
+      <sound>sound\music_DubstepTwo</sound>
+      <sound>sound\music_ClassicalOne</sound>
+      <sound>sound\music_EminemOne</sound>
+      <sound>sound\music_ClassicalTwo</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprite_BlockOneSizeOne</sprite>
-    <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
-    <sprite>sprites\sprite_BlockThreeSizeOne</sprite>
-    <sprite>sprites\sprite_BlockFourSizeOne</sprite>
-    <sprite>sprites\sprite_BlockFiveSizeTwo</sprite>
-    <sprite>sprites\sprite_BlockSixSizeTwo</sprite>
-    <sprite>sprites\sprite_BlockSevenSizeTwo</sprite>
-    <sprite>sprites\sprite_BlockEightSizeTwo</sprite>
-    <sprite>sprites\sprite_BlockHQSizeOne</sprite>
-    <sprite>sprites\sprite_PlayerVehicle</sprite>
-    <sprite>sprites\sprite_RandomVehicleOne</sprite>
-    <sprite>sprites\sprite_RandomVehicleTwo</sprite>
-    <sprite>sprites\sprite_RandomVehicleThree</sprite>
-    <sprite>sprites\sprite_RandomVehicleFour</sprite>
-    <sprite>sprites\sprite_RandomVehicleFive</sprite>
-    <sprite>sprites\sprite_Reema</sprite>
-    <sprite>sprites\sprite_Amanda</sprite>
-    <sprite>sprites\sprite_James</sprite>
-    <sprite>sprites\sprite_KevinOne</sprite>
-    <sprite>sprites\sprite_KevinTwo</sprite>
+    <sprites name="Blocks">
+      <sprite>sprites\sprite_BlockOneSizeOne</sprite>
+      <sprite>sprites\sprite_BlockTwoSizeOne</sprite>
+      <sprite>sprites\sprite_BlockThreeSizeOne</sprite>
+      <sprite>sprites\sprite_BlockFourSizeOne</sprite>
+      <sprite>sprites\sprite_BlockFiveSizeTwo</sprite>
+      <sprite>sprites\sprite_BlockSixSizeTwo</sprite>
+      <sprite>sprites\sprite_BlockSevenSizeTwo</sprite>
+      <sprite>sprites\sprite_BlockEightSizeTwo</sprite>
+      <sprite>sprites\sprite_BlockHQSizeOne</sprite>
+    </sprites>
+    <sprites name="Vehicles">
+      <sprite>sprites\sprite_PlayerVehicle</sprite>
+      <sprite>sprites\sprite_RandomVehicleOne</sprite>
+      <sprite>sprites\sprite_RandomVehicleTwo</sprite>
+      <sprite>sprites\sprite_RandomVehicleThree</sprite>
+      <sprite>sprites\sprite_RandomVehicleFour</sprite>
+      <sprite>sprites\sprite_RandomVehicleFive</sprite>
+      <sprite>sprites\sprite_Reema</sprite>
+      <sprite>sprites\sprite_James</sprite>
+      <sprite>sprites\sprite_KevinTwo</sprite>
+      <sprite>sprites\sprite_KevinOne</sprite>
+      <sprite>sprites\sprite_Amanda</sprite>
+    </sprites>
+    <sprites name="Fonts">
+      <sprite>sprites\sprite_FontSize_9</sprite>
+      <sprite>sprites\sprite_FontSize_13</sprite>
+      <sprite>sprites\sprite_FontSize_19</sprite>
+      <sprite>sprites\sprite_FontSize_25</sprite>
+      <sprite>sprites\sprite_FontSize_33</sprite>
+      <sprite>sprites\sprite_FontSize_45</sprite>
+      <sprite>sprites\sprite_FontSize_60</sprite>
+      <sprite>sprites\sprite_FontSize_75</sprite>
+      <sprite>sprites\sprite_FontSize_98</sprite>
+    </sprites>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
-    <sprite>sprites\sprite_FontSize_98</sprite>
-    <sprite>sprites\sprite_FontSize_75</sprite>
-    <sprite>sprites\sprite_FontSize_60</sprite>
-    <sprite>sprites\sprite_FontSize_45</sprite>
-    <sprite>sprites\sprite_FontSize_33</sprite>
-    <sprite>sprites\sprite_FontSize_25</sprite>
-    <sprite>sprites\sprite_FontSize_19</sprite>
-    <sprite>sprites\sprite_FontSize_13</sprite>
-    <sprite>sprites\sprite_FontSize_9</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_Invisible</sprite>
@@ -62,13 +74,15 @@
     <sprite>sprites\sprite_Vehicles</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bckSB_5</background>
-    <background>background\bckSB_4</background>
-    <background>background\bckSB_3</background>
-    <background>background\bckSB_2</background>
-    <background>background\bckSB_1</background>
     <background>background\bckLevel1</background>
     <background>background\bckSky</background>
+    <backgrounds name="Storyboard">
+      <background>background\bckSB_1</background>
+      <background>background\bckSB_2</background>
+      <background>background\bckSB_3</background>
+      <background>background\bckSB_4</background>
+      <background>background\bckSB_5</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -85,23 +99,7 @@
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
-    <object>objects\object_PlayerVehicle</object>
-    <object>objects\object_TestPlayerVehicle</object>
-    <object>objects\object_RandomVehicleOne</object>
-    <object>objects\object_RandomVehicleTwo</object>
-    <object>objects\object_RandomVehicleThree</object>
-    <object>objects\object_RandomVehicleFour</object>
-    <object>objects\object_RandomVehicleFive</object>
     <object>objects\object_RandomVehicleMovement</object>
-    <object>objects\object_BlockOneSizeOne</object>
-    <object>objects\object_BlockTwoSizeOne</object>
-    <object>objects\object_BlockThreeSizeOne</object>
-    <object>objects\object_BlockFourSizeOne</object>
-    <object>objects\object_BlockFiveSizeTwo</object>
-    <object>objects\object_BlockSixSizeTwo</object>
-    <object>objects\object_BlockSevenSizeTwo</object>
-    <object>objects\object_BlockEightSizeTwo</object>
-    <object>objects\object_BlockHQSizeOne</object>
     <object>objects\object_BlockParent</object>
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
@@ -133,6 +131,25 @@
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
       <object>objects\objStartTitle</object>
+    <objects name="Blocks">
+      <object>objects\object_BlockOneSizeOne</object>
+      <object>objects\object_BlockTwoSizeOne</object>
+      <object>objects\object_BlockThreeSizeOne</object>
+      <object>objects\object_BlockFourSizeOne</object>
+      <object>objects\object_BlockFiveSizeTwo</object>
+      <object>objects\object_BlockSixSizeTwo</object>
+      <object>objects\object_BlockSevenSizeTwo</object>
+      <object>objects\object_BlockEightSizeTwo</object>
+      <object>objects\object_BlockHQSizeOne</object>
+    </objects>
+    <objects name="Vehicles">
+      <object>objects\object_TestPlayerVehicle</object>
+      <object>objects\object_PlayerVehicle</object>
+      <object>objects\object_RandomVehicleOne</object>
+      <object>objects\object_RandomVehicleTwo</object>
+      <object>objects\object_RandomVehicleThree</object>
+      <object>objects\object_RandomVehicleFour</object>
+      <object>objects\object_RandomVehicleFive</object>
     </objects>
   </objects>
   <rooms name="rooms">
