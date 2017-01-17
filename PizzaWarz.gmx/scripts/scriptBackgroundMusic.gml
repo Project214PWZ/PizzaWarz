@@ -1,6 +1,6 @@
 randomize();
 //Random number to select a song
-selectSong = 20;//irandom(4);
+selectSong = irandom(4);
 
 //Song that plays is dependant on random variable
 if(selectSong = 0){
@@ -22,8 +22,5 @@ else if(selectSong = 4){
 else if(selectSong = 5){
     
     audio_play_sound(music_EminemOne, 10, false);
-}
-else if(selectSong = 20){
-    audio_play_sound(sound14, 10, false);
 }
 global.songSelect = selectSong;

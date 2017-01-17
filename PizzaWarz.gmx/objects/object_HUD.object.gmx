@@ -67,20 +67,29 @@ if view_yview + view_hview &gt; room_height view_yview = room_height - view_hvie
 if(global.bolCount == true)
 {
     global.intSeconds -= 1/room_speed;
+    if(global.intPizzaTimer != 0){
+        global.intPizzaTimer -= 1/room_speed;
+    }
 }
 if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
 {
-    global.intMinutes -= 1;
-    global.intSeconds = 60;
+    if(global.intMinutes = 0){
+        //show_message("Here");
+        room_set_persistent( 7, true);
+    }
+    else{
+        global.intMinutes -= 1;
+        global.intSeconds = 60;
+    }
 }
-if(global.intPizzaTimer == 0)
+if(global.intPizzaTimer &lt;= 0)
 {
-    global.intPizzaTimer = 1;
+    global.intPizzaTimer = 0;
 }
-else
-{
-global.intPizzaTimer -= 1/room_speed;
-}
+//else
+//{
+//global.intPizzaTimer -= 1/room_speed;
+//}
 
 </string>
           </argument>
