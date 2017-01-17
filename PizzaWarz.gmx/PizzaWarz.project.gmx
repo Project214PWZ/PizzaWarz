@@ -131,6 +131,7 @@
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
       <object>objects\objStartTitle</object>
+	</objects>
     <objects name="Blocks">
       <object>objects\object_BlockOneSizeOne</object>
       <object>objects\object_BlockTwoSizeOne</object>
