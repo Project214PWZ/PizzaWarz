@@ -56,6 +56,10 @@
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_Invisible</sprite>
+    <sprite>sprites\sprite_contest</sprite>
+    <sprite>sprites\sprite_Pizza</sprite>
+    <sprite>sprites\sprite_PizzaClosing</sprite>
+    <sprite>sprites\sprite_Vehicles</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckSB_5</background>
@@ -113,6 +117,23 @@
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
     <object>objects\object_DeliveryPointer</object>
+    <objects name="Credits">
+      <object>objects\objCreditsBackground</object>
+      <object>objects\objCreditsController</object>
+      <object>objects\objCreditScreen</object>
+      <object>objects\objCreditsInstructors</object>
+      <object>objects\objCreditsMembers</object>
+      <object>objects\objCreditsSprites</object>
+      <object>objects\objCreditsSpritesBlocks</object>
+      <object>objects\objCreditsSpritesVehicles1</object>
+      <object>objects\objCreditsSpritesVehicles2</object>
+      <object>objects\objCreditThankyou</object>
+    </objects>
+    <objects name="StartScreen">
+      <object>objects\objStartController</object>
+      <object>objects\objStartScreen</object>
+      <object>objects\objStartTitle</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
