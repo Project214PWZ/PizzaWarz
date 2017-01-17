@@ -19,8 +19,7 @@ else if(selectSong = 3){
 else if(selectSong = 4){
     audio_play_sound(music_ClassicalTwo, 10, false);
 }
-else if(selectSong = 5){
-    
+else if(selectSong = 5){    
     audio_play_sound(music_EminemOne, 10, false);
 }
 global.songSelect = selectSong;
