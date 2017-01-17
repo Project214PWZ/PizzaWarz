@@ -5,15 +5,16 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound14</sound>
-    <sounds name="sounds">
+    <sounds name="Sounds">
       <sound>sound\sound_FailedDelivery</sound>
       <sound>sound\sound_MoneyEarned</sound>
       <sound>sound\sound_GameStart</sound>
       <sound>sound\sound_TireScreech</sound>
-      <sound>sound\sound_CarEngine</sound>
       <sound>sound\sound_CarCrash</sound>
       <sound>sound\sound_SuccessfulDelivery</sound>
+      <sound>sound\sound_CarEngine</sound>
+      <sound>sound\sound_Whaa</sound>
+      <sound>sound\sound_Gunfire</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\music_DubstepOne</sound>
