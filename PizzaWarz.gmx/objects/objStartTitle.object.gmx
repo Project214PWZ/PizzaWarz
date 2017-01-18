@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>fontAlpha = 1;
-fadeOut=false;
-alarm[0]=150; //bigger means longer delay before fade out
+//fadeOut=false;
+//alarm[0]=150; //bigger means longer delay before fade out
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,7 @@ alarm[0]=150; //bigger means longer delay before fade out
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeOut=true;
+            <string>//fadeOut=true;
 </string>
           </argument>
         </arguments>
@@ -73,10 +73,10 @@ alarm[0]=150; //bigger means longer delay before fade out
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-		fontAlpha -=.01;  //smaller means slower fadeout
-		}
-		show_debug_message(fontAlpha);
+            <string>//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+//fontAlpha -=.01;  //smaller means slower fadeout
+//}
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -101,7 +101,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_25,36,false,1); 
 draw_set_font(sprite_FontSize_25);
-draw_set_alpha(fontAlpha);
+//draw_set_alpha(fontAlpha);
 draw_text_colour(275, 200, "PIZZA WARS" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
 </string>
           </argument>

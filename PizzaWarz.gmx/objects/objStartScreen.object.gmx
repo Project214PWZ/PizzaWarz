@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>fontAlpha = 1;
-fadeOut=false;
-alarm[0]=150; //bigger means longer delay before fade out
+//fadeOut=false;
+//alarm[0]=150; //bigger means longer delay before fade out
 
-vspeed = 0;
-hspeed = 0;
-image_angle = 360;
+//vspeed = 0;
+//hspeed = 0;
+//image_angle = 360;
 
 </string>
           </argument>
@@ -55,7 +55,7 @@ image_angle = 360;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeOut=true;
+            <string>//fadeOut=true;
 </string>
           </argument>
         </arguments>
@@ -78,10 +78,10 @@ image_angle = 360;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-		fontAlpha -=.01;  //smaller means slower fadeout
-		}
-		show_debug_message(fontAlpha);
+            <string>//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+//fontAlpha -=.01;  //smaller means slower fadeout
+//}
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -106,45 +106,22 @@ image_angle = 360;
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
-draw_set_alpha(fontAlpha);
+//draw_set_alpha(fontAlpha);
 
-draw_text_colour(275, 350, "PRESS X TO START", c_yellow, c_yellow, c_yellow, c_white, fontAlpha); 
+draw_text_colour(275, 350, "PRESS ENTER TO START", c_yellow, c_yellow, c_yellow, c_white, fontAlpha); 
 draw_text_colour(75, 500, "TUTORIAL" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
 draw_text_colour(325, 500, "PRESS THE SPACE BAR" ,c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
 draw_text_colour(75, 550, "CREDITS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(325, 550, "PRESS ENTER" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(325, 550, "PRESS BACKSPACE" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
 
-draw_sprite(sprite_PlayerVehicle, 0, 100, 100);
-
-
+//draw_sprite(sprite_PlayerVehicle, 0, 100, 100);
 
 
 
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="88">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(room_PlayAreaLevelOne);
+
+
 </string>
           </argument>
         </arguments>
@@ -190,7 +167,30 @@ draw_sprite(sprite_PlayerVehicle, 0, 100, 100);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Room_Credit); 
+            <string>room_goto(room_PlayAreaLevelOne);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(room_Credit);
 </string>
           </argument>
         </arguments>

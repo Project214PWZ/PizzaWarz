@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>alarm[0]=room_speed*1;
 alarm[1]=room_speed*1; 
-alarm[2]=room_speed*5;
+//alarm[2]=room_speed*5;
 </string>
           </argument>
         </arguments>

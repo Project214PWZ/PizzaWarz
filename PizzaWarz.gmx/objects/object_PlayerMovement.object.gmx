@@ -31,7 +31,7 @@ image_angle = 360;
 canIncrease=true;
 canDecrease=true;
 canAcceptDamage=true;
-audio_play_sound(sound_CarEngine, 10, false);
+//audio_play_sound(sound_CarEngine, 10, false);
 </string>
           </argument>
         </arguments>

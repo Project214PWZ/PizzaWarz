@@ -130,7 +130,7 @@
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
       <object>objects\objStartTitle</object>
-	</objects>
+    </objects>
     <objects name="Blocks">
       <object>objects\object_BlockOneSizeOne</object>
       <object>objects\object_BlockTwoSizeOne</object>
@@ -161,10 +161,10 @@
       <room>rooms\room_StoryBoard5</room>
       <room>rooms\room_pizza</room>
     </rooms>
+    <room>rooms\room_Start</room>
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_PlayAreaLevelOne</room>
-    <room>rooms\Room_Credit</room>
-    <room>rooms\Room_Start</room>
+    <room>rooms\room_Credit</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

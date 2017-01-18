@@ -74,8 +74,21 @@ if(global.bolCount == true)
 if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
 {
     if(global.intMinutes = 0){
-        //show_message("Here");
-        room_set_persistent( 7, true);
+        //keyboard_clear(vk_enter);
+        font_add_sprite(sprite_FontSize_33,36,false,1);
+        draw_set_font(sprite_FontSize_33);
+        draw_text_colour(300,120,"THANKS FOR PLAYING",c_white,c_red,c_white,c_red,1);
+        draw_text_colour(300,180,"YOU EARNED $" + string(global.intScore),c_white,c_red,c_white,c_red,1);
+        //isPaused = 1;
+        //while(isPaused ==1){    
+            if(keyboard_check_pressed(vk_enter)){
+                //move to credits screen
+                room_goto(room_Credit);
+            }
+            else if(keyboard_check_direct(vk_enter)){
+                room_goto(room_Credit);
+            }
+        //}
     }
     else{
         global.intMinutes -= 1;
@@ -164,12 +177,8 @@ else{
         }
 }
 
-
-
-
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, global.intHealth, c_gray, c_red, c_blue, 0, true, true);
-
 
 //draw the view rectangle on the minimap
 surface_set_target(mapSurface);
@@ -179,9 +188,6 @@ with(object_Enviroment)
 {
     draw_sprite_ext(sprite_index, 0, x*other.mapScale, y*other.mapScale, other.mapScale, other.mapScale, image_angle, image_blend, image_alpha);
 }
-
-
-
 surface_reset_target();
 
 
