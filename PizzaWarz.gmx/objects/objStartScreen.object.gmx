@@ -167,7 +167,8 @@ draw_text_colour(325, 550, "PRESS BACKSPACE" , c_orange, c_yellow, c_yellow, c_o
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_PlayAreaLevelOne);
+            <string>audio_play_sound(sound_GameStart, 10, false);
+room_goto(room_PlayAreaLevelOne);
 </string>
           </argument>
         </arguments>

@@ -151,6 +151,7 @@
       <object>objects\object_RandomVehicleFour</object>
       <object>objects\object_RandomVehicleFive</object>
     </objects>
+    <object>objects\object_EndGame</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
