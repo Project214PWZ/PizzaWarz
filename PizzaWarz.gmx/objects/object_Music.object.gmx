@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Calling background music script
 
-scriptBackgroundMusic();
+//scriptBackgroundMusic();
 </string>
           </argument>
         </arguments>
@@ -51,45 +51,42 @@ scriptBackgroundMusic();
           <argument>
             <kind>1</kind>
             <string>///Checking if the music has stopped
-if(global.songSelect == 5){
-    if !audio_is_playing(music_EminemOne)
-    {
-        scriptBackgroundMusic();
-    }
-}
-else if(global.songSelect == 4){
-    if !audio_is_playing(music_ClassicalTwo)
-    {
-        scriptBackgroundMusic();
-    }
-}
-else if(global.songSelect == 3){
-    if !audio_is_playing(music_ClassicalOne)
-    {
-        scriptBackgroundMusic();
-    }
-}
-else if(global.songSelect == 2){
-    if !audio_is_playing(music_Running)
-    {
-        scriptBackgroundMusic();
-    }
-}
-else if(global.songSelect == 1){
-    if !audio_is_playing(music_DubstepTwo)
-    {
-        scriptBackgroundMusic();
-    }
-}
-else if(global.songSelect == 0){
-    if !audio_is_playing(music_DubstepOne)
-    {
-        scriptBackgroundMusic();
-    }
-}
-   
-   
-   
+//if(global.songSelect == 5){
+//    if !audio_is_playing(music_EminemOne)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
+//else if(global.songSelect == 4){
+//    if !audio_is_playing(music_ClassicalTwo)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
+//else if(global.songSelect == 3){
+//    if !audio_is_playing(music_ClassicalOne)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
+//else if(global.songSelect == 2){
+//    if !audio_is_playing(music_Running)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
+//else if(global.songSelect == 1){
+//    if !audio_is_playing(music_DubstepTwo)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
+//else if(global.songSelect == 0){
+//    if !audio_is_playing(music_DubstepOne)
+//    {
+//        scriptBackgroundMusic();
+//    }
+//}
 </string>
           </argument>
         </arguments>

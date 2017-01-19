@@ -51,7 +51,7 @@ alarm[5] = 75;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Go to next room after set time
+            <string>//Go to next room after set time
 room_goto_next();
 </string>
           </argument>
