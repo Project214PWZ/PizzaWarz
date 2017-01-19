@@ -39,8 +39,21 @@ global.intSongSelect = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
 global.arrayLengthCounter = 0;
 global.bolMoreDeliveries = false;
+global.intVehicleOneCounter = 0;
+global.intVehicleTwoCounter = 0;
+global.intVehicleThreeCounter = 0;
+global.intVehicleFourCounter = 0;
+global.intVehicleFiveCounter = 0;
+global.intVehicleSixCounter = 0;
+global.intVehicleSevenCounter = 0;
+global.intVehicleEightCounter = 0;
+global.intVehicleNineCounter = 0;
+global.intVehicleTenCounter = 0;
+global.intStreetChange = 0;
 scriptGenerateMap();
-scriptGenerateDeliveryPoints();</code>
+scriptGenerateDeliveryPoints();
+scriptRandomVehicle();
+//scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
