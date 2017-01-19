@@ -95,10 +95,18 @@
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
     <script>scripts\scriptBackgroundMusic.gml</script>
+    <script>scripts\scriptTestScript.gml</script>
+    <script>scripts\scriptDeliveryPointer.gml</script>
+    <script>scripts\scriptRandomVehicle.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
+    <object>objects\object_Reema</object>
+    <object>objects\object_James</object>
+    <object>objects\object_Amanda</object>
+    <object>objects\object_KevinOne</object>
+    <object>objects\object_KevinTwo</object>
     <object>objects\object_RandomVehicleMovement</object>
     <object>objects\object_BlockParent</object>
     <object>objects\object_DeliveryDestinationMarker</object>

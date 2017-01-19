@@ -104,14 +104,14 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(215, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
 
-draw_text_colour(75, 250, "WE DECIDED TO THROW " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 280, "A DRAWING CONTEST AND " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 310, "AND INVITED SUBMISSIONS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 340, "FROM OUR FELLOW  CLASSMATES" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 370, "AND THE 1ST YR STUDENTS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(75, 250, "WE DECIDED TO THROW A " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(75, 280, "DRAWING CONTEST AND INVITED" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(75, 310, "SUBMISSIONS FROM OUR FELLOW " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(75, 340, "CLASSMATES AND THE 1ST YRS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
 
-draw_text_colour(75, 400, "CONTEST WINNER:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(250, 400, "REEMA " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+
+draw_text_colour(150, 400, "CONTEST WINNER" , c_red, c_red, c_red, c_red, fontAlpha);
+draw_text_colour(200, 430, "REEMA " , c_red, c_red, c_red, c_red, fontAlpha);
 draw_sprite(sprite_contest, 1, 750, 220);
 
 draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
