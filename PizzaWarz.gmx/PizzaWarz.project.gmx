@@ -94,6 +94,7 @@
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
     <script>scripts\scriptBackgroundMusic.gml</script>
+    <script>scripts\scriptTestScript.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>

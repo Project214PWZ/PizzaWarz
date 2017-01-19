@@ -22,7 +22,7 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     instance_create(global.intXBuildingPlacement, global.intYBuildingPlacement, random_Block);
     global.intYBuildingPlacement += global.intYBuildingPlacementNext;
 }
-instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_TestPlayerVehicle);
+instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_PlayerMovement);
 scriptLogging();
 
 
