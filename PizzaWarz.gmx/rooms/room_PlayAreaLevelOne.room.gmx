@@ -39,18 +39,23 @@ global.intBlockSevenCounter = 0;
 global.intBlockEightCounter = 0;
 global.intSongSelect = 0;
 global.objRandom_Block = object_BlockOneSizeOne;
-global.arrayBlockRowOne = 0;
-global.arrayBlockRowTwo = 0;
-global.arrayBlockRowThree = 0;
-global.arrayBlockRowFour = 0;
-global.arrayBlockRowFive = 0;
-global.arrayBlockRowSix = 0;
-global.arrayBlockRowSeven = 0;
-global.arrayBlockRowEight = 0;
-global.arrayBlockRowNine = 0;
-global.arrayBlockRowTen = 0;
+global.arrayBlockCoor = 0;
+global.arrayLoc[0] = 0;
 global.arrayLengthCounter = 0;
 global.bolMoreDeliveries = false;
+global.HorizontalCount = 0;
+global.VerticalCount = 0;
+global.intDirectionSelect = 0;
+global.intHorizontalLaneOne = 0;
+global.intHorizontalLaneTwo = 0;
+global.intHorizontalLaneThree = 0;
+global.intHorizontalLaneFour = 0;
+global.intHorizontalLaneFive = 0;
+global.intHorizontalLaneSix = 0;
+global.intHorizontalLaneSeven = 0;
+global.intHorizontalLaneEight = 0;
+global.intHorizontalLaneNine = 0;
+global.intHorizontalLaneTen = 0;
 global.intVehicleOneCounter = 0;
 global.intVehicleTwoCounter = 0;
 global.intVehicleThreeCounter = 0;
@@ -64,8 +69,7 @@ global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
-scriptRandomVehicle();
-//scriptRandomVehicle();</code>
+scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -115,7 +119,6 @@ scriptRandomVehicle();
     <instance objName="object_Music" x="0" y="0" name="inst_6CE45920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="224" y="64" name="inst_DE199E9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="64" y="128" name="inst_8284D010" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_EndGame" x="32" y="0" name="inst_FF9BBDBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

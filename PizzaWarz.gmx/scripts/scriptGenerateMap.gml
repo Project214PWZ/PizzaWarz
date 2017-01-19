@@ -1,6 +1,10 @@
 #define scriptGenerateMap
+xBlockCoor1 = 0;
+xBlockCoor2 = 0;
 for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     if(global.intSizeOneBlocks == 5 && global.intSizeTwoBlocks == 5){
+        xBlockCoor1 = 0;
+        xBlockCoor2++;
         global.intSizeOneBlocks = 0;
         global.intSizeTwoBlocks = 0;
         global.intYBuildingPlacement = 208;
@@ -19,13 +23,14 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     else if(numSelectBlock == 0){
         random_Block = scriptPickBlockSizeTwo();
     }
+    global.arrayBlockCoor[xBlockCoor1+xBlockCoor2,0] = global.intXBuildingPlacement;
+    global.arrayBlockCoor[xBlockCoor1+xBlockCoor2,1] = global.intXBuildingPlacement + 636;
+    global.arrayBlockCoor[xBlockCoor1+xBlockCoor2,2] = global.intYBuildingPlacement;
     instance_create(global.intXBuildingPlacement, global.intYBuildingPlacement, random_Block);
     global.intYBuildingPlacement += global.intYBuildingPlacementNext;
+    xBlockCoor1 = xBlockCoor1 + 10;
 }
 instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_PlayerMovement);
-scriptLogging();
-instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_TestPlayerVehicle);
-
 scriptLogging();
 
 
@@ -40,8 +45,9 @@ if(numSelectBlock == 0){
         scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+628,global.intYBuildingPlacement+379);
         scriptArrayListDeliveryDetinationPoints(global.intXBuildingPlacement+136,global.intYBuildingPlacement+880);
         return object_BlockOneSizeOne;}
-    else
+    else{
         return scriptPickBlockSizeOne();
+    }
 }
 else if(numSelectBlock == 1 ){
     if(global.intBlockTwoCounter<14){
