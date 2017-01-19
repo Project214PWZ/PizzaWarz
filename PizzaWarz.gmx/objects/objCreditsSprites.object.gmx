@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>fontAlpha = 1;
 fadeOut=false;
-alarm[0]=100; //bigger means longer delay before fade out
+alarm[0]=150; //bigger means longer delay before fade out
 </string>
           </argument>
         </arguments>

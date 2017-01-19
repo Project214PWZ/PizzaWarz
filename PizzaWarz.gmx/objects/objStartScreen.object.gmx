@@ -108,11 +108,16 @@
 draw_set_font(sprite_FontSize_9);
 //draw_set_alpha(fontAlpha);
 
-draw_text_colour(275, 350, "PRESS ENTER TO START", c_yellow, c_yellow, c_yellow, c_white, fontAlpha); 
-draw_text_colour(75, 500, "TUTORIAL" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(325, 500, "PRESS THE SPACE BAR" ,c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 550, "CREDITS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(325, 550, "PRESS BACKSPACE" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(275, 350, "PRESS", c_yellow, c_yellow, c_yellow, c_white, fontAlpha); 
+draw_text_colour(425, 350, "ENTER", c_red, c_red, c_red, c_red, fontAlpha); 
+draw_text_colour(575, 350, "TO START", c_yellow, c_yellow, c_yellow, c_yellow, fontAlpha); 
+
+draw_text_colour(425, 450, "SPACE BAR" ,c_red, c_red, c_red, c_red, fontAlpha);
+draw_text_colour(675, 450, "FOR HELP" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+
+draw_text_colour(425, 550, "BACKSPACE" ,c_red, c_red, c_red, c_red , fontAlpha);
+draw_text_colour(675, 550, "FOR CREDITS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+
 
 //draw_sprite(sprite_PlayerVehicle, 0, 100, 100);
 
