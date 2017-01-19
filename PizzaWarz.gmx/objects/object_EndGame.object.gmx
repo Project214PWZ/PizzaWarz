@@ -25,9 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1;
-fadeOut=false;
-alarm[0]=150;
+            <string>alarm[0] = 50;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+instance_activate_all();
 </string>
           </argument>
         </arguments>
@@ -50,70 +73,20 @@ alarm[0]=150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeOut=true;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-fontAlpha -=.05;  //smaller means slower fadeout
-}
-show_debug_message(fontAlpha);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
-draw_set_font(sprite_FontSize_9);
-draw_set_alpha(fontAlpha);
-
-draw_text_colour(250, 150, "PIZZA WARS DESIGNED FOR " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(325, 250, "SASKPOLYTECHS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(100, 300, "COMP 214  BUSINESS INFORMATION SYSTEMS " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(125, 350, "INTRODUCTION TO PROJECT MANAGEMENT" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 500, "INSTRUCTOR: " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 500, "GAVIN OSBORNE" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 550, "INSTRUCTOR:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 550, "CRAIG NELSON" ,c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 600, "SOFTWARE:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 600, "GAMEMAKER STUDIO" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-  
+            <string>//Height and width of the window
+width = window_get_width();
+height = window_get_height();
+//Test writing
+draw_text_colour(width,height,"TEST",c_white,c_teal,c_white,c_teal,1);
+//Trying to take a "screenshot" of the current view
+pauseSprite = sprite_create_from_surface(room_PlayAreaLevelOne, width, height, window_get_width(), window_get_height(), false, false, 0, 0);
+//Deactivating everything
+instance_deactivate_all(true);
+//Test writing
+draw_text_colour(width,height,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
+//Draw the "screenshot"
+draw_sprite(pauseSprite, 0, 0, 0);
+alarm[1] = 50;
 </string>
           </argument>
         </arguments>

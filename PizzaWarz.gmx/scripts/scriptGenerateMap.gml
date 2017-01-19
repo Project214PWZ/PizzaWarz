@@ -24,8 +24,9 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
 }
 instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_PlayerMovement);
 scriptLogging();
+instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_TestPlayerVehicle);
 
-
+scriptLogging();
 
 
 #define scriptPickBlockSizeOne
