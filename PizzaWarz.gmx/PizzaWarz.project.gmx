@@ -22,6 +22,7 @@
       <sound>sound\music_DubstepTwo</sound>
       <sound>sound\music_ClassicalOne</sound>
       <sound>sound\music_EminemOne</sound>
+      <sound>sound\music_EasyStreet</sound>
       <sound>sound\music_ClassicalTwo</sound>
     </sounds>
   </sounds>
@@ -113,6 +114,8 @@
     <object>objects\object_ReturnToTutorial</object>
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
+    <object>objects\object_EndGame</object>
+    <object>objects\object_EndStats</object>
     <object>objects\object_DeliveryPointer</object>
     <objects name="Credits">
       <object>objects\objCreditsBackground</object>
@@ -151,7 +154,6 @@
       <object>objects\object_RandomVehicleFour</object>
       <object>objects\object_RandomVehicleFive</object>
     </objects>
-    <object>objects\object_EndGame</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
@@ -166,6 +168,7 @@
     <room>rooms\room_Tutorial</room>
     <room>rooms\room_PlayAreaLevelOne</room>
     <room>rooms\room_Credit</room>
+    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

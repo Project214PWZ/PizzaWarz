@@ -25,14 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 50;
-
+            <string>alarm[3] = 50;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
+    <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,44 +48,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-instance_activate_all();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Height and width of the window
-width = window_get_width();
-height = window_get_height();
-//Test writing
-draw_text_colour(width,height,"TEST",c_white,c_teal,c_white,c_teal,1);
-//Trying to take a "screenshot" of the current view
-pauseSprite = sprite_create_from_surface(room_PlayAreaLevelOne, width, height, window_get_width(), window_get_height(), false, false, 0, 0);
-//Deactivating everything
+            <string>//Cleaning up code **WORKS**
+background = (working_directory + "\Screens\Screen_Pause.png");
+//Creates a .png of the current view **WORKS**
+screen_save_part(background,window_get_x(), window_get_y(), window_get_width(), window_get_height());
+//Deactivates everything **WORKS**
 instance_deactivate_all(true);
-//Test writing
-draw_text_colour(width,height,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
-//Draw the "screenshot"
-draw_sprite(pauseSprite, 0, 0, 0);
-alarm[1] = 50;
+//Goes to the pause "screen" **WORKS**
+room_goto(room_Pause);
+//Showing message to help notify when things change **WORKS**
+show_message("Screenshot taken");   
+
 </string>
           </argument>
         </arguments>

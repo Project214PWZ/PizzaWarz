@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Calling background music script
 
-//scriptBackgroundMusic();
+scriptBackgroundMusic();
 </string>
           </argument>
         </arguments>
