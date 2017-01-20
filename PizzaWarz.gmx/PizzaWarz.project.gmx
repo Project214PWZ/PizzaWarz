@@ -101,11 +101,6 @@
   <objects name="objects">
     <object>objects\object_Enviroment</object>
     <object>objects\object_HUD</object>
-    <object>objects\object_Reema</object>
-    <object>objects\object_James</object>
-    <object>objects\object_Amanda</object>
-    <object>objects\object_KevinOne</object>
-    <object>objects\object_KevinTwo</object>
     <object>objects\object_RandomVehicleMovement</object>
     <object>objects\object_BlockParent</object>
     <object>objects\object_DeliveryDestinationMarker</object>
@@ -153,13 +148,17 @@
       <object>objects\object_BlockHQSizeOne</object>
     </objects>
     <objects name="Vehicles">
-      <object>objects\object_TestPlayerVehicle</object>
       <object>objects\object_PlayerVehicle</object>
       <object>objects\object_RandomVehicleOne</object>
       <object>objects\object_RandomVehicleTwo</object>
       <object>objects\object_RandomVehicleThree</object>
       <object>objects\object_RandomVehicleFour</object>
       <object>objects\object_RandomVehicleFive</object>
+      <object>objects\object_Reema</object>
+      <object>objects\object_James</object>
+      <object>objects\object_Amanda</object>
+      <object>objects\object_KevinOne</object>
+      <object>objects\object_KevinTwo</object>
     </objects>
   </objects>
   <rooms name="rooms">

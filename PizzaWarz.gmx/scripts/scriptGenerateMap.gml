@@ -30,7 +30,7 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
     global.intYBuildingPlacement += global.intYBuildingPlacementNext;
     xBlockCoor1 = xBlockCoor1 + 10;
 }
-instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_PlayerMovement);
+instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], object_PlayerVehicle);
 scriptLogging();
 
 
