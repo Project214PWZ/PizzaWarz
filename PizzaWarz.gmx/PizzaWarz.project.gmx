@@ -69,11 +69,8 @@
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_Invisible</sprite>
-    <sprite>sprites\sprite_contest</sprite>
-    <sprite>sprites\sprite40</sprite>
     <sprite>sprites\sprite_Pizza</sprite>
     <sprite>sprites\sprite_PizzaClosing</sprite>
-    <sprite>sprites\sprite_Vehicles</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
