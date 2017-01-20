@@ -12,7 +12,6 @@
       <sound>sound\sound_TireScreech</sound>
       <sound>sound\sound_CarCrash</sound>
       <sound>sound\sound_SuccessfulDelivery</sound>
-      <sound>sound\sound_CarEngine</sound>
       <sound>sound\sound_Whaa</sound>
       <sound>sound\sound_Gunfire</sound>
     </sounds>

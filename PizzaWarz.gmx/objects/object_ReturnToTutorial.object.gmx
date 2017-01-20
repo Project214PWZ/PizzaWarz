@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_set_persistent( 7, true);
-room_goto(6);
+            <string>room_set_persistent(room_PlayAreaLevelOne, true);
+room_goto(room_Tutorial);
 
 </string>
           </argument>

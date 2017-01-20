@@ -297,6 +297,8 @@ if(canAcceptDamage = true){
         vspeed = +3;
     }
 }
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -333,6 +335,8 @@ if(canAcceptDamage = true){
         vspeed = -3;
     }
 }
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -546,6 +550,8 @@ else if (image_angle == 270){
     hspeed=0;
 }
 global.intPlayerSpeed = vspeed;
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -591,6 +597,8 @@ else if(image_angle == 180){
     vspeed=0;
 }
 global.intPlayerSpeed = hspeed;
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -636,6 +644,8 @@ else if(image_angle == 270){
     hspeed=0;
 }
 global.intPlayerSpeed = vspeed;
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -681,6 +691,8 @@ else if(image_angle == 180){
     vspeed=0;
 }
 global.intPlayerSpeed = hspeed;
+x = clamp(x, 10, room_width - 10); 
+y = clamp(y, 10, room_height - 10);
 </string>
           </argument>
         </arguments>
@@ -760,6 +772,7 @@ else if(image_angle == 270 || image_angle == 90){
 else if(image_angle == 270 || image_angle == 90){
     vspeed = 0;
 }
+
 </string>
           </argument>
         </arguments>
