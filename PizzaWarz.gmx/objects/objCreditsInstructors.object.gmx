@@ -103,16 +103,16 @@ show_debug_message(fontAlpha);
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
-draw_text_colour(250, 150, "PIZZA WARS DESIGNED FOR " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(325, 250, "SASKPOLYTECHS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(100, 300, "COMP 214  BUSINESS INFORMATION SYSTEMS " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(125, 350, "INTRODUCTION TO PROJECT MANAGEMENT" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 500, "INSTRUCTOR: " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 500, "GAVIN OSBORNE" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 550, "INSTRUCTOR:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 550, "CRAIG NELSON" ,c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 600, "SOFTWARE:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(400, 600, "GAMEMAKER STUDIO" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(250, 150, "PIZZA WARS DESIGNED FOR " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(325, 250, "SASKPOLYTECHS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(100, 300, "COMP 214  BUSINESS INFORMATION SYSTEMS " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(125, 350, "INTRODUCTION TO PROJECT MANAGEMENT" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(75, 500, "INSTRUCTOR: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(400, 500, "GAVINE OSBORNE" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 550, "INSTRUCTOR:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(400, 550, "CRAIG NEILSON" ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 600, "SOFTWARE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(400, 600, "GAMEMAKER STUDIO" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
   
 </string>
           </argument>

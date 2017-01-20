@@ -102,13 +102,13 @@ show_debug_message(fontAlpha);
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
-draw_text_colour(325, 150, "BACKGROUNDS" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(75, 250, "OPENING TITLE SCREEN:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(600, 250, "TGILLS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 300, "OPENING STOREY BOARD:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(600, 300, "TGILLS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 350, "PAVEMENTS:" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(600, 350, "TGILLS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(325, 150, "BACKGROUNDS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(75, 250, "OPENING TITLE SCREEN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 250, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 300, "OPENING STOREY BOARD:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 300, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 350, "PAVEMENTS:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 350, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_set_alpha(1);
 
 </string>

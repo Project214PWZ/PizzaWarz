@@ -34,10 +34,6 @@ font_add_sprite(sprite_FontSize_33,36,false,1);
 draw_set_font(sprite_FontSize_33);
 draw_text_colour(150,120,"THANKS FOR PLAYING",c_white,c_red,c_white,c_red,1);
 draw_text_colour(150,180,"YOU EARNED $" + string(global.intScore),c_white,c_red,c_white,c_red,1);
-        
-         
-        
-        
 </string>
           </argument>
         </arguments>

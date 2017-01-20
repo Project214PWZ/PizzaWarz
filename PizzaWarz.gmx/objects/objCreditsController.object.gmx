@@ -59,9 +59,12 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Start);
-		audio_stop_all();
-	</string>
+            <string>with(objCreditThankyou){
+    instance_destroy();
+}
+room_goto(room_Start);
+audio_stop_all();
+</string>
           </argument>
         </arguments>
       </action>
@@ -83,8 +86,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100,objCreditThankyou); 
-
+            <string>with(objCreditsBackground){
+    instance_destroy();
+}
+instance_create(100,100,objCreditThankyou); 
 </string>
           </argument>
         </arguments>
@@ -107,7 +112,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100,objCreditsBackground); 
+            <string>with(objCreditsSpritesVehicles2){
+    instance_destroy();
+}
+instance_create(100,100,objCreditsBackground); 
 </string>
           </argument>
         </arguments>
@@ -130,9 +138,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100,objCreditsSpritesVehicles2); 
-
-
+            <string>with(objCreditsSpritesVehicles1){
+    instance_destroy();
+}
+instance_create(100,100,objCreditsSpritesVehicles2);
 </string>
           </argument>
         </arguments>
@@ -155,7 +164,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100,objCreditsSpritesVehicles1); 
+            <string>with(objCreditsSprites){
+    instance_destroy();
+}
+instance_create(100,100,objCreditsSpritesVehicles1); 
 </string>
           </argument>
         </arguments>
@@ -178,8 +190,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditsSprites);
-//alarm[2]=120;
+            <string>with(objCreditsSpritesBlocks){
+    instance_destroy();
+}
+instance_create(100,100, objCreditsSprites);
 </string>
           </argument>
         </arguments>
@@ -202,7 +216,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditsSpritesBlocks);
+            <string>with(objCreditsMembers){
+    instance_destroy();
+}
+instance_create(100,100, objCreditsSpritesBlocks);
 
 </string>
           </argument>
@@ -226,7 +243,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditsMembers);
+            <string>with(objCreditsInstructors){
+    instance_destroy();
+}
+instance_create(100,100, objCreditsMembers);
 
 </string>
           </argument>
@@ -250,7 +270,10 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditsInstructors); 
+            <string>with(objCreditScreen){
+    instance_destroy();
+}
+instance_create(100,100, objCreditsInstructors); 
 
 </string>
           </argument>

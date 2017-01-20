@@ -102,24 +102,24 @@ show_debug_message(fontAlpha);
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
-draw_text_colour(215, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(215, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 250, "WE DECIDED TO THROW A " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 280, "DRAWING CONTEST AND INVITED" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 310, "SUBMISSIONS FROM OUR FELLOW " , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-draw_text_colour(75, 340, "CLASSMATES AND THE 1ST YRS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(75, 250, "WE DECIDED TO THROW A " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 280, "DRAWING CONTEST AND INVITED" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 310, "SUBMISSIONS FROM OUR FELLOW " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 340, "CLASSMATES AND THE 1ST YRS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 
-draw_text_colour(150, 400, "CONTEST WINNER" , c_red, c_red, c_red, c_red, fontAlpha);
-draw_text_colour(200, 430, "REEMA " , c_red, c_red, c_red, c_red, fontAlpha);
-draw_sprite(sprite_contest, 1, 750, 220);
+draw_text_colour(150, 400, "CONTEST WINNER" , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(200, 430, "REEMA " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_sprite(sprite_Reema, 0, 750, 220);
 
-draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
+draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_sprite(sprite_contest, 0, 200, 530);
-draw_sprite(sprite_contest, 2, 400, 540);
-draw_sprite(sprite_contest, 3, 600, 530);
-draw_sprite(sprite_contest, 4, 800, 540);
+draw_sprite(sprite_KevinTwo, 0, 200, 530);
+draw_sprite(sprite_KevinOne, 0, 400, 540);
+draw_sprite(sprite_Amanda, 0, 600, 530);
+draw_sprite(sprite_James, 0, 800, 540);
 
 </string>
           </argument>

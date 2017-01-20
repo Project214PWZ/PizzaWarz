@@ -99,13 +99,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>font_add_sprite(sprite_FontSize_19,36,false,1); 
-draw_set_font(sprite_FontSize_19);
+            <string>font_add_sprite(sprite_FontSize_33,36,false,1); 
+draw_set_font(sprite_FontSize_33);
 draw_set_alpha(fontAlpha);
 
-draw_text_colour(375, 300, "THANK YOU" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-
+draw_text_colour(375, 300, "THANK YOU" , c_white, c_orange, c_white, c_orange, fontAlpha);
 </string>
           </argument>
         </arguments>

@@ -108,18 +108,15 @@
 draw_set_font(sprite_FontSize_9);
 //draw_set_alpha(fontAlpha);
 
-draw_text_colour(275, 350, "PRESS", c_yellow, c_yellow, c_yellow, c_white, fontAlpha); 
-draw_text_colour(425, 350, "ENTER", c_red, c_red, c_red, c_red, fontAlpha); 
-draw_text_colour(575, 350, "TO START", c_yellow, c_yellow, c_yellow, c_yellow, fontAlpha); 
-
-draw_text_colour(425, 450, "SPACE BAR" ,c_red, c_red, c_red, c_red, fontAlpha);
-draw_text_colour(675, 450, "FOR HELP" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-
-draw_text_colour(425, 550, "BACKSPACE" ,c_red, c_red, c_red, c_red , fontAlpha);
-draw_text_colour(675, 550, "FOR CREDITS" , c_orange, c_yellow, c_yellow, c_orange, fontAlpha);
-
-
-//draw_sprite(sprite_PlayerVehicle, 0, 100, 100);
+draw_text_colour(275, 350, "PRESS", c_white, c_orange, c_white, c_orange, fontAlpha); 
+draw_text_colour(425, 350, "ENTER", c_white, c_red, c_white, c_red, fontAlpha); 
+draw_text_colour(575, 350, "TO START", c_white, c_yellow, c_white, c_yellow, fontAlpha); 
+draw_text_colour(275, 450, "PRESS", c_white, c_orange, c_white, c_orange, fontAlpha); 
+draw_text_colour(425, 450, "SPACE BAR" ,c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(675, 450, "FOR HELP" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(275, 550, "PRESS", c_white, c_orange, c_white, c_orange, fontAlpha); 
+draw_text_colour(425, 550, "BACKSPACE" ,c_white, c_red, c_white, c_red , fontAlpha);
+draw_text_colour(675, 550, "FOR CREDITS" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 
 
