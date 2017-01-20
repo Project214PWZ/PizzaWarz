@@ -102,7 +102,7 @@
             <string>font_add_sprite(sprite_FontSize_25,36,false,1); 
 draw_set_font(sprite_FontSize_25);
 //draw_set_alpha(fontAlpha);
-draw_text_colour(175, 175, "PIZZA WARS" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(175, 175, "PIZZA WARS" , c_white, c_purple, c_white, c_purple, fontAlpha);
 </string>
           </argument>
         </arguments>
