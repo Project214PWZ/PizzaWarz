@@ -97,6 +97,7 @@
     <script>scripts\scriptBackgroundMusic.gml</script>
     <script>scripts\scriptDeliveryPointer.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
+    <script>scripts\scriptEndGame.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
