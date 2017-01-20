@@ -3,10 +3,8 @@ for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
     global.intDirectionSelect = irandom(1);
     if(global.intDirectionSelect == 0 && global.HorizontalCount<40)
     {
-        //show_message(global.arrayLoc[0]);
-        //show_message(global.arrayLoc[1]);
-        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
         global.HorizontalCount += scriptHorizontalVehicle();
+        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
     }
     else if(global.intDirectionSelect == 1 && global.VerticalCount<44)
     {
@@ -14,13 +12,9 @@ for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
     }
     else if(global.intDirectionSelect == 0)
     {
-        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
         global.HorizontalCount += scriptHorizontalVehicle();
+        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
     }
-//    else if(global.intDirectionSelect == 1)
-//    {
-//        scriptVerticalVehicle();
-//    }
 }
 
 #define scriptHorizontalVehicle

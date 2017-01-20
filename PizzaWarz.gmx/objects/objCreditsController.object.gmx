@@ -60,11 +60,8 @@ alarm[9]=room_speed*45;
           <argument>
             <kind>1</kind>
             <string>room_goto(room_Start);
-<<<<<<< HEAD
-audio_stop_all();
-=======
->>>>>>> origin/master
-</string>
+		audio_stop_all();
+	</string>
           </argument>
         </arguments>
       </action>
