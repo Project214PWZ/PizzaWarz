@@ -79,8 +79,8 @@ if(image_alpha=0)
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(x,y,text1,c_silver,c_silver,c_silver,c_silver,1);
-draw_text_colour(x,y+30,text2,c_silver,c_silver,c_silver,c_silver,1);
+draw_text_colour(x,y,text1,c_white,c_purple,c_white,c_purple,1);
+draw_text_colour(x,y+30,text2,c_white,c_purple,c_white,c_purple,1);
 </string>
           </argument>
         </arguments>

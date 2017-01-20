@@ -32,8 +32,13 @@ draw_background_stretched(screenPause,0,0,window_get_width(), window_get_height(
 //End game stuff
 font_add_sprite(sprite_FontSize_33,36,false,1);
 draw_set_font(sprite_FontSize_33);
-draw_text_colour(150,120,"THANKS FOR PLAYING",c_white,c_red,c_white,c_red,1);
-draw_text_colour(150,180,"YOU EARNED $" + string(global.intScore),c_white,c_red,c_white,c_red,1);
+if(global.intHealth == 0){
+    draw_text_colour(200,160,"YOUR CAR BROKE DOWN",c_white,c_red,c_white,c_red,1);
+}
+else{
+    draw_text_colour(200,160,"THANKS FOR PLAYING",c_white,c_red,c_white,c_red,1);
+}
+draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,c_white,c_red,1);
 </string>
           </argument>
         </arguments>
