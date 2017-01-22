@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var yy = object_PlayerMovement.y;
-var xx = object_PlayerMovement.x;
+            <string>var yy = global.objUseForMovement.y;
+var xx = global.objUseForMovement.x;
 if(global.intPizzasToDeliver != 0){
     if(instance_exists(object_DeliveryDestinationMarker)){
     image_index = 0;

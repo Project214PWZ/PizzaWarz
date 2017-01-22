@@ -85,7 +85,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scriptTipCalculation.gml</script>
-    <script>scripts\scriptSelectRandomDeliveries.gml</script>
     <script>scripts\scriptApplyDamage.gml</script>
     <script>scripts\scriptGenerateMap.gml</script>
     <script>scripts\scriptArrayListDeliveryDetinationPoints.gml</script>

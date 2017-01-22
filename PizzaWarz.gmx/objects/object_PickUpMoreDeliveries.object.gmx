@@ -48,11 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(object_PlayerMovement.vspeed = 0 &amp;&amp; object_PlayerMovement.hspeed = 0)
+            <string>if(global.objUseForMovement.vspeed = 0 &amp;&amp; global.objUseForMovement.hspeed = 0)
 {
+    scriptGenerateDeliveryPoints();
     global.bolMoreDeliveries = false;
     instance_destroy();
-    scriptGenerateDeliveryPoints();
 }
 </string>
           </argument>

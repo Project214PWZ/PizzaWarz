@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-100</depth>
   <persistent>0</persistent>
-  <parentName>object_Enviroment</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,14 +28,12 @@
             <string>//Set initial speed for all directions to 0
 vspeed = 0;
 hspeed = 0;
-image_angle = 0;
 //Boolean value that determines increase in speed interval
 canIncrease = true;
 //Boolean value that determines decrease in speed interval
 canDecrease = true;
 //Boolean value that will allow damage to be taken
 canAcceptDamage = true;
-//audio_play_sound(sound_CarEngine, 10, false);
 </string>
           </argument>
         </arguments>
@@ -205,30 +203,6 @@ if(vspeed = 0 &amp;&amp; hspeed = 0){
       </action>
     </event>
     <event eventtype="4" ename="object_BlockParent">
-      <action>
-        <libid>1</libid>
-        <id>102</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -661,7 +635,7 @@ else if(image_angle == 270){
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -1078,6 +1052,7 @@ else if(image_angle == 270 || image_angle == 90){
     //Stop heading North or South
     vspeed = 0;
 }
+
 </string>
           </argument>
         </arguments>
@@ -1111,6 +1086,7 @@ else if(image_angle == 270 || image_angle == 90){
     //Stop heading North or South
     vspeed = 0;
 }
+
 </string>
           </argument>
         </arguments>
