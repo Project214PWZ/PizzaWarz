@@ -25,13 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(position_meeting(x,y,objInvisible))
-//{
-//image_angle = 90;
-//hspeed = -3.5;
-//}
-
-vspeed = -3.5;
+            <string>image_angle = global.randomImageDirection;
+if(image_angle == 0){
+    vspeed = -9;
+}
+else if(image_angle == 90){
+    hspeed = -9;
+}
+else if(image_angle == 180){
+    vspeed = 9;
+}
+else if(image_angle == 270){
+    hspeed = 9;
+}
 </string>
           </argument>
         </arguments>
@@ -54,27 +60,27 @@ vspeed = -3.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>num = irandom(3);
-if(position_meeting(x,y,object_Invisible))
-{
-if(num == 0){ //left
-image_angle = 90;
+            <string>//num = irandom(3);
+//if(position_meeting(x,y,object_Invisible))
+//{
+//if(num == 0){ //left
+//image_angle = 90;
 //hspeed = -3.5;
-image_speed = 0.5;
-direction += 2.5;
-}
-else if(num == 1) // right
-{
-image_angle = 270;
+//image_speed = 0.5;
+//direction += 2.5;
+//}
+//else if(num == 1) // right
+//{
+//image_angle = 270;
 //hspeed = 2;
 //image_speed = -0.5;
-direction = 5;
-}
-else if(num == 2) //straight
-{
-vspeed = -3.5;
-}
-}
+//direction = 5;
+//}
+//else if(num == 2) //straight
+//{
+//vspeed = -3.5;
+//}
+//}
 </string>
           </argument>
         </arguments>

@@ -269,38 +269,38 @@ intLane = irandom(3)
 if(intLane == 0)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 180;
+        global.randomImageDirection = 90;
     }
     else if(argument[0]=="ver"){
-        global.randomImageDirection = 270;
+        global.randomImageDirection = 180;
     }
 return 26;
 }
 else if(intLane ==1)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 180;
-     }
+        global.randomImageDirection = 90;
+    }
     else if(argument[0]=="ver"){
-        global.randomImageDirection = 270;
+        global.randomImageDirection = 180;
     }
 return 78;
 }else if(intLane ==2)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 0;
+        global.randomImageDirection = 270;
     }
     else if(argument[0]=="ver"){
-        global.randomImageDirection = 90;
+        global.randomImageDirection = 0;
     }
 return 130;
 }
 else if(intLane ==3){
     if(argument[0]=="hor"){
-        global.randomImageDirection = 0;
+        global.randomImageDirection = 270;
     }
     else if(argument[0]=="ver"){
-        global.randomImageDirection = 90;
+        global.randomImageDirection = 0;
     }
 return 182;
 }
