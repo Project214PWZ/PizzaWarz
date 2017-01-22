@@ -29,16 +29,15 @@
 var xx = global.objUseForMovement.x;
 if(global.intPizzasToDeliver != 0){
     if(instance_exists(object_DeliveryDestinationMarker)){
-    image_index = 0;
+        image_index = 0;
         var ex = instance_nearest(xx, yy, object_DeliveryDestinationMarker).x;
         var ey = instance_nearest(xx, yy, object_DeliveryDestinationMarker).y;
         image_angle = point_direction(xx,yy,ex,ey) - 90;
     }
     else{    
-    image_index = 1;
-    image_angle = point_direction(xx,yy,global.HQDeliveryCoor[0],global.HQDeliveryCoor[1]) - 90;
-    
-}
+        image_index = 1;
+        image_angle = point_direction(xx,yy,global.HQDeliveryCoor[0],global.HQDeliveryCoor[1]) - 90;
+    }
 }
 
 

@@ -18,7 +18,7 @@ global.intPizzasToDeliver = 0;
 global.intDeliveriesMade = 0;
 global.intPizzaTimer = 0;
 global.intPizzaTimerReset = 45;
-global.intMinutes = 1;
+global.intMinutes = 20;
 global.intSeconds = 00.1;
 global.bolCount = false;
 global.intPlayerSpeed = 0;
@@ -81,7 +81,7 @@ global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
-scriptRandomVehicle();</code>
+//scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

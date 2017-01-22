@@ -135,9 +135,8 @@ canIncrease = true;
 if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries = true){
     //Creates the Pick Up deliveries object at the HQ
     instance_create(global.HQDeliveryCoor[0],global.HQDeliveryCoor[1],object_PickUpMoreDeliveries);
-    //Sets Pizzas needing delivered to 0 and need more deliveries to false
+    //Sets need more deliveries to false
     //This will prevent this loop from being entered again
-    global.intPizzasToDeliver = 0;
     global.bolMoreDeliveries = false;
 }
 </string>
@@ -408,11 +407,13 @@ if(image_angle == 180){
     //Keep moving forward to a max of forward 30
     if(vspeed &gt;= 30){
         vspeed = 30;
+        global.intPlayerSpeed = vspeed;
     }
     //Increase forward speed by 3
     else if(vspeed &gt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         vspeed += 3;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -421,6 +422,7 @@ if(image_angle == 180){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 4;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -430,11 +432,13 @@ else if(image_angle == 0){
     //Keep reverse speed to a max of reverse 12
     if(vspeed &gt;= 12){
         vspeed = 12;
+        global.intPlayerSpeed = vspeed;
     }
     //While in reverse increase reverse by 3
-    else if(vspeed &lt; 0 &amp;&amp; canDecrease == true){
+    else if(vspeed &gt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         vspeed += 3;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -443,6 +447,7 @@ else if(image_angle == 0){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 6;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -474,11 +479,13 @@ if(image_angle == 270){
     //Keep moving forward to a max of forward 30
     if(hspeed &gt;= 30){
         hspeed = 30;
+        global.intPlayerSpeed = hspeed;
     }
     //Increase forward speed by 3
     else if(hspeed &gt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         hspeed += 3;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -487,6 +494,7 @@ if(image_angle == 270){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 4;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -496,11 +504,13 @@ else if(image_angle == 90){
     //Keep reverse speed to a max of reverse 12
     if(hspeed &gt;= 12){
         hspeed = 12;
+        global.intPlayerSpeed = hspeed;
     }
     //While in reverse increase reverse by 3
-    else if(hspeed &lt; 0 &amp;&amp; canDecrease == true){
+    else if(hspeed &gt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         hspeed += 3;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -509,6 +519,7 @@ else if(image_angle == 90){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 6;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -540,11 +551,13 @@ if(image_angle == 0){
     //Keep forward speed to a max of forward 30
     if(vspeed &lt;= -30){
         vspeed = -30;
+        global.intPlayerSpeed = vspeed;
     }
     //Increase forward speed by 3
     else if(vspeed &lt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         vspeed -= 3;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -553,6 +566,7 @@ if(image_angle == 0){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 4;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -562,11 +576,13 @@ else if(image_angle == 180){
     //Keep reverse speed to a max of reverse 12
     if(vspeed &lt;= -12){
         vspeed = -12;
+        global.intPlayerSpeed = vspeed;
     }
     //While in reverse increase reverse by 3
-    else if(vspeed &gt; 0 &amp;&amp; canDecrease == true){
+    else if(vspeed &lt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         vspeed -= 3;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -575,6 +591,7 @@ else if(image_angle == 180){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 6;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -606,11 +623,13 @@ if(image_angle == 90){
     //Keep moving forward to a max of forward 30
     if(hspeed &lt;= -30){
         hspeed = -30;
+        global.intPlayerSpeed = hspeed;
     }
     //Increase forward speed by 3
     else if(hspeed &lt;= 0 &amp;&amp; canIncrease == true){
         //Add alarm for increase intervals
         hspeed -= 3;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -619,6 +638,7 @@ if(image_angle == 90){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed -=4;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -628,11 +648,13 @@ else if(image_angle == 270){
     //Keep reverse speed to a max of reverse 12
     if(hspeed &lt;= -12){
         hspeed = -12;
+        global.intPlayerSpeed = hspeed;
     }
     //While in reverse increase reverse by 3
-    else if(hspeed &gt; 0 &amp;&amp; canDecrease == true){
+    else if(hspeed &lt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         hspeed -= 3;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -641,6 +663,7 @@ else if(image_angle == 270){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed -= 6;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -672,11 +695,13 @@ if(image_angle == 180){
     //Keep forward speed to a max of forward 30
     if(vspeed &gt;= 30){
         vspeed = 30;
+        global.intPlayerSpeed = vspeed;
     }
     //Increase forward speed by 3
     else if(vspeed &gt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         vspeed += 3;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -685,6 +710,7 @@ if(image_angle == 180){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 4;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -701,6 +727,7 @@ else if(image_angle == 90){
     if(vspeed &gt;= 12){
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 4; 
+        global.intPlayerSpeed = vspeed;
     }
 }
 //Moving "Right", "East"
@@ -715,6 +742,7 @@ else if(image_angle == 270){
     if(vspeed &gt;= 12){
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 4; 
+        global.intPlayerSpeed = vspeed;
     }
 }
 //Moving "Up", "North"
@@ -722,11 +750,13 @@ else if(image_angle == 0){
     //Keep reverse speed to a max of reverse 12
     if(vspeed &gt;= 12){
         vspeed = 12;
+        global.intPlayerSpeed = vspeed;
     }
     //While in reverse increase reverse by 3
-    else if(vspeed &lt; 0 &amp;&amp; canDecrease == true){
+    else if(vspeed &gt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         vspeed += 3;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -735,6 +765,7 @@ else if(image_angle == 0){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 6;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -766,11 +797,13 @@ if(image_angle == 270){
     //Keep forward speed to a max of forward 30
     if(hspeed &gt;= 30){
         hspeed = 30;
+        global.intPlayerSpeed = hspeed;
     }
     //Increase forward speed by 3
     else if(hspeed &gt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         hspeed += 3;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -779,6 +812,7 @@ if(image_angle == 270){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 4;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -795,6 +829,7 @@ else if(image_angle == 0){
     if(hspeed &gt;= 12){
         audio_play_sound(sound_TireScreech,10,false);
         hspeed -= 4; 
+        global.intPlayerSpeed = hspeed;
     }
 }
 //Moving "Down", "South"
@@ -809,6 +844,7 @@ else if(image_angle == 180){
     if(hspeed &gt;= 12){
         audio_play_sound(sound_TireScreech,10,false);
         hspeed -= 4; 
+        global.intPlayerSpeed = hspeed;
     }
 }
 //Moving "Left", "West"
@@ -816,11 +852,13 @@ else if(image_angle == 90){
     //Keep reverse speed to a max of reverse 12
     if(hspeed &gt;= 12){
         hspeed = 12;
+        global.intPlayerSpeed = hspeed;
     }
     //While in reverse increase reverse by 3
-    else if(hspeed &lt; 0 &amp;&amp; canDecrease == true){
+    else if(hspeed &gt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         hspeed += 3;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -829,6 +867,7 @@ else if(image_angle == 90){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 6;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -860,11 +899,13 @@ if(image_angle == 0){
     //Keep forward speed to a max of forward 30
     if(vspeed &lt;= -30){
         vspeed = -30;
+        global.intPlayerSpeed = vspeed;
     }
     //Increase forward speed by 3
     else if(vspeed &lt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         vspeed -= 3;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -873,6 +914,7 @@ if(image_angle == 0){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 4;
+        global.intPlayerSpeed = vspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -889,6 +931,7 @@ else if(image_angle == 90){
     if(vspeed &lt;= -12){
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 4; 
+        global.intPlayerSpeed = vspeed;
     }
 }
 //Moving "Right", "East"
@@ -903,6 +946,7 @@ else if(image_angle == 270){
     if(vspeed &lt;= -12){
         audio_play_sound(sound_TireScreech,10,false);
         vspeed += 4; 
+        global.intPlayerSpeed = vspeed;
     }
 }
 //Moving "Down", "South"
@@ -910,11 +954,13 @@ else if(image_angle == 180){
     //Keep reverse speed to a max of reverse 12
     if(vspeed &lt;= -12){
         vspeed = -12;
+        global.intPlayerSpeed = vspeed;
     }
     //While in reverse increase reverse by 3
-    else if(vspeed &gt;= 0 &amp;&amp; canDecrease == true){
+    else if(vspeed &lt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         vspeed -= 3;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -923,6 +969,7 @@ else if(image_angle == 180){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         vspeed -= 6;
+        global.intPlayerSpeed = vspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -954,11 +1001,13 @@ if(image_angle == 90){
     //Keep forward speed to a max of forward 30
     if(hspeed &lt;= -30){
         hspeed = -30;
+        global.intPlayerSpeed = hspeed;
     }
     //Increase forward speed by 3
     else if(hspeed &lt;= 0 &amp;&amp; canIncrease == true){
         //Alarm for increase intervals
         hspeed -= 3;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -967,6 +1016,7 @@ if(image_angle == 90){
         //Alarm for increase in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 4;
+        global.intPlayerSpeed = hspeed;
         canIncrease = false;
         alarm[0] = 10;
     }
@@ -983,6 +1033,7 @@ else if(image_angle == 0){
     if(hspeed &lt;= -12){
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 4; 
+        global.intPlayerSpeed = hspeed;
     }
 }
 //Moving "Down", "South"
@@ -997,6 +1048,7 @@ else if(image_angle == 180){
     if(hspeed &lt;= -12){
         audio_play_sound(sound_TireScreech,10,false);
         hspeed += 4; 
+        global.intPlayerSpeed = hspeed;
     }
 }
 //Moving "Right", "East"
@@ -1004,11 +1056,13 @@ else if(image_angle == 270){
     //Keep reverse speed to a max of reverse 12
     if(hspeed &lt;= -12){
         hspeed = -12;
+        global.intPlayerSpeed = hspeed;
     }
     //While in reverse increase reverse by 3
-    else if(hspeed &gt; 0 &amp;&amp; canDecrease == true){
+    else if(hspeed &lt;= 0 &amp;&amp; canDecrease == true){
         //Alarm for increase of reverse speed interval
         hspeed -= 3;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -1017,6 +1071,7 @@ else if(image_angle == 270){
         //Alarm for decrease in speed interval
         audio_play_sound(sound_TireScreech,10,false);
         hspeed -= 6;
+        global.intPlayerSpeed = hspeed;
         canDecrease = false;
         alarm[1] = 10;
     }
@@ -1137,6 +1192,7 @@ else if(image_angle == 270 || image_angle == 90){
 //close to stopping it will
 if(vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
     vspeed = 0;
+    global.intPlayerSpeed = vspeed;
 }
 </string>
           </argument>
@@ -1164,6 +1220,7 @@ if(vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
 //close to stopping it will
 if(hspeed &gt;= -5 &amp;&amp; hspeed &lt;= 5){
     hspeed = 0;
+    global.intPlayerSpeed = hspeed;
 }
 </string>
           </argument>
@@ -1191,6 +1248,7 @@ if(hspeed &gt;= -5 &amp;&amp; hspeed &lt;= 5){
 //close to stopping it will
 if(vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
     vspeed = 0;
+    global.intPlayerSpeed = vspeed;
 }
 </string>
           </argument>
@@ -1218,6 +1276,7 @@ if(vspeed &gt;= -5 &amp;&amp; vspeed &lt;= 5){
 //close to stopping it will
 if(hspeed &gt;= -5 &amp;&amp; hspeed &lt;= 5){
     hspeed = 0;
+    global.intPlayerSpeed = hspeed;
 }
 </string>
           </argument>
