@@ -117,6 +117,9 @@ draw_text_colour(675, 575, "FOR HELP" , c_white, c_orange, c_white, c_orange, fo
 draw_text_colour(275, 625, "PRESS", c_white, c_orange, c_white, c_orange, fontAlpha); 
 draw_text_colour(425, 625, "BACKSPACE" ,c_white, c_red, c_white, c_red , fontAlpha);
 draw_text_colour(675, 625, "FOR CREDITS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(275, 675, "PRESS", c_white, c_orange, c_white, c_orange, fontAlpha); 
+draw_text_colour(425, 675, "CTRL" ,c_white, c_red, c_white, c_red , fontAlpha);
+draw_text_colour(575, 675, "FOR INTRO" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 
 
@@ -147,6 +150,29 @@ draw_text_colour(675, 625, "FOR CREDITS" , c_white, c_orange, c_white, c_orange,
           <argument>
             <kind>1</kind>
             <string>room_goto(room_Tutorial); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="17">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(room_StoryBoard1);
 </string>
           </argument>
         </arguments>

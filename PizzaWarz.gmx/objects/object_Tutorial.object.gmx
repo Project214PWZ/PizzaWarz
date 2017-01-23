@@ -35,8 +35,10 @@ draw_text_colour(20,180,"USE THE 'D' KEY TO CHNAGE TO THE RIGHT LANE",c_white,c_
 
 draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,300,"DIRECTION NEEDED TO GO TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT TIPS WILL",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,380,"BE AWARDED",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,380," TIPS WILL BE AWARDED",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,420,"WHEN DELIVERY ARROW TURNS BLUE",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,460," RETURN TO PIZZARIA",c_white,c_lime,c_white,c_lime,1);
 
 draw_text_colour(20,window_get_height()-80,"IN GAMEPLAY PRESS F1 TO RETURN TO TUTORIAL",c_white,c_teal,c_white,c_teal,1);
 draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN SCREEN",c_white,c_teal,c_white,c_teal,1);
