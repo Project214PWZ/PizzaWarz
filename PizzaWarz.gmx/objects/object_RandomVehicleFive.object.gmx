@@ -27,16 +27,20 @@
             <kind>1</kind>
             <string>image_angle = global.randomImageDirection;
 if(image_angle == 0){
-    vspeed = -9;
+    //vspeed = -9;
+    vspeed = 0;
 }
 else if(image_angle == 90){
-    hspeed = -9;
+  //  hspeed = -9;
+  hspeed = 0;
 }
 else if(image_angle == 180){
-    vspeed = 9;
+    //vspeed = 9;
+    vspeed = 0;
 }
 else if(image_angle == 270){
-    hspeed = 9;
+   // hspeed = 9;
+   hspeed = 0;
 }
 </string>
           </argument>

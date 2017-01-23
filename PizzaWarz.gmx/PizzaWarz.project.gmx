@@ -94,6 +94,7 @@
     <script>scripts\scriptDeliveryPointer.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
+    <script>scripts\scriptErrorChecking.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>

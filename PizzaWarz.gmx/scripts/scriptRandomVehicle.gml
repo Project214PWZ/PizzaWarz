@@ -1,20 +1,21 @@
 #define scriptRandomVehicle
 for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
-    global.intDirectionSelect = irandom(1);
-    if(global.intDirectionSelect == 0 && global.HorizontalCount<40)
-    {
-        global.HorizontalCount += scriptHorizontalVehicle();
-        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
-    }
-    else if(global.intDirectionSelect == 1 && global.VerticalCount<44)
-    {
+   // global.intDirectionSelect = irandom(1);
+   // if(global.intDirectionSelect == 0 && global.HorizontalCount<40)
+ //   {
+        
+     //   global.HorizontalCount += scriptHorizontalVehicle();
+    //    instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
+    //}
+   // else if(global.intDirectionSelect == 1 && global.VerticalCount<44)
+   // {
         scriptVerticalVehicle();
-    }
-    else if(global.intDirectionSelect == 0)
-    {
-        global.HorizontalCount += scriptHorizontalVehicle();
-        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
-    }
+   // }
+   // else if(global.intDirectionSelect == 0)
+    //{
+      //  global.HorizontalCount += scriptHorizontalVehicle();
+        //instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
+   // }
 }
 
 #define scriptHorizontalVehicle
@@ -27,7 +28,16 @@ if(numRoadSelect ==0)
         global.intHorizontalLaneOne++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane1");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();
@@ -40,7 +50,16 @@ else if(numRoadSelect==1)
         global.intHorizontalLaneTwo++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane2");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -53,7 +72,15 @@ else if(numRoadSelect==2)
         global.intHorizontalLaneThree++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane3");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -66,7 +93,15 @@ else if(numRoadSelect==3)
         global.intHorizontalLaneFour++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane4");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -79,7 +114,15 @@ else if(numRoadSelect==4)
         global.intHorizontalLaneFive++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane5");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -92,7 +135,15 @@ else if(numRoadSelect==5)
         global.intHorizontalLaneSix++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane6");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -105,7 +156,15 @@ else if(numRoadSelect==6)
         global.intHorizontalLaneSeven++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane7");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -118,7 +177,15 @@ else if(numRoadSelect==7)
         global.intHorizontalLaneEight++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane8");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -131,7 +198,15 @@ else if(numRoadSelect==8)
         global.intHorizontalLaneNine++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane9");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
@@ -144,24 +219,43 @@ else if(numRoadSelect==9)
         global.intHorizontalLaneTen++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
         global.arrayLoc[1] = global.arrayBlockCoor[intStartSelect,2]-scriptSelectLane("hor");
-        return 1;
+        if !position_meeting(global.arrayLoc[0],global.arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            return 1;
+        }
+        else
+        {
+            show_message("In horizontal lane10");
+            return scriptHorizontalVehicle();
+        }
     }
     else
         return scriptHorizontalVehicle();  
 }
 
 #define scriptVerticalVehicle
+randomize();
 for(intStreet = 0; intStreet<11; intStreet++){
     for(numVehicles = 0; numVehicles<4; numVehicles++){
         arrayLoc[0] = global.intStreetChange + scriptSelectLane("ver");
         arrayLoc[1] = irandom(8647);
-        instance_create(arrayLoc[0],arrayLoc[1],scriptPickRandomVehicle());
-        global.VerticalCount++;
+        if !position_meeting(arrayLoc[0],arrayLoc[1],object_RandomVehicleMovement)
+        { 
+            instance_create(arrayLoc[0],arrayLoc[1],scriptPickRandomVehicle());
+            global.VerticalCount++;
+        }
+        else
+        {
+         show_message("In vertical lanes");   
+            numVehicles--;
+        }
+
     }
     global.intStreetChange = global.intStreetChange + global.intXBuildingPlacementNext;
 }
 
 #define scriptPickRandomVehicle
+show_message("Problem scriptPickRandomVehicle");
 numSelectVehicle = irandom(9);
 if(numSelectVehicle ==0)
 {
@@ -269,7 +363,7 @@ intLane = irandom(3)
 if(intLane == 0)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 90;
+        global.randomImageDirection = 270;
     }
     else if(argument[0]=="ver"){
         global.randomImageDirection = 180;
@@ -279,7 +373,7 @@ return 26;
 else if(intLane ==1)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 90;
+        global.randomImageDirection = 270;
     }
     else if(argument[0]=="ver"){
         global.randomImageDirection = 180;
@@ -288,7 +382,7 @@ return 78;
 }else if(intLane ==2)
 {
     if(argument[0]=="hor"){
-        global.randomImageDirection = 270;
+        global.randomImageDirection = 90;
     }
     else if(argument[0]=="ver"){
         global.randomImageDirection = 0;
@@ -297,7 +391,7 @@ return 130;
 }
 else if(intLane ==3){
     if(argument[0]=="hor"){
-        global.randomImageDirection = 270;
+        global.randomImageDirection = 90
     }
     else if(argument[0]=="ver"){
         global.randomImageDirection = 0;
