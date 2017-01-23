@@ -63,7 +63,20 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
             <kind>1</kind>
             <string>room_goto(room_Credit);
 audio_stop_all();
-audio_play_sound(music_EasyStreet, 10, false); 
+
+
+
+//Easter Egg
+if(global.intScore &gt; 100){
+    audio_play_sound(music_EasyStreet, 10, false); 
+}
+else{
+    audio_play_sound(music_DubstepTwo, 10, false);
+}
+
+
+
+
 //Deletes file after use **WORKS**
 if file_exists((working_directory + "\Screens\Screen_Pause.png"))
    {

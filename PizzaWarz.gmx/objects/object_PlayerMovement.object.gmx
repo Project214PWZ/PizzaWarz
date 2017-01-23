@@ -139,6 +139,14 @@ if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMo
     //This will prevent this loop from being entered again
     global.bolMoreDeliveries = false;
 }
+
+
+
+if x&lt;80{x = 80;}
+if x&gt;room_width - 80{x = room_width - 80;}
+//0 being the top of the room
+if y&lt;80{y = 80;}
+else if y &gt; room_height - 80{y = room_height - 80;}
 </string>
           </argument>
         </arguments>

@@ -81,7 +81,7 @@ global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
-scriptRandomVehicle();</code>
+//scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="objStartController" x="256" y="224" name="inst_801F54A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_PizzaTitle" x="512" y="224" name="inst_C3FF934B" locked="0" code="" scaleX="0.734743714332581" scaleY="0.641901910305023" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

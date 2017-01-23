@@ -66,10 +66,11 @@
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
-    <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_Invisible</sprite>
     <sprite>sprites\sprite_Pizza</sprite>
     <sprite>sprites\sprite_PizzaClosing</sprite>
+    <sprite>sprites\sprite_MainPizza</sprite>
+    <sprite>sprites\sprite_PizzaWarzTitle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
@@ -133,6 +134,7 @@
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
       <object>objects\objStartTitle</object>
+      <object>objects\object_PizzaTitle</object>
     </objects>
     <objects name="Blocks">
       <object>objects\object_BlockOneSizeOne</object>
