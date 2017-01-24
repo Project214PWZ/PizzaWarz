@@ -45,7 +45,7 @@ else if(image_angle == 90 &amp;&amp; y &lt; 208){
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 180;
     }
-    else
+    else{
         //nothing happen vehicle doesn't turn
     }
 }
@@ -56,7 +56,7 @@ else if(image_angle == 270 &amp;&amp; y &lt; 208){
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 180;
     }
-    else
+    else{
         //nothing happen vehicle doesn't turn
     }
 }
@@ -67,7 +67,7 @@ else if(image_angle == 90){
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 0;
     }
-    else
+    else{
         //nothing happen vehicle doesn't turn
     }
 }
@@ -91,7 +91,7 @@ else if(image_angle == 270){
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 0;
     }
-    else
+    else{
         //nothing happen vehicle doesn't turn
     }
 }
