@@ -1,12 +1,10 @@
 #define scriptGenerateDeliveryPoints
-show_message("Entered scriptGenerateDeliveryPoints fine");
 global.intPizzasToDeliver = irandom(3);
 arraySet[0] = 0;
 global.intPizzaTimer = global.intPizzaTimerReset;
 for(n=0;n<=global.intPizzasToDeliver;n++){
     scriptRecursivePoints(n,arraySet);
 }
-show_message("Exited scriptGenerateDeliveryPoints");
 
 #define scriptRecursivePoints
 intDeliveryPoints = irandom(array_height_2d(global.arrayDeliveryPoints));

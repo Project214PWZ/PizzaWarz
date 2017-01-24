@@ -1,5 +1,5 @@
 #define scriptRandomVehicle
-for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
+//for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
    // global.intDirectionSelect = irandom(1);
    // if(global.intDirectionSelect == 0 && global.HorizontalCount<40)
  //   {
@@ -16,7 +16,7 @@ for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
       //  global.HorizontalCount += scriptHorizontalVehicle();
         //instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
    // }
-}
+//}
 
 #define scriptHorizontalVehicle
 numRoadSelect = irandom(10);
@@ -255,107 +255,136 @@ for(intStreet = 0; intStreet<11; intStreet++){
 }
 
 #define scriptPickRandomVehicle
-show_message("Problem scriptPickRandomVehicle");
-numSelectVehicle = irandom(9);
+numSelectVehicle = irandom(1);
+if(numSelectVehicle == 0 && global.RandomVehicleSetOne < 70)
+{
+    return scriptPickRandomVehicle2();
+}
+else if(numSelectVehicle == 1 && global.RandomVehicleSetTwo < 14)
+{
+    return scriptPickRandomVehicle3();
+}
+else if(numSelectVehicle == 1){
+    return scriptPickRandomVehicle2();
+}
+else if(numSelectVehicle == 0){
+    return scriptPickRandomVehicle3();
+}
+
+#define scriptPickRandomVehicle2
+numSelectVehicle = irandom(4);
 if(numSelectVehicle ==0)
 {
     if(global.intVehicleOneCounter<14)
     {
         global.intVehicleOneCounter++;
+        global.RandomVehicleSetOne++;
         return object_RandomVehicleOne;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle2();
 }
 else if(numSelectVehicle==1)
 {
     if(global.intVehicleTwoCounter<14)
     {
         global.intVehicleTwoCounter++;
+        global.RandomVehicleSetOne++;
         return object_RandomVehicleTwo;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle2();
 }
 else if(numSelectVehicle==2)
 {
     if(global.intVehicleThreeCounter<14)
     {
         global.intVehicleThreeCounter++;
+        global.RandomVehicleSetOne++;
         return object_RandomVehicleThree;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle2();
 }
 else if(numSelectVehicle==3)
 {
     if(global.intVehicleFourCounter<14)
     {
         global.intVehicleFourCounter++;
+        global.RandomVehicleSetOne++;
         return object_RandomVehicleFour;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle2();
 }
 else if(numSelectVehicle==4)
 {
     if(global.intVehicleFiveCounter<14)
     {
         global.intVehicleFiveCounter++;
+        global.RandomVehicleSetOne++;
         return object_RandomVehicleFive;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle2();
 }
-else if(numSelectVehicle==5)
+
+#define scriptPickRandomVehicle3
+numSelectVehicle = irandom(4);
+if(numSelectVehicle==0)
 {
     if(global.intVehicleSixCounter<6)
     {
         global.intVehicleSixCounter++;
+        global.RandomVehicleSetTwo++;
         return object_Reema;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle3();
 }
-else if(numSelectVehicle==6)
+else if(numSelectVehicle==1)
 {
-    if(global.intVehicleSevenCounter<3)
+    if(global.intVehicleSevenCounter<2)
     {
         global.intVehicleSevenCounter++;
+        global.RandomVehicleSetTwo++;
         return object_Amanda;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle3();
 }
-else if(numSelectVehicle==7)
+else if(numSelectVehicle==2)
 {
-    if(global.intVehicleEightCounter<3)
+    if(global.intVehicleEightCounter<2)
     {
         global.intVehicleEightCounter++;
+        global.RandomVehicleSetTwo++;
         return object_James;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle3();
 }    
-else if(numSelectVehicle==8)
+else if(numSelectVehicle==3)
 {
-    if(global.intVehicleNineCounter<3)
+    if(global.intVehicleNineCounter<2)
     {
         global.intVehicleNineCounter++;
+        global.RandomVehicleSetTwo++;
         return object_KevinOne;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle3();
 } 
-else if(numSelectVehicle==9)
+else if(numSelectVehicle==4)
 {
-    if(global.intVehicleTenCounter<3)
+    if(global.intVehicleTenCounter<2)
     {
         global.intVehicleTenCounter++;
+        global.RandomVehicleSetTwo++;
         return object_KevinTwo;
     }
     else
-        return scriptPickRandomVehicle();
+        return scriptPickRandomVehicle3();
 }
 
 #define scriptSelectLane

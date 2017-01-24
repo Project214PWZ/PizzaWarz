@@ -57,6 +57,8 @@ global.arrayLengthCounter = 0;
 global.bolMoreDeliveries = false;
 global.HorizontalCount = 0;
 global.VerticalCount = 0;
+global.RandomVehicleSetOne = 0;
+global.RandomVehicleSetTwo = 0;
 global.intDirectionSelect = 0;
 global.intHorizontalLaneOne = 0;
 global.intHorizontalLaneTwo = 0;
@@ -81,7 +83,7 @@ global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
-//scriptRandomVehicle();</code>
+scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

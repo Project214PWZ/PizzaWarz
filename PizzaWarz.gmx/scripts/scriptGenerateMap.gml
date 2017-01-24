@@ -1,5 +1,4 @@
 #define scriptGenerateMap
-show_message("Entered scriptGenerateMap fine");
 xBlockCoor1 = 0;
 xBlockCoor2 = 0;
 for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
@@ -33,7 +32,6 @@ for(intBlockCount=1;intBlockCount<=100;intBlockCount++){
 }
 instance_create(global.HQDeliveryCoor[0] + 130, global.HQDeliveryCoor[1], global.objActualPlayerCar);
 scriptLogging();
-show_message("Exiting scriptGenerateMap");
 
 #define scriptPickBlockSizeOne
 numSelectBlock = irandom(4);

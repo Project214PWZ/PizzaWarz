@@ -8,6 +8,98 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="4" ename="object_Intersection">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(image_angle == 0 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 90;
+    }
+    else if(intTurn == 1){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 270;
+    }
+}
+else if(image_angle == 90 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 180;
+    }
+    else
+        //nothing happen vehicle doesn't turn
+    }
+}
+else if(image_angle == 270 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 180;
+    }
+    else
+        //nothing happen vehicle doesn't turn
+    }
+}
+else if(image_angle == 90){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 0;
+    }
+    else
+        //nothing happen vehicle doesn't turn
+    }
+}
+else if(image_angle == 180){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 90;
+    }
+    else if(intTurn == 1){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 270;
+    }
+}
+else if(image_angle == 270){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 0;
+    }
+    else
+        //nothing happen vehicle doesn't turn
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="object_BlockParent">
       <action>
         <libid>1</libid>
