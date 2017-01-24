@@ -8,6 +8,36 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Stopping the persistent room
+room_set_persistent(room_PlayAreaLevelOne, false);
+
+instance_deactivate_all(true);
+background = (working_directory + "\Screens\Screen_Pause.png");
+screenPause = background_add(background,false,false);
+
+//font = font_add_sprite(sprite_FontSize_33,36,false,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,18 +55,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>background = (working_directory + "\Screens\Screen_Pause.png");
-screenPause = background_add(background,false,false);
-//Drawing the background of the new room **NOT WORKING**
+            <string>//Drawing the background of the new room
 draw_background_stretched(screenPause,0,0,window_get_width(), window_get_height());
 //End game stuff
 font_add_sprite(sprite_FontSize_33,36,false,1);
 draw_set_font(sprite_FontSize_33);
-if(global.intHealth == 0){
+counter = 0;
+if(global.intHealth = 0 and counter = 0){
     draw_text_colour(200,160,"YOUR CAR BROKE DOWN",c_white,c_red,c_white,c_red,1);
+    counter++;
 }
 else{
     draw_text_colour(200,160,"THANKS FOR PLAYING",c_white,c_red,c_white,c_red,1);
+    counter++;
 }
 draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,c_white,c_red,1);
 </string>
@@ -63,25 +94,19 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
             <kind>1</kind>
             <string>room_goto(room_Credit);
 audio_stop_all();
-
-
-
 //Easter Egg
 if(global.intScore &gt; 100){
     audio_play_sound(music_EasyStreet, 10, false); 
 }
 else{
-    audio_play_sound(music_DubstepTwo, 10, false);
+    scriptBackgroundMusic();
 }
-
-
-
-
-//Deletes file after use **WORKS**
+//Deletes file after use
 if file_exists((working_directory + "\Screens\Screen_Pause.png"))
    {
    file_delete((working_directory + "\Screens\Screen_Pause.png"));
    } 
+
 </string>
           </argument>
         </arguments>

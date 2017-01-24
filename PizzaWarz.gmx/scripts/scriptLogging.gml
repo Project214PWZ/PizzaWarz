@@ -12,6 +12,7 @@ var blockFive = string(global.intBlockFiveCounter);
 var blockSix = string(global.intBlockSixCounter);
 var blockSeven = string(global.intBlockSevenCounter);
 var blockEight = string(global.intBlockEightCounter);
+
 var blockHQ = "0";
 if(global.bolPlacedHQ == true){
     blockHQ = "1";    
@@ -53,5 +54,6 @@ file_text_write_string(file, "Block HQ Spawns: ");
 file_text_write_string(file, blockHQ);
 file_text_writeln(file);
 file_text_write_string(file, "******************************************************************************************************");
+
 file_text_writeln(file);
 file_text_close(file);

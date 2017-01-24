@@ -36,6 +36,7 @@ mapScale = 200/2600; //room_width;
 //Draws the map to scale
 mapSurface = surface_create(mapSize, mapSize);
 initiateSurface = 1;
+
 </string>
           </argument>
         </arguments>
@@ -73,8 +74,10 @@ if(global.bolCount == true)
 }
 if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
 {
-    if(global.intMinutes = 0){
+    counter = 0;
+    if(global.intMinutes = 0 and counter = 0){
         scriptEndGame();
+        counter++;
     }
     else{
         global.intMinutes -= 1;

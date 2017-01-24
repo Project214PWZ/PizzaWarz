@@ -101,6 +101,7 @@
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptErrorChecking.gml</script>
+    <script>scripts\scriptDISABLE.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -110,6 +111,7 @@
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
     <object>objects\object_Tutorial</object>
+    <object>objects\object_ReturnToTutorial</object>
     <object>objects\object_BulletHoleGenerator</object>
     <object>objects\object_Pizza</object>
     <object>objects\object_PickUpMoreDeliveries</object>
@@ -117,7 +119,6 @@
     <object>objects\object_Invisible</object>
     <object>objects\object_SuccessfulDeliveryMessage</object>
     <object>objects\object_StoryBoard</object>
-    <object>objects\object_ReturnToTutorial</object>
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
     <object>objects\object_EndGame</object>
