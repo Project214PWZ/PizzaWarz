@@ -25,9 +25,9 @@
       <sound>sound\music_EminemOne</sound>
       <sound>sound\music_EasyStreet</sound>
       <sound>sound\music_ClassicalTwo</sound>
-      <sound>sound\sound_FlashPiano</sound>
       <sound>sound\sound_FlashSynthezier</sound>
-      <sound>sound\sound_StirlingZelda</sound>
+      <sound>sound\music_BuffyEndCredits</sound>
+      <sound>sound\music_LegendofZeldaTheme</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">

@@ -173,6 +173,9 @@ scriptDISABLE();
           <argument>
             <kind>1</kind>
             <string>room_goto(room_StoryBoard1);
+audio_stop_all();
+audio_play_sound(sound_FlashSynthezier,10,true);
+//audio_play_sound(music_LegendofZeldaTheme,10,true);
 </string>
           </argument>
         </arguments>
@@ -222,6 +225,8 @@ audio_stop_all();
           <argument>
             <kind>1</kind>
             <string>room_goto(room_Credit);
+audio_stop_all();
+audio_play_sound(music_BuffyEndCredits);
 </string>
           </argument>
         </arguments>
