@@ -198,6 +198,7 @@ scriptDISABLE();
             <string>room_set_persistent(room_PlayAreaLevelOne, true);
 audio_play_sound(sound_GameStart, 10, false);
 room_goto(room_PlayAreaLevelOne);
+audio_stop_all();
 </string>
           </argument>
         </arguments>
