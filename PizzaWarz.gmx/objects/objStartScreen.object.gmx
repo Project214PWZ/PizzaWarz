@@ -226,7 +226,7 @@ audio_stop_all();
             <kind>1</kind>
             <string>room_goto(room_Credit);
 audio_stop_all();
-audio_play_sound(music_BuffyEndCredits);
+audio_play_sound(music_BuffyEndCredits,10,false);
 </string>
           </argument>
         </arguments>
