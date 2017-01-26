@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="object_Intersection">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,17 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_angle == 0 &amp;&amp; y &lt; 208){
+            <string>canTurn = true;
+/*
+randomize();
+if(position_meeting(x,y,object_Intersection))
+{
+
+if(image_angle == 0 &amp;&amp; y &lt; 208){
     intTurn = irandom(1);
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
-        image_angle = 90;
+        //heading north ,turning west(left) ----outer --lane will change
+                image_angle = 90;
+                if(object_RandomVehicleMovement.lane = 130)
+                {
+                    object_RandomVehicleMovement.lane = 78;
+                }
+                else if(object_RandomVehicleMovement.lane = 182)
+                {
+                    object_RandomVehicleMovement.lane = 26;
+                }
+                 
+                
     }
     else if(intTurn == 1){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
+                //heading north ,turning east(right) --same lane
         image_angle = 270;
+
     }
 }
 else if(image_angle == 90 &amp;&amp; y &lt; 208){
@@ -43,57 +62,258 @@ else if(image_angle == 90 &amp;&amp; y &lt; 208){
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
+                //heading west(left) ,turning south ---outer ---lane will change
         image_angle = 180;
-    }
-    else{
-        //nothing happen vehicle doesn't turn
+                if(object_RandomVehicleMovement.lane = 78)
+                {
+                    object_RandomVehicleMovement.lane = 130;
+                }
+                else if(object_RandomVehicleMovement.lane = 26)
+                {
+                    object_RandomVehicleMovement.lane = 182;
+                }        
     }
 }
 else if(image_angle == 270 &amp;&amp; y &lt; 208){
     intTurn = irandom(1);
+    //heading east(right) ,turning south  ---outer ---same lane
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 180;
     }
-    else{
-        //nothing happen vehicle doesn't turn
-    }
 }
 else if(image_angle == 90){
     intTurn = irandom(1);
+    //heading west(left) ,turning north ---outer lower lane -- same lane
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 0;
-    }
-    else{
-        //nothing happen vehicle doesn't turn
+   
     }
 }
 else if(image_angle == 180){
     intTurn = irandom(1);
+        //heading south ,turning west(left)----same lane
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 90;
     }
     else if(intTurn == 1){
+    //heading south ,turning east(right) ----inner lane and rightmost outer lane --lane will change
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 270;
+                if(object_RandomVehicleMovement.lane = 78)
+                {
+                    object_RandomVehicleMovement.lane = 130;
+                }
+                else if(object_RandomVehicleMovement.lane = 26)
+                {
+                    object_RandomVehicleMovement.lane = 182;
+                } 
+
     }
 }
 else if(image_angle == 270){
     intTurn = irandom(1);
+    //heading east(right) ,turning north    
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         image_angle = 0;
+                if(object_RandomVehicleMovement.lane = 130)
+                {
+                    object_RandomVehicleMovement.lane = 78;
+                }
+                else if(object_RandomVehicleMovement.lane = 182)
+                {
+                    object_RandomVehicleMovement.lane = 26;
+                }   
+
     }
-    else{
+}
         //nothing happen vehicle doesn't turn
+        canTurn = false;
+        alarm[0]= 30;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canTurn = true;
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>randomize();
+lane = global.carLane;
+if(position_meeting(x,y,object_Intersection))
+{
+
+if(image_angle == 0 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        //heading north ,turning west(left) ----outer --lane will change
+                direction = 90;
+                image_speed = 0.5;
+                //direction += 2.5;
+                if(object_RandomVehicleMovement.lane = 130)
+                {
+                    object_RandomVehicleMovement.lane = 78;
+                }
+                else if(object_RandomVehicleMovement.lane = 182)
+                {
+                    object_RandomVehicleMovement.lane = 26;
+                }
+                 
+                
     }
+    else if(intTurn == 1){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+                //heading north ,turning east(right) --same lane
+        image_angle = 270;
+                image_speed = 0.5;
+                //direction += 2.5;
+    }
+}
+else if(image_angle == 90 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+                //heading west(left) ,turning south ---outer ---lane will change
+        direction = 180;
+        image_speed = 0.5;
+               // direction += 2.5;
+                if(object_RandomVehicleMovement.lane = 78)
+                {
+                    object_RandomVehicleMovement.lane = 130;
+                }
+                else if(object_RandomVehicleMovement.lane = 26)
+                {
+                    object_RandomVehicleMovement.lane = 182;
+                }        
+    }
+}
+else if(image_angle == 270 &amp;&amp; y &lt; 208){
+    intTurn = irandom(1);
+    //heading east(right) ,turning south  ---outer ---same lane
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 180;
+        image_speed = 0.5;
+                //direction += 2.5;
+    }
+}
+else if(image_angle == 90){
+    intTurn = irandom(1);
+    //heading west(left) ,turning north ---outer lower lane -- same lane
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 0;
+        image_speed = 0.5;
+                //direction += 2.5;
+   
+    }
+}
+else if(image_angle == 180){
+    intTurn = irandom(1);
+        //heading south ,turning west(left)----same lane
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        image_angle = 90;
+        image_speed = 0.5;
+                //direction += 2.5;
+    }
+    else if(intTurn == 1){
+    //heading south ,turning east(right) ----inner lane and rightmost outer lane --lane will change
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        direction = 270;
+        image_speed = 0.5;
+                direction += 2.5;
+                if(object_RandomVehicleMovement.lane = 78)
+                {
+                    object_RandomVehicleMovement.lane = 130;
+                }
+                else if(object_RandomVehicleMovement.lane = 26)
+                {
+                    object_RandomVehicleMovement.lane = 182;
+                } 
+
+    }
+}
+else if(image_angle == 270){
+    intTurn = irandom(1);
+    //heading east(right) ,turning north    
+    if(intTurn == 0){
+        //need to set alarm so that it doesn't turn again until next intersection
+        //need to incorporate what lane it was in and put it back in that lane
+        direction = 0;
+        image_speed = 0.5;
+                //direction += 2.5;
+                if(object_RandomVehicleMovement.lane = 130)
+                {
+                    object_RandomVehicleMovement.lane = 78;
+                }
+                else if(object_RandomVehicleMovement.lane = 182)
+                {
+                    object_RandomVehicleMovement.lane = 26;
+                }   
+
+    }
+}
+        //nothing happen vehicle doesn't turn
+        canTurn = false;
+        alarm[0]= 30;
 }
 </string>
           </argument>
