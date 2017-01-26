@@ -122,7 +122,6 @@ draw_text_colour(425, 675, "CTRL" ,c_white, c_red, c_white, c_red , fontAlpha);
 draw_text_colour(575, 675, "FOR INTRO" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 
-scriptDISABLE();
 
 
 
@@ -202,6 +201,9 @@ audio_play_sound(sound_FlashSynthezier,10,true);
 audio_play_sound(sound_GameStart, 10, false);
 room_goto(room_PlayAreaLevelOne);
 audio_stop_all();
+
+room_set_persistent(room_PlayAreaLevelOne, false);
+
 </string>
           </argument>
         </arguments>

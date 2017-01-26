@@ -99,8 +99,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>font_add_sprite(sprite_FontSize_33,36,false,1); 
-draw_set_font(sprite_FontSize_33);
+            <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
+draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 300, "THANK YOU" , c_white, c_orange, c_white, c_orange, fontAlpha);

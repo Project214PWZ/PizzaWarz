@@ -58,13 +58,6 @@
     <sprites name="Fonts">
       <sprite>sprites\sprite_FontSize_9</sprite>
       <sprite>sprites\sprite_FontSize_13</sprite>
-      <sprite>sprites\sprite_FontSize_19</sprite>
-      <sprite>sprites\sprite_FontSize_25</sprite>
-      <sprite>sprites\sprite_FontSize_33</sprite>
-      <sprite>sprites\sprite_FontSize_45</sprite>
-      <sprite>sprites\sprite_FontSize_60</sprite>
-      <sprite>sprites\sprite_FontSize_75</sprite>
-      <sprite>sprites\sprite_FontSize_98</sprite>
     </sprites>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
@@ -97,11 +90,9 @@
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
     <script>scripts\scriptBackgroundMusic.gml</script>
-    <script>scripts\scriptDeliveryPointer.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptErrorChecking.gml</script>
-    <script>scripts\scriptDISABLE.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -139,7 +130,6 @@
     <objects name="StartScreen">
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
-      <object>objects\objStartTitle</object>
       <object>objects\object_PizzaTitle</object>
     </objects>
     <objects name="Blocks">
