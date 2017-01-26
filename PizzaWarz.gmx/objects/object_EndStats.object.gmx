@@ -32,7 +32,45 @@ instance_deactivate_all(true);
 background = (working_directory + "\Screens\Screen_Pause.png");
 screenPause = background_add(background,false,false);
 
+alarm[0] = 250;
+
 //font = font_add_sprite(sprite_FontSize_33,36,false,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(room_Credit);
+audio_stop_all();
+//Easter Egg
+if(global.intScore &gt; 250){
+    audio_play_sound(music_EasyStreet, 10, true); 
+}
+else{
+    audio_play_sound(music_BuffyEndCredits, 10, true);
+}
+//Deletes file after use
+if file_exists((working_directory + "\Screens\Screen_Pause.png"))
+   {
+   file_delete((working_directory + "\Screens\Screen_Pause.png"));
+   } 
 </string>
           </argument>
         </arguments>
