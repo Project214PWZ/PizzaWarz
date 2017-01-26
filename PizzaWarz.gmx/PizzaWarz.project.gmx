@@ -65,6 +65,7 @@
       <sprite>sprites\sprite_FontSize_60</sprite>
       <sprite>sprites\sprite_FontSize_75</sprite>
       <sprite>sprites\sprite_FontSize_98</sprite>
+      <sprite>sprites\sprite_FontSize9_Backslash</sprite>
     </sprites>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
@@ -135,6 +136,8 @@
       <object>objects\objCreditsSpritesVehicles1</object>
       <object>objects\objCreditsSpritesVehicles2</object>
       <object>objects\objCreditThankyou</object>
+      <object>objects\objCreditsSoundEffects</object>
+      <object>objects\objCreditsMusic</object>
     </objects>
     <objects name="StartScreen">
       <object>objects\objStartController</object>
