@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Cleaning up code
+            <string>
+//Cleaning up code
 background = (working_directory + "\Screens\Screen_Pause.png");
 //Creates a .png of the current view
 screen_save_part(background,window_get_x(), window_get_y(), window_get_width(), window_get_height());

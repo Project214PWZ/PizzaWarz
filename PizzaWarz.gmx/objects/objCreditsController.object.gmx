@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=room_speed*1;
+            <string>
+alarm[0]=room_speed*1;
 alarm[1]=room_speed*1; 
 alarm[2]=room_speed*5;
 alarm[3]=room_speed*10;
@@ -64,6 +65,8 @@ alarm[9]=room_speed*45;
 }
 room_goto(room_Start);
 audio_stop_all();
+//audio_play_sound(sound_FlashSynthezier,10,false);
+game_restart();
 </string>
           </argument>
         </arguments>
@@ -324,6 +327,8 @@ instance_create(100,100, objCreditsInstructors);
             <kind>1</kind>
             <string>room_goto(room_Start);
 audio_stop_all();
+//audio_play_sound(sound_FlashSynthezier,10,false);
+game_restart();
 </string>
           </argument>
         </arguments>

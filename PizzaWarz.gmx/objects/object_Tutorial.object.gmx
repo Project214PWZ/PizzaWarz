@@ -65,7 +65,8 @@ draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN S
           <argument>
             <kind>1</kind>
             <string>room_goto(room_Start);
-//audio_stop_all();
+audio_stop_all();
+
 </string>
           </argument>
         </arguments>
@@ -90,7 +91,7 @@ draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN S
             <kind>1</kind>
             <string>room_goto(room_PlayAreaLevelOne);
 audio_play_sound(sound_GameStart,10,false);
-audio_resume_all();
+//audio_resume_all();
 </string>
           </argument>
         </arguments>
