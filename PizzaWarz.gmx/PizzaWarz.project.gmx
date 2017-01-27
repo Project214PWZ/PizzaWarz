@@ -10,13 +10,12 @@
       <sound>sound\sound_MoneyEarned</sound>
       <sound>sound\sound_GameStart</sound>
       <sound>sound\sound_TireScreech</sound>
-      <sound>sound\sound_CarCrash</sound>
+      <sound>sound\sound_CarEngine</sound>
       <sound>sound\sound_SuccessfulDelivery</sound>
       <sound>sound\sound_Whaa</sound>
       <sound>sound\sound_Gunfire</sound>
-      <sound>sound\sound_CarStart</sound>
-      <sound>sound\sound_CarStartDriveAway</sound>
       <sound>sound\sound_PunchEffect</sound>
+      <sound>sound\sound_CarCrash</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\music_DubstepOne</sound>

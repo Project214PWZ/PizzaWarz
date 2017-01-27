@@ -110,7 +110,7 @@ draw_text_colour(125, 350, "INTRODUCTION TO PROJECT MANAGEMENT" , c_white, c_ora
 draw_text_colour(75, 500, "INSTRUCTOR: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(400, 500, "GAVIN OSBORNE" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 550, "INSTRUCTOR:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(400, 550, "CRAIG NEILSON" ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(400, 550, "CRAIG NIELSEN" ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 600, "SOFTWARE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(400, 600, "GAMEMAKER STUDIO" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
   
