@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>WIDTH = window_get_width();
+            <string>
+
+WIDTH = window_get_width();
 HEIGHT = window_get_height();
 
 
@@ -78,6 +80,7 @@ if(global.intSeconds &gt; 0) and (global.intSeconds &lt; 0.1)
 {
     counter = 0;
     if(global.intMinutes = 0 and counter = 0){
+        room_persistent = false;
         scriptEndGame();
         counter++;
     }

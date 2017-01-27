@@ -7,7 +7,7 @@ for(n=1;n<=global.intPizzasToDeliver;n++){
 }
 
 #define scriptRecursivePoints
-intDeliveryPoints = irandom(array_height_2d(global.arrayDeliveryPoints));
+intDeliveryPoints = irandom(array_height_2d(global.arrayDeliveryPoints)-1);
 arraySet = argument[1];
 for(m = 0;m < array_length_1d(arraySet); m++){
     if(arraySet[m] == intDeliveryPoints){

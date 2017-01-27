@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_set_persistent(room_PlayAreaLevelOne, false);
+            <string>
 fontAlpha = 1;
+
+
+
 </string>
           </argument>
         </arguments>
@@ -49,7 +52,10 @@ fontAlpha = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+            <string>room_set_persistent(room_PlayAreaLevelOne, false);
+
+
+//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 //fontAlpha -=.01;  //smaller means slower fadeout
 //}
 //show_debug_message(fontAlpha);
@@ -119,7 +125,7 @@ draw_text_colour(575, 675, "FOR INTRO" , c_white, c_orange, c_white, c_orange, f
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Tutorial); 
+            <string>room_goto(room_TutorialFromStart); 
 </string>
           </argument>
         </arguments>
@@ -166,8 +172,7 @@ audio_stop_all();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_set_persistent(room_PlayAreaLevelOne, true);
-audio_play_sound(sound_GameStart, 10, false);
+            <string>audio_play_sound(sound_GameStart, 10, false);
 room_goto(room_PlayAreaLevelOne);
 audio_stop_all();
 </string>
