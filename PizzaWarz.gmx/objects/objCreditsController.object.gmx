@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-alarm[0]=room_speed*1;
+            <string>alarm[0]=room_speed*1;
 alarm[1]=room_speed*1; 
 alarm[2]=room_speed*5;
 alarm[3]=room_speed*10;

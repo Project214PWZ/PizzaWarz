@@ -143,7 +143,7 @@ font_add_sprite(sprite_FontSize_9,36,false,1);
 //draws the players total cash
 draw_set_font(sprite_FontSize_9);
 draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_white, c_purple, c_white, c_purple,1);
-draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
+//draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
 
 //draws the 5 minute timer for level
 if(global.intSeconds&lt;10)

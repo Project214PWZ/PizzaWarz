@@ -32,7 +32,7 @@ instance_deactivate_all(true);
 background = (working_directory + "\Screens\Screen_Pause.png");
 screenPause = background_add(background,false,false);
 
-alarm[0] = 250;
+alarm[0] = 200;
 
 //font = font_add_sprite(sprite_FontSize_33,36,false,1);
 </string>
@@ -113,7 +113,7 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="1">
+    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
