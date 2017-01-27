@@ -16,18 +16,19 @@
       <sound>sound\sound_Gunfire</sound>
       <sound>sound\sound_CarStart</sound>
       <sound>sound\sound_CarStartDriveAway</sound>
+      <sound>sound\sound_PunchEffect</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\music_DubstepOne</sound>
       <sound>sound\music_Running</sound>
       <sound>sound\music_DubstepTwo</sound>
       <sound>sound\music_ClassicalOne</sound>
-      <sound>sound\music_EminemOne</sound>
       <sound>sound\music_EasyStreet</sound>
       <sound>sound\music_ClassicalTwo</sound>
       <sound>sound\sound_FlashSynthezier</sound>
       <sound>sound\music_BuffyEndCredits</sound>
       <sound>sound\music_LegendofZeldaTheme</sound>
+      <sound>sound\music_InspectorGadgetOpening</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
