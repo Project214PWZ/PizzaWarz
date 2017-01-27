@@ -85,19 +85,9 @@ scriptGenerateMap();
 scriptGenerateDeliveryPoints();
 room_persistent = true;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+audio_sound_gain(sound_CarCrash,0.8,0);
+audio_sound_gain(sound_CarEngine,0.1,0);
+audio_sound_gain(sound_TireScreech,0.1,0);
 
 //scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>

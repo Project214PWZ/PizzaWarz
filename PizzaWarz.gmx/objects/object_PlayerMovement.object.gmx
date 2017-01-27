@@ -35,7 +35,7 @@ canIncrease = true;
 canDecrease = true;
 //Boolean value that will allow damage to be taken
 canAcceptDamage = true;
-audio_play_sound(sound_CarEngine, 10, false);
+audio_play_sound(sound_CarEngine, 10, true);
 </string>
           </argument>
         </arguments>

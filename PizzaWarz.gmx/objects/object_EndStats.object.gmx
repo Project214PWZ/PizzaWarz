@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Stopping the persistent room
+            <string>audio_stop_sound(sound_CarEngine);
+//Stopping the persistent room
 room_set_persistent(room_PlayAreaLevelOne, false);
 
 instance_deactivate_all(true);
@@ -60,7 +61,7 @@ alarm[0] = 200;
             <string>room_goto(room_Credit);
 audio_stop_all();
 //Easter Egg
-if(global.intScore &gt; 250){
+if(global.intScore &gt; 500){
     audio_play_sound(music_EasyStreet, 10, true); 
 }
 else{
@@ -133,7 +134,7 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
             <string>room_goto(room_Credit);
 audio_stop_all();
 //Easter Egg
-if(global.intScore &gt; 250){
+if(global.intScore &gt; 500){
     audio_play_sound(music_EasyStreet, 10, true); 
 }
 else{
