@@ -31,6 +31,9 @@
 else{
     room_goto(room_PlayAreaLevelOne)    
 }
+if(audio_is_playing(music_InspectorGadgetOpening)){
+    audio_stop_all();
+}
 //audio_pause_all();
 audio_play_sound(sound_GameStart,10,false);
 </string>
