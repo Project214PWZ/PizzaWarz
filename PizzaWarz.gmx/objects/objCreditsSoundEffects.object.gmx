@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1;
-fadeOut=false;
-alarm[0]=150; //bigger means longer delay before fade out
+            <string>		fontAlpha = 1;
+		fadeOut=false;
+		alarm[0]=100;
 </string>
           </argument>
         </arguments>
@@ -74,10 +74,9 @@ alarm[0]=150; //bigger means longer delay before fade out
           <argument>
             <kind>1</kind>
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-fontAlpha -=.05;  //smaller means slower fadeout
-}
-show_debug_message(fontAlpha);
-
+		fontAlpha -=.05;  //smaller means slower fadeout
+		}
+		show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -101,38 +100,27 @@ show_debug_message(fontAlpha);
           <argument>
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
-draw_set_font(sprite_FontSize_9);
-draw_set_alpha(fontAlpha);
-draw_text_colour(325, 150, "SPRITES: " , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(75, 250, "BULLET HOLES:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 250, "WWW://NOBACKS.COM/SET-OF-SIX/" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 320, "DELIVERY DIRECTION:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 320, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 390, "DELIVERY MARKER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 390, "TGILLS " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 460, "MAIN PIZZA:  " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 460, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 530, "CUSTOM FONT:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 530, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 600, "PICK UP MORE DELIVERIES:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 600, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 670, "PIZZA WAR TITLE:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 670, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+		draw_set_font(sprite_FontSize_9);
+		draw_set_alpha(fontAlpha);
 
-
-
-
-draw_sprite(sprite_bullethole1,0,390,245); 
-draw_sprite(sprite_bullethole1,0,460,245); 
-draw_sprite(sprite_bullethole1,0,520,245); 
-draw_sprite(sprite_DeliveryDirection, 0, 550, 320); 
-draw_sprite(sprite_DeliveryDesinationMarker, 2, 490, 410);
-draw_sprite(sprite_Pizza, 0, 430, 470);
-draw_sprite(sprite_FontSize_9, 29, 400, 540); 
-draw_sprite(sprite_FontSize_9, 30, 430, 540); 
-draw_sprite(sprite_FontSize_9, 31, 460, 540);
-draw_sprite(sprite_FontSize_9, 32, 490, 540);
-
+draw_text_colour(100, 200, "FAILED DELIVERY:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 200, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(100, 250, "MONEY EARNED:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 250, "WWW.YOUTUBE.COM/WATCH?V=BYJDZLPBTA" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(100, 300, "GAME START:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 300, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(100, 350, "CAR CRASH:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 350, "WWW.YOUTUBE.COM/WATCH?V=K6QM01JXRGK" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+  draw_text_colour(100, 400, "SUCCESSFUL DELIVERY:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 400, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+  draw_text_colour(100, 450, "WHAA:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 450, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+  draw_text_colour(100, 500, "GUNFIRE:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 500, "WWW.YOUTUBE.COM/WATCH?v=L9JTVKGSSBY" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+  draw_text_colour(100, 550, "CAR START:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 550, "WWW.YOUTUBE.COM/WATCH?v=F5Z13DTCMRO" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+  draw_text_colour(100, 600, "CAR START DRIVE AWAY:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+		draw_text_colour(600, 600, "WWW.YOUTUBE.COM/WATCH?v=ELYLK8ACH8U" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
 </string>
           </argument>
         </arguments>

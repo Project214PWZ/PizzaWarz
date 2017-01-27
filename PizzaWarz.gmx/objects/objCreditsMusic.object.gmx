@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1000</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,32 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text1="SUCCESSFUL";
-text2=" DELIVERY ";
+            <string>fontAlpha = 1;
+		fadeOut=false;
+		alarm[0]=100; 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fadeout=true; 
 </string>
           </argument>
         </arguments>
@@ -49,12 +73,10 @@ text2=" DELIVERY ";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y-=4;
-image_alpha-=0.025;
-if(image_alpha=0)
-{
-    instance_destroy();
-}
+            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+		fontAlpha -=.05;  //smaller means slower fadeout
+		}
+		show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -77,18 +99,18 @@ if(image_alpha=0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(view_current = 0){
-
-
-font_add_sprite(sprite_FontSize_9,36,false,1);
+            <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(x,y,text1,c_white,c_purple,c_white,c_purple,1);
-draw_text_colour(x,y+30,text2,c_white,c_purple,c_white,c_purple,1);
+draw_set_alpha(fontAlpha);
 
-
-}
-
-
+draw_text_colour(100, 200, "$LIGHTS$:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(600, 200, "YOUTUBE.COM " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 250, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(600, 250, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 300, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(600, 300, ": " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 350, ":  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(600, 350, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
 </string>
           </argument>
         </arguments>

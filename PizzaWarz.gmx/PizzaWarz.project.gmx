@@ -65,11 +65,13 @@
       <sprite>sprites\sprite_FontSize_60</sprite>
       <sprite>sprites\sprite_FontSize_75</sprite>
       <sprite>sprites\sprite_FontSize_98</sprite>
+      <sprite>sprites\sprite_FontSize9_Backslash</sprite>
     </sprites>
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
+    <sprite>sprites\sprite_ForEnviroment</sprite>
     <sprite>sprites\sprite_Interscetion</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_Pizza</sprite>
@@ -97,11 +99,9 @@
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
     <script>scripts\scriptBackgroundMusic.gml</script>
-    <script>scripts\scriptDeliveryPointer.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptErrorChecking.gml</script>
-    <script>scripts\scriptDISABLE.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -135,11 +135,12 @@
       <object>objects\objCreditsSpritesVehicles1</object>
       <object>objects\objCreditsSpritesVehicles2</object>
       <object>objects\objCreditThankyou</object>
+      <object>objects\objCreditsSoundEffects</object>
+      <object>objects\objCreditsMusic</object>
     </objects>
     <objects name="StartScreen">
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
-      <object>objects\objStartTitle</object>
       <object>objects\object_PizzaTitle</object>
     </objects>
     <objects name="Blocks">

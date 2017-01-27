@@ -96,8 +96,8 @@ if file_exists((working_directory + "\Screens\Screen_Pause.png"))
             <string>//Drawing the background of the new room
 draw_background_stretched(screenPause,0,0,window_get_width(), window_get_height());
 //End game stuff
-font_add_sprite(sprite_FontSize_33,36,false,1);
-draw_set_font(sprite_FontSize_33);
+font_add_sprite(sprite_FontSize_9,36,false,1);
+draw_set_font(sprite_FontSize_9);
 counter = 0;
 if(global.intHealth = 0 and counter = 0){
     draw_text_colour(200,160,"YOUR CAR BROKE DOWN",c_white,c_red,c_white,c_red,1);
