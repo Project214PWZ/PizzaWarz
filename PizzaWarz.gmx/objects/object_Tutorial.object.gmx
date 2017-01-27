@@ -64,10 +64,14 @@ draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN M
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Start);
-audio_stop_all();
-audio_play_sound(music_InspectorGadgetOpening,10,true);
-
+            <string>if(audio_is_playing(music_InspectorGadgetOpening)){
+    room_goto(room_Start);
+}
+else{
+    room_goto(room_Start);
+    audio_stop_all();   
+    audio_play_sound(music_InspectorGadgetOpening,10,true);
+}
 </string>
           </argument>
         </arguments>
