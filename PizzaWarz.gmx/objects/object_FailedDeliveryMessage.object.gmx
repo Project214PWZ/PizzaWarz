@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text1="SUCCESSFUL";
-text2=" DELIVERY ";
+            <string>text1="TOO LATE";
+text2=" NO TIP ";
 </string>
           </argument>
         </arguments>
@@ -82,8 +82,8 @@ if(image_alpha=0)
 
 font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(x,y,text1,c_white,c_green,c_white,c_green,1);
-draw_text_colour(x,y+30,text2,c_white,c_green,c_white,c_green,1);
+draw_text_colour(x,y,text1,c_white,c_red,c_white,c_red,1);
+draw_text_colour(x,y+30,text2,c_white,c_red,c_white,c_red,1);
 
 
 }

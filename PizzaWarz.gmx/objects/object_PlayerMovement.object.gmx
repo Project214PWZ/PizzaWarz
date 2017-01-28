@@ -202,9 +202,17 @@ if(vspeed = 0 &amp;&amp; hspeed = 0){
 //If it is not then the collision with the Destination Marker is successful
 //This will make a delivery
 if(vspeed = 0 &amp;&amp; hspeed = 0){
-    //play successful sound and display successful message
-    instance_create(x,y,object_SuccessfulDeliveryMessage);
-    audio_play_sound(sound_SuccessfulDelivery, 10, false);
+    //If the pizza timer is at 0 then player receives no tip
+    if(global.intPizzaTimer &lt;=0){
+        //play successful sound and display successful message
+        instance_create(x,y,object_FailedDeliveryMessage);
+        audio_play_sound(sound_FailedDelivery, 10, false);
+    }
+    else{
+        //play successful sound and display successful message
+        instance_create(x,y,object_SuccessfulDeliveryMessage);
+        audio_play_sound(sound_SuccessfulDelivery, 10, false);
+    }
 }
 </string>
           </argument>

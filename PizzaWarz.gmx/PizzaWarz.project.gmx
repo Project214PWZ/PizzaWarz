@@ -119,6 +119,7 @@
     <object>objects\object_RoomMoving1</object>
     <object>objects\object_Intersection</object>
     <object>objects\object_SuccessfulDeliveryMessage</object>
+    <object>objects\object_FailedDeliveryMessage</object>
     <object>objects\object_StoryBoard</object>
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
