@@ -37,17 +37,17 @@ draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,
 draw_text_colour(20,300,"DIRECTION NEEDED TO GO TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,380," TIPS WILL BE AWARDED",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,420,"WHEN DELIVERY ARROW TURNS BLUE",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,460," RETURN TO PIZZARIA",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,420,"WHEN DELIVERY ARROW TURNS BLUE RETURN",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,460," TO PIZZARIA FOR ADDITIONAL DELIVERIES",c_white,c_lime,c_white,c_lime,1);
 
-draw_text_colour(20,window_get_height()-80,"IN GAMEPLAY PRESS F1 TO RETURN TO TUTORIAL",c_white,c_teal,c_white,c_teal,1);
-draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN SCREEN",c_white,c_teal,c_white,c_teal,1);
+draw_text_colour(20,window_get_height()-80,"IN GAMEPLAY PRESS F1 TO TOGGLE BETWEEN GAME AND TUTORIAL",c_white,c_teal,c_white,c_teal,1);
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="112">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -64,34 +64,8 @@ draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN S
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Start);
-audio_stop_all();
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="13">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto(room_PlayAreaLevelOne);
+            <string>room_goto(room_PlayAreaLevelOne);   
 audio_play_sound(sound_GameStart,10,false);
-//audio_resume_all();
 </string>
           </argument>
         </arguments>

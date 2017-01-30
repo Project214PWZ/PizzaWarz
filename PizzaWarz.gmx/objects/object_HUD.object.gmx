@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>WIDTH = window_get_width();
+            <string>
+
+WIDTH = window_get_width();
 HEIGHT = window_get_height();
 
 
@@ -123,7 +125,6 @@ if(draw_gui_mode == 2){
 
 }
 
-
 var mapLeft = WIDTH - mapSize;
 var mapTop = HEIGHT - mapSize;
 var intSingleSeconds = floor(global.intSeconds);
@@ -142,23 +143,20 @@ else
 font_add_sprite(sprite_FontSize_9,36,false,1);
 //draws the players total cash
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_white, c_purple, c_white, c_purple,1);
-draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
+draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_white, c_orange, c_white, c_orange,1);
+//draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
 
 //draws the 5 minute timer for level
 if(global.intSeconds&lt;10)
 {
-    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":0" + string(intSingleSeconds),c_white, c_purple, c_white, c_purple,1);      
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":0" + string(intSingleSeconds),c_white, c_orange, c_white, c_orange,1);      
 }
 else
 {
-    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_white, c_purple, c_white, c_purple,1);
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_white, c_orange, c_white, c_orange,1);
 }//intPizzasToDeliver
 var offset_x = 50;
 var offset_y = 50;
-
-
-
 
 //show_debug_message(draw_gui_mode);
 
@@ -182,11 +180,9 @@ var offset_y = 50;
             instance_destroy();
         }
     }
-
-
+    
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, global.intHealth, c_gray, c_red, c_blue, 0, true, true);
-
 
 /*
 
@@ -201,12 +197,6 @@ with(object_Enviroment)
 surface_reset_target();
 
 */
-
-
-
-
-
-
 </string>
           </argument>
         </arguments>

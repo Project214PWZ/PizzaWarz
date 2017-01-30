@@ -76,7 +76,7 @@ alarm[0]=100; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 fontAlpha -=.05;  //smaller means slower fadeout
 }
-show_debug_message(fontAlpha);
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -104,23 +104,25 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(300, 140, "SPRITES: VEHICLES" , c_white, c_orange, c_white, c_orange, fontAlpha);
 draw_text_colour(75, 250, "PLAYER VEHICLE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 250, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 250, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 300, "RANDOM VEHICLE 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 300, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 350, "RANDOM VEHICLE 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 350, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 350, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 400, "RANDOM VEHICLE 3:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 400, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 450, "RANDOM VEHICLE 4:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 450, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 450, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 500, "RANDOM VEHICLE 5:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 500, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha)
-draw_sprite(sprite_PlayerVehicle, 0, 845, 75);
-draw_sprite(sprite_RandomVehicleOne, 0, 845, 200);
-draw_sprite(sprite_RandomVehicleTwo, 0, 800, 325);
-draw_sprite(sprite_RandomVehicleThree, 0, 845, 730);
-draw_sprite(sprite_RandomVehicleFour, 0, 950, 250);
-draw_sprite(sprite_RandomVehicleFive, 0, 950, 650);
+draw_text_colour(600, 500, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha)
+
+
+draw_sprite(sprite_PlayerVehicle, 0, 125, 590);
+draw_sprite(sprite_RandomVehicleOne, 0, 325, 590);
+draw_sprite(sprite_RandomVehicleTwo, 0, 525, 610);
+draw_sprite(sprite_RandomVehicleThree, 0, 725, 590);
+draw_sprite(sprite_RandomVehicleFour, 0, 925, 590);
+draw_sprite(sprite_RandomVehicleFive, 0, 1125, 590);
 </string>
           </argument>
         </arguments>

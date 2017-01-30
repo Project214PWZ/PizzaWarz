@@ -77,7 +77,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
    fontAlpha -=.05;  //smaller means slower fadeout
 }
-show_debug_message(fontAlpha);
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>

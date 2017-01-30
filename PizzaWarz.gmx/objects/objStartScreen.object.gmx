@@ -25,37 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1;
-//fadeOut=false;
-//alarm[0]=150; //bigger means longer delay before fade out
+            <string>
+fontAlpha = 1;
 
-//vspeed = 0;
-//hspeed = 0;
-//image_angle = 360;
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//fadeOut=true;
+
 </string>
           </argument>
         </arguments>
@@ -78,7 +52,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+            <string>room_set_persistent(room_PlayAreaLevelOne, false);
+
+
+//if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 //fontAlpha -=.01;  //smaller means slower fadeout
 //}
 //show_debug_message(fontAlpha);
@@ -148,7 +125,7 @@ draw_text_colour(575, 675, "FOR INTRO" , c_white, c_orange, c_white, c_orange, f
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Tutorial); 
+            <string>room_goto(room_TutorialFromStart); 
 </string>
           </argument>
         </arguments>
@@ -173,8 +150,6 @@ draw_text_colour(575, 675, "FOR INTRO" , c_white, c_orange, c_white, c_orange, f
             <kind>1</kind>
             <string>room_goto(room_StoryBoard1);
 audio_stop_all();
-audio_play_sound(sound_FlashSynthezier,10,true);
-//audio_play_sound(music_LegendofZeldaTheme,10,true);
 </string>
           </argument>
         </arguments>
@@ -197,13 +172,9 @@ audio_play_sound(sound_FlashSynthezier,10,true);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_set_persistent(room_PlayAreaLevelOne, true);
-audio_play_sound(sound_GameStart, 10, false);
+            <string>audio_play_sound(sound_GameStart, 10, false);
 room_goto(room_PlayAreaLevelOne);
 audio_stop_all();
-
-room_set_persistent(room_PlayAreaLevelOne, false);
-
 </string>
           </argument>
         </arguments>

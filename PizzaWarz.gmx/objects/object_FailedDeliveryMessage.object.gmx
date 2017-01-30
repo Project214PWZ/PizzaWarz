@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,32 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1;
-fadeOut=false;
-alarm[0]=150; //bigger means longer delay before fade out
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>fadeOut=true;
+            <string>text1="TOO LATE";
+text2=" NO TIP ";
 </string>
           </argument>
         </arguments>
@@ -73,11 +49,12 @@ alarm[0]=150; //bigger means longer delay before fade out
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-fontAlpha -=.05;  //smaller means slower fadeout
+            <string>y-=4;
+image_alpha-=0.025;
+if(image_alpha=0)
+{
+    instance_destroy();
 }
-//show_debug_message(fontAlpha);
-
 </string>
           </argument>
         </arguments>
@@ -100,35 +77,17 @@ fontAlpha -=.05;  //smaller means slower fadeout
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
+            <string>if(view_current = 0){
+
+
+font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
-draw_set_alpha(fontAlpha);
-draw_text_colour(325, 150, "SPRITES: " , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(35, 250, "BULLET HOLES:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(275, 320, "WWW://NOBACKS.COM/SET-OF-SIX/" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(35, 390, "DELIVERY DIRECTION:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(580, 390, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(35, 460, "DELIVERY MARKER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(580, 460, "TYLER GUILLAUME " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(35, 530, "MAIN PIZZA:  " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(580, 530, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(35, 600, "CUSTOM FONT:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(580, 600, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(35, 670, "PIZZA WAR TITLE:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(580, 670, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(x,y,text1,c_white,c_red,c_white,c_red,1);
+draw_text_colour(x,y+30,text2,c_white,c_red,c_white,c_red,1);
 
 
+}
 
-
-
-draw_sprite(sprite_bullethole1,0,350,240);
-draw_sprite(sprite_DeliveryDirection, 0, 520, 390); 
-draw_sprite(sprite_DeliveryDesinationMarker, 2, 450, 480);
-draw_sprite(sprite_Pizza, 0, 390, 540);
-draw_sprite(sprite_FontSize_9, 29, 360, 610); 
-draw_sprite(sprite_FontSize_9, 30, 390, 610); 
-draw_sprite(sprite_FontSize_9, 31, 420, 610);
-draw_sprite(sprite_FontSize_9, 32, 450, 610);
 
 </string>
           </argument>

@@ -74,9 +74,9 @@
           <argument>
             <kind>1</kind>
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-		fontAlpha -=.05;  //smaller means slower fadeout
-		}
-		show_debug_message(fontAlpha);
+fontAlpha -=.05;  //smaller means slower fadeout
+}
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>

@@ -76,7 +76,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 fontAlpha -=.05;  //smaller means slower fadeout
 }
-show_debug_message(fontAlpha);
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -104,7 +104,7 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(215, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 250, "WE DECIDED TO THROW A " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 250, "WE DECIDED TO THROW A" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 280, "DRAWING CONTEST AND INVITED" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 310, "SUBMISSIONS FROM OUR FELLOW " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(75, 340, "CLASSMATES AND THE 1ST YRS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
@@ -112,7 +112,7 @@ draw_text_colour(75, 340, "CLASSMATES AND THE 1ST YRS" , c_white, c_yellow, c_wh
 
 draw_text_colour(150, 400, "CONTEST WINNER" , c_white, c_red, c_white, c_red, fontAlpha);
 draw_text_colour(200, 430, "REEMA " , c_white, c_red, c_white, c_red, fontAlpha);
-draw_sprite(sprite_Reema, 0, 750, 280);
+draw_sprite(sprite_Reema, 0, 550, 425);
 
 draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 

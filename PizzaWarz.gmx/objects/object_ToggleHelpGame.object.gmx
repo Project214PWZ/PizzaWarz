@@ -25,14 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room = room_PlayAreaLevelOne){
-    room_goto(room_Tutorial);    
-}
-else{
-    room_goto(room_PlayAreaLevelOne)    
-}
-//audio_pause_all();
-audio_play_sound(sound_GameStart,10,false);
+            <string>room_goto(room_TutorialFromGame);  
 </string>
           </argument>
         </arguments>
