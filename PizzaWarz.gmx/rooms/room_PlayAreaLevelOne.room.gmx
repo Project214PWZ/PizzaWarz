@@ -81,6 +81,8 @@ global.intVehicleEightCounter = 0;
 global.intVehicleNineCounter = 0;
 global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
+
+global.intRadioChannel = 0;//Radio channel switch
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
 
