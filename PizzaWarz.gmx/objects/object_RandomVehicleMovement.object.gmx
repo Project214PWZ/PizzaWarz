@@ -187,41 +187,94 @@ else if(image_angle == 270){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>
+randomize();
 lane = global.carLane;
+//intersect = collision_line(x,y,x,y-10,object_RandomVehicleMovement,false,false);
+//if (intersect &amp;lt; 0)
+//{
+//show_message("object_RandomVehicleMovement");
+//x = x -30;
+
+
+//}
+
+//if ( collision_circle(x,y,30,object_PlayerVehicle,false,true))
+//{
+//x = x+52;
+//}
+
+
+
 if(position_meeting(x,y,object_Intersection))
 {
 
-if(image_angle == 0 &amp;&amp; y &lt; 208){
+if(image_angle == 0 ){
     intTurn = irandom(1);
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
         //heading north ,turning west(left) ----outer --lane will change
-                direction = 90;
-                image_speed = 0.5;
+                image_angle = 90;
+                direction = 180;
+                y = 78;
+                //show_message(object_RandomVehicleMovement.lane);
+                //direction = image_angle;
+                //direction = 90;   
+                //image_angle = direction;
+               /* image_speed = 0.5;
                 //direction += 2.5;
-                if(object_RandomVehicleMovement.lane = 130)
+                */
+                if(lane == 130)
                 {
-                    object_RandomVehicleMovement.lane = 78;
+                    y = 78;
+                    hLane = 78;
                 }
-                else if(object_RandomVehicleMovement.lane = 182)
+                else if(lane == 182)
                 {
-                    object_RandomVehicleMovement.lane = 26;
+                    y = 26;
+                    hLane = 26;
                 }
-                 
+              if(collision_line(0,y,8648,y,object_RandomVehicleMovement,false,true))
+              {
+                    y = y + 52;
+                    hspeed= -10;
+              }   
                 
     }
     else if(intTurn == 1){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
                 //heading north ,turning east(right) --same lane
-        image_angle = 270;
-                image_speed = 0.5;
+        //direction = 0;
+ 
+        image_angle = 270       //image_angle = direction;
+        direction = 0;
+       y = 182;
+        //show_message(object_RandomVehicleMovement.lane);
+        //direction = image_angle;
+               // image_speed = 0.5;
                 //direction += 2.5;
+                if(lane == 130)
+                {
+                y = 130;
+                hlane = 130;
+                }
+                else if(lane == 182)
+                {
+                    y = 182;
+                    hLane = 182;
+                }
+             if(collision_line(0,y,8648,y,object_RandomVehicleMovement,false,true))
+              {
+                    y = y + 52;
+                    hspeed= 10;
+              }  
     }
 }
-else if(image_angle == 90 &amp;&amp; y &lt; 208){
+
+/*
+else if(image_angle == 90 &amp;amp;&amp;amp; y &amp;lt; 208){
     intTurn = irandom(1);
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
@@ -240,7 +293,8 @@ else if(image_angle == 90 &amp;&amp; y &lt; 208){
                 }        
     }
 }
-else if(image_angle == 270 &amp;&amp; y &lt; 208){
+
+else if(image_angle == 270 &amp;amp;&amp;amp; y &amp;lt; 208){
     intTurn = irandom(1);
     //heading east(right) ,turning south  ---outer ---same lane
     if(intTurn == 0){
@@ -263,23 +317,26 @@ else if(image_angle == 90){
    
     }
 }
+*/
 else if(image_angle == 180){
     intTurn = irandom(1);
         //heading south ,turning west(left)----same lane
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
-        image_angle = 90;
-        image_speed = 0.5;
+        direction = 180;
+        image_angle = direction;
+        //image_speed = 0.5;
                 //direction += 2.5;
     }
     else if(intTurn == 1){
     //heading south ,turning east(right) ----inner lane and rightmost outer lane --lane will change
         //need to set alarm so that it doesn't turn again until next intersection
         //need to incorporate what lane it was in and put it back in that lane
-        direction = 270;
-        image_speed = 0.5;
-                direction += 2.5;
+        direction = 0;
+        image_angle = direction;
+        //image_speed = 0.5;
+                
                 if(object_RandomVehicleMovement.lane = 78)
                 {
                     object_RandomVehicleMovement.lane = 130;
@@ -291,6 +348,7 @@ else if(image_angle == 180){
 
     }
 }
+/*
 else if(image_angle == 270){
     intTurn = irandom(1);
     //heading east(right) ,turning north    
@@ -311,9 +369,130 @@ else if(image_angle == 270){
 
     }
 }
+*/
         //nothing happen vehicle doesn't turn
         canTurn = false;
         alarm[0]= 30;
+}
+//if(collision_circle(x,y,30,object_RandomVehicleMovement,false,true))
+if(position_meeting(x,y,object_RandomVehicleMovement)){
+//{
+//show_message(image_angle);
+//show_message(y);
+/*
+    if(image_angle == 0)
+    {
+
+        x = object_RandomVehicleMovement.x +52;
+        vspeed = -10;
+
+        
+    }
+    else if (image_angle == 180)
+    {
+    x = object_RandomVehicleMovement.x +52;
+    vspeed = 10;
+    
+    }
+    */
+    if(image_angle == 90)
+    {
+    y = 26;
+    hspeed= -10;
+    }
+    else if(image_angle == 270)
+    {
+     y = 78;
+     hspeed = 10;
+    }
+    
+    else if(image_angle == 0)
+    {
+        x = x -52;
+        vspeed= -10;
+        /*
+     if(lane == 130)
+     {
+        if(place_free(x+52,y))
+        {
+        x = 182;
+        vspeed= -10;
+        }
+        else
+        {
+        instance_destroy();
+        }
+     }
+     else if(lane == 182)
+     {
+        if(place_free(x-52,y))
+        {
+        x = 130;
+        vspeed= -10;
+        }
+        else
+        {
+        instance_destroy();
+        }
+     }
+     
+     vspeed = -10;
+     */
+    }
+    else if(image_angle == 180)
+    {
+            x = x + 52;
+        vspeed= 10;
+     /*if(lane == 26)
+     {
+        if(place_free(x+52,y))
+        {
+        x = 78;
+        vspeed= 10;
+        }
+        else
+        {
+        instance_destroy();
+        }
+     }
+     else if(lane == 78)
+     {
+        if(place_free(x-52,y))
+        {
+        x = 26;
+        vspeed= 10;
+        }
+        else
+        {
+        instance_destroy();
+        }
+     }
+     
+     vspeed = 10;
+    }
+    */
+}
+if(image_angle == 90)
+{
+hspeed= -10;
+}
+else if(image_angle == 270)
+{
+     hspeed = 10;
+}
+
+else if(image_angle == 0)
+{
+vspeed= -10;
+}
+
+else if(image_angle == 180)
+{
+     vspeed = 10;
+}
+
+
+
 }
 </string>
           </argument>
