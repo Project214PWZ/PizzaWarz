@@ -82,9 +82,17 @@ global.intVehicleNineCounter = 0;
 global.intVehicleTenCounter = 0;
 global.intStreetChange = 0;
 
-global.intRadioChannel = 0;//Radio channel switch
+audio_sound_gain(sound_CarEngine, .1, 0);
+audio_sound_gain(sound_TireScreech, .75, 0);
+audio_sound_gain(sound_CarCrash, .75, 0);
+
+
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
+
+
+
+
 
 scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
@@ -129,8 +137,7 @@ scriptRandomVehicle();</code>
   <instances>
     <instance objName="object_HUD" x="64" y="0" name="inst_DE3F06DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Enviroment" x="0" y="0" name="inst_0C07CB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_ReturnToTutorial" x="32" y="0" name="inst_347E6777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Music" x="0" y="32" name="inst_6CE45920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="32" y="0" name="inst_347E6777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_RandomVehicleMovement" x="32" y="32" name="inst_1A6C6C19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="844" y="0" name="inst_E7660695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="1688" y="0" name="inst_0428F1D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -142,6 +149,7 @@ scriptRandomVehicle();</code>
     <instance objName="object_Intersection" x="6752" y="0" name="inst_DD5D921A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="7596" y="0" name="inst_E61242AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="8440" y="0" name="inst_4F02C724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_RadioV2" x="160" y="0" name="inst_009BF59F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

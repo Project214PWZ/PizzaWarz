@@ -24,10 +24,23 @@
       <sound>sound\music_ClassicalOne</sound>
       <sound>sound\music_EasyStreet</sound>
       <sound>sound\music_ClassicalTwo</sound>
-      <sound>sound\sound_FlashSynthezier</sound>
       <sound>sound\music_BuffyEndCredits</sound>
-      <sound>sound\music_LegendofZeldaTheme</sound>
       <sound>sound\music_InspectorGadgetOpening</sound>
+      <sound>sound\music_BachPianoConcertoinFMinor</sound>
+      <sound>sound\music_MozartRequiem</sound>
+      <sound>sound\music_Mozart5th</sound>
+      <sound>sound\music_ACDCHighwaytoHell</sound>
+      <sound>sound\music_BonJoviLivingOnAPrayer</sound>
+      <sound>sound\music_VanHalenJump</sound>
+      <sound>sound\music_DaftPunkAroundTheWorld</sound>
+      <sound>sound\music_DaftPunkGetLucky</sound>
+      <sound>sound\music_DaftPunkHarderBetterFasterStronger</sound>
+      <sound>sound\music_EminemSuperman</sound>
+      <sound>sound\music_EminemBeautiful</sound>
+      <sound>sound\music_EminemRapGod</sound>
+      <sound>sound\music_ApocalypticaNothingElseMatters</sound>
+      <sound>sound\music_MegaDeathSymphonyofDestruction</sound>
+      <sound>sound\music_KISSDetroitRockCity</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -104,7 +117,7 @@
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptErrorChecking.gml</script>
     <script>scripts\script10.gml</script>
-    <script>scripts\scriptRadio.gml</script>
+    <script>scripts\scriptStationSwitch.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -125,7 +138,9 @@
     <object>objects\object_StoryBoard</object>
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
+    <object>objects\object_ToggleHelpGame</object>
     <object>objects\object_EndGame</object>
+    <object>objects\object_RadioV2</object>
     <object>objects\object_EndStats</object>
     <object>objects\object_DeliveryPointer</object>
     <objects name="Credits">
@@ -171,8 +186,6 @@
       <object>objects\object_KevinOne</object>
       <object>objects\object_KevinTwo</object>
     </objects>
-    <object>objects\object_ToggleHelpGame</object>
-    <object>objects\object_Radio</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
