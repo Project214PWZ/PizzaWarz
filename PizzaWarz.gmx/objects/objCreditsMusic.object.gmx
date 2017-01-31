@@ -102,15 +102,26 @@
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
+draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(100, 200, "$LIGHTS$:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(600, 200, "YOUTUBE.COM " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 250, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(600, 250, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 300, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(600, 300, ": " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 350, ":  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(600, 350, ":" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(400, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha);
+
+draw_text_colour(375, 250, "%AWOLNATION%:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=LGT1AIDRWM" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(375, 350, "%BEAUTIFUL$" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 400, "YOUTUBE.COM/WATCH?V=IGT1AIDZRWM " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(370, 450, "%BUFFY ENDING%:  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 500, "YOUTUBE.COM/WATCH?V=KSCPWUHOG0L :" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(370, 550, "%CON TE PARTIRO%:  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 600, "YOUTUBE.COM/WATCH?V=WDX5NGPHMA1" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(375, 650, "%EASY STREET%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(1000, 700, "YOUTUBE.COM/WATCH?V=1UGQ1MGOFR4" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+
 </string>
           </argument>
         </arguments>

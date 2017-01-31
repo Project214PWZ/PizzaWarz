@@ -103,13 +103,20 @@ show_debug_message(fontAlpha);
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
+
+draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
+
 draw_text_colour(325, 150, "TEAM MEMBERS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+
 draw_text_colour(75, 250, "PROJECT MANAGER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(575, 250, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
 draw_text_colour(75, 300, "GRAPHIC DESIGNER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(575, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
 draw_text_colour(75, 400, "PROGRAMMER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(575, 400, "RINCY MARY VARGHESE" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
 draw_text_colour(75, 350, "BUSINESS ANALYST:  " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(575, 350, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 

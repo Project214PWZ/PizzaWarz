@@ -138,6 +138,8 @@
       <object>objects\objCreditThankyou</object>
       <object>objects\objCreditsSoundEffects</object>
       <object>objects\objCreditsMusic</object>
+      <object>objects\objCreditsSoundEffects2</object>
+      <object>objects\objCreditsMusic2</object>
     </objects>
     <objects name="StartScreen">
       <object>objects\objStartController</object>

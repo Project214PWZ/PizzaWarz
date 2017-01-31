@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>		fontAlpha = 1;
-		fadeOut=false;
-		alarm[0]=100;
+            <string>fontAlpha = 1;
+fadeOut=false;
+alarm[0]=100; 
 </string>
           </argument>
         </arguments>
@@ -105,27 +105,25 @@ draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(325, 150, "SOUND EFFECTS" , c_white, c_orange, c_white, c_orange, fontAlpha);    
-    
-draw_text_colour(350, 200, "%CAR CRASH%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(100, 250, "WWW.YOUTUBE.COM/WATCH?V=K6QM01JXRGK" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    
-draw_text_colour(360, 300, "%CAR START%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(100, 350, "WWW.YOUTUBE.COM/WATCH?v=F5Z13DTCMRO" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    
-draw_text_colour(295, 400, "%CAR START DRIVE AWAY%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(100, 450, "WWW.YOUTUBE.COM/WATCH?v=ELYLK8ACH8U" , c_red, c_yellow, c_yellow, c_red, fontAlpha);    
-    
-draw_text_colour(310, 500, "%FAILED DELIVERY%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(75, 550, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    
-draw_text_colour(350, 600, "%GAME START%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(75, 650, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-        
+draw_text_colour(375, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha); 
 
-    
+//draw_text_colour(375, 250, "%FLASH GORDON%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+//draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=ALWLHSCL71E" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
 
-    
+draw_text_colour(300, 250, "%FLIGHT OF VALKYRIES%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=3YOYLGVL1UE" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(375, 350, "%LIGHTS%:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 400, "YOUTUBE.COM/WATCH?V=QJSFIETOXSQ " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(330, 450, "%RUNNING IN THE 90S% " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(100, 500, "YOUTUBE.COM/WATCH?V=BJ0XBCWKG3E" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+
+draw_text_colour(375, 600, "THANK YOU" , c_white, c_orange, c_white, c_orange, fontAlpha);
+
+
+
+
 
 </string>
           </argument>

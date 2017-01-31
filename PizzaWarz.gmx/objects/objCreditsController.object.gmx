@@ -36,6 +36,65 @@ alarm[6]=room_speed*25;
 alarm[7]=room_speed*30; 
 alarm[8]=room_speed*35; 
 alarm[9]=room_speed*45;
+alarm[10]=room_speed*50; 
+alarm[11]=room_speed*60; 
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(objCreditsMusic2){
+    instance_destroy();
+}
+room_goto(room_Start);
+audio_stop_all();
+//audio_play_sound(sound_FlashSynthezier,10,false);
+game_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(objCreditsMusic){
+    instance_destroy();
+}
+instance_create(100,100,objCreditsMusic2);
 
 
 </string>
@@ -60,13 +119,13 @@ alarm[9]=room_speed*45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditThankyou){
+            <string>with(objCreditsSoundEffects2){
     instance_destroy();
 }
-room_goto(room_Start);
-audio_stop_all();
-//audio_play_sound(sound_FlashSynthezier,10,false);
-game_restart();
+instance_create(100,100,objCreditsMusic);
+
+
+
 </string>
           </argument>
         </arguments>
@@ -89,10 +148,10 @@ game_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditsBackground){
+            <string>with(objCreditsSoundEffects){
     instance_destroy();
 }
-instance_create(100,100,objCreditThankyou); 
+instance_create(100,100,objCreditsSoundEffects2); 
 </string>
           </argument>
         </arguments>
@@ -115,10 +174,10 @@ instance_create(100,100,objCreditThankyou);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditsSpritesVehicles2){
+            <string>with(objCreditsBackground){
     instance_destroy();
 }
-instance_create(100,100,objCreditsBackground); 
+instance_create(100,100,objCreditsSoundEffects); 
 </string>
           </argument>
         </arguments>
@@ -141,10 +200,10 @@ instance_create(100,100,objCreditsBackground);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditsSpritesVehicles1){
+            <string>with(objCreditsSpritesVehicles2){
     instance_destroy();
 }
-instance_create(100,100,objCreditsSpritesVehicles2);
+instance_create(100,100,objCreditsBackground);
 </string>
           </argument>
         </arguments>
@@ -167,10 +226,10 @@ instance_create(100,100,objCreditsSpritesVehicles2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditsSprites){
+            <string>with(objCreditsSpritesVehicles1){
     instance_destroy();
 }
-instance_create(100,100,objCreditsSpritesVehicles1); 
+instance_create(100,100,objCreditsSpritesVehicles2); 
 </string>
           </argument>
         </arguments>
@@ -193,16 +252,43 @@ instance_create(100,100,objCreditsSpritesVehicles1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(objCreditsSpritesBlocks){
+            <string>with(objCreditsSprites){
     instance_destroy();
 }
-instance_create(100,100, objCreditsSprites);
+instance_create(100,100, objCreditsSpritesVehicles1);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(objCreditsSpritesBlocks){
+    instance_destroy();
+}
+instance_create(100,100, objCreditsSprites);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -229,7 +315,7 @@ instance_create(100,100, objCreditsSpritesBlocks);
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="2">
+    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -249,34 +335,7 @@ instance_create(100,100, objCreditsSpritesBlocks);
             <string>with(objCreditsInstructors){
     instance_destroy();
 }
-instance_create(100,100, objCreditsMembers);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with(objCreditScreen){
-    instance_destroy();
-}
-instance_create(100,100, objCreditsInstructors); 
+instance_create(100,100, objCreditsMembers); 
 
 </string>
           </argument>
@@ -300,8 +359,11 @@ instance_create(100,100, objCreditsInstructors);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditScreen);
-
+            <string>instance_create(100,100, objCreditsInstructors)
+//with(objCreditsInstructors){
+ //   instance_destroy();
+//}
+//instance_create(100,100, objCreditsMembers); 
 
 </string>
           </argument>
