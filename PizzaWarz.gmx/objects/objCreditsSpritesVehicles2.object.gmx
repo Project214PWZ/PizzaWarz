@@ -76,7 +76,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 fontAlpha -=.05;  //smaller means slower fadeout
 }
-show_debug_message(fontAlpha);
+//show_debug_message(fontAlpha);
 </string>
           </argument>
         </arguments>
@@ -104,7 +104,6 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
-
 draw_text_colour(210, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 draw_text_colour(75, 250, "WE DECIDED TO THROW A DRAWING CONTEST AND" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
@@ -116,7 +115,6 @@ draw_text_colour(600, 400, "REEMA " , c_white, c_red, c_white, c_red, fontAlpha)
 draw_sprite(sprite_Reema, 0, 750, 400);
 
 draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 
 draw_sprite(sprite_KevinTwo, 0, 200, 590);
 draw_text_colour(150, 680, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);

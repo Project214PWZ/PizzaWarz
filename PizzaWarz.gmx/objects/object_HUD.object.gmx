@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>WIDTH = window_get_width();
+            <string>
+
+WIDTH = window_get_width();
 HEIGHT = window_get_height();
 
 
@@ -36,6 +38,8 @@ mapScale = 200/2600; //room_width;
 //Draws the map to scale
 mapSurface = surface_create(mapSize, mapSize);
 initiateSurface = 1;
+
+draw_gui_mode = 0;
 
 </string>
           </argument>
@@ -115,9 +119,16 @@ if(global.intHealth == 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var mapLeft = WIDTH - mapSize;
+            <string>draw_gui_mode += 1;
+if(draw_gui_mode == 2){
+    draw_gui_mode = 0;
+
+}
+
+var mapLeft = WIDTH - mapSize;
 var mapTop = HEIGHT - mapSize;
 var intSingleSeconds = floor(global.intSeconds);
+/*
 if surface_exists(mapSurface)
 {
     
@@ -128,46 +139,52 @@ else
     mapSurface = surface_create(mapSize, mapSize);
     initiateSurface = 1;
 }
-font_add_sprite(sprite_FontSize_19,36,false,1);
+*/
+font_add_sprite(sprite_FontSize_9,36,false,1);
 //draws the players total cash
-draw_set_font(sprite_FontSize_19);
-draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_white, c_purple, c_white, c_purple,1);
-draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
+draw_set_font(sprite_FontSize_9);
+draw_text_colour(20,HEIGHT-107,"$" + string(global.intScore),c_white, c_orange, c_white, c_orange,1);
+//draw_text_colour(20,HEIGHT-147,string(global.intPlayerSpeed),c_white, c_purple, c_white, c_purple,1);
 
 //draws the 5 minute timer for level
 if(global.intSeconds&lt;10)
 {
-    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":0" + string(intSingleSeconds),c_white, c_purple, c_white, c_purple,1);      
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":0" + string(intSingleSeconds),c_white, c_orange, c_white, c_orange,1);      
 }
 else
 {
-    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_white, c_purple, c_white, c_purple,1);
+    draw_text_colour((WIDTH/2)-25,20,string(global.intMinutes) + ":" + string(intSingleSeconds),c_white, c_orange, c_white, c_orange,1);
 }//intPizzasToDeliver
 var offset_x = 50;
 var offset_y = 50;
-if(global.intPizzasToDeliver != 0){
-//Draw Direction arrow
-    
-    xx=view_xview[0]+offset_x;
-    yy=view_yview[0]+offset_y;
-    if(instance_exists(object_DeliveryPointer)){
+
+//show_debug_message(draw_gui_mode);
+
+    //DELIVERY ARROW
+    if(global.intPizzasToDeliver != 0){
+    //Draw Direction arrow    
+        xx=view_xview[0]+offset_x;
+        yy=view_yview[0]+offset_y;
+        if(instance_exists(object_DeliveryPointer)){
+            with(object_DeliveryPointer){
+                instance_destroy();
+        }
+            instance_create(xx,yy,object_DeliveryPointer);
+        }
+        else{
+            instance_create(xx,yy,object_DeliveryPointer);
+        }
+    }
+    else{
         with(object_DeliveryPointer){
             instance_destroy();
         }
-        instance_create(xx,yy,object_DeliveryPointer);
     }
-    else{
-        instance_create(xx,yy,object_DeliveryPointer);
-    }
-}
-else{
-    with(object_DeliveryPointer){
-            instance_destroy();
-        }
-}
-
+    
 //draws the healthbar
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, global.intHealth, c_gray, c_red, c_blue, 0, true, true);
+
+/*
 
 //draw the view rectangle on the minimap
 surface_set_target(mapSurface);
@@ -179,11 +196,7 @@ with(object_Enviroment)
 }
 surface_reset_target();
 
-
-
-
-
-
+*/
 </string>
           </argument>
         </arguments>
@@ -206,21 +219,16 @@ surface_reset_target();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(initiateSurface == 1){
+            <string>/*
+if(initiateSurface == 1){
     surface_set_target(mapSurface);
-    draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);
-    /*
-    //Drawing the directional arrow
-    var offset_x = 35;
-    var offset_y = 35;
-    xx=view_xview[0]+offset_x;
-    yy=view_yview[0]+offset_y;
-    instance_create(xx,yy,object_DeliveryPointer);
-    */
-    
+    draw_background_tiled_ext(background_index[0],0,0,mapScale,mapScale,c_white,1);       
     surface_reset_target();
     initiateSurface = 0;
 }
+*/
+
+
 </string>
           </argument>
         </arguments>

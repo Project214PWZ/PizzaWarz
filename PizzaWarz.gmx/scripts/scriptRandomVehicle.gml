@@ -1,29 +1,34 @@
 #define scriptRandomVehicle
-//for(intVehicleCount =1;intVehicleCount<=84;intVehicleCount++){
-   // global.intDirectionSelect = irandom(1);
-   // if(global.intDirectionSelect == 0 && global.HorizontalCount<40)
- //   {
+/*for(intVehicleCount =1;intVehicleCount<=52;intVehicleCount++){
+    global.intDirectionSelect = irandom(1);
+    if(global.intDirectionSelect == 0 && global.HorizontalCount<8)
+    {
         
-     //   global.HorizontalCount += scriptHorizontalVehicle();
-    //    instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
-    //}
-   // else if(global.intDirectionSelect == 1 && global.VerticalCount<44)
-   // {
+        global.HorizontalCount += scriptHorizontalVehicle();
+        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
+    }
+    else if(global.intDirectionSelect == 1 && global.VerticalCount<44)
+    {
         scriptVerticalVehicle();
-   // }
-   // else if(global.intDirectionSelect == 0)
-    //{
-      //  global.HorizontalCount += scriptHorizontalVehicle();
-        //instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
-   // }
-//}
+    }
+    else if(global.intDirectionSelect == 0)
+    {
+        global.HorizontalCount += scriptHorizontalVehicle();
+        instance_create(global.arrayLoc[0], global.arrayLoc[1],scriptPickRandomVehicle());
+    }
+}
+*/
+scriptVerticalVehicle();
 
 #define scriptHorizontalVehicle
-numRoadSelect = irandom(10);
+/*
+numRoadSelect = irandom(1);
 if(numRoadSelect ==0)
 {
+ global.carLane = scriptSelectLane("hor");
     if(global.intHorizontalLaneOne<4)
     {
+   
         intStartSelect = irandom(9);
         global.intHorizontalLaneOne++;
         global.arrayLoc[0] = round(random_range(global.arrayBlockCoor[intStartSelect,0],global.arrayBlockCoor[intStartSelect,1]));
@@ -211,8 +216,10 @@ else if(numRoadSelect==8)
     else
         return scriptHorizontalVehicle();  
 } 
-else if(numRoadSelect==9)
+
+else if(numRoadSelect==1)
 {
+ global.carLane = scriptSelectLane("hor");
     if(global.intHorizontalLaneTen<4)
     {
         intStartSelect = random_range(90,99);
@@ -232,12 +239,14 @@ else if(numRoadSelect==9)
     else
         return scriptHorizontalVehicle();  
 }
+*/
 
 #define scriptVerticalVehicle
 randomize();
 for(intStreet = 0; intStreet<11; intStreet++){
     for(numVehicles = 0; numVehicles<4; numVehicles++){
-        arrayLoc[0] = global.intStreetChange + scriptSelectLane("ver");
+        global.carLane = scriptSelectLane("ver");
+        arrayLoc[0] = global.intStreetChange + global.carLane;
         arrayLoc[1] = irandom(8647);
         if !position_meeting(arrayLoc[0],arrayLoc[1],object_RandomVehicleMovement)
         { 

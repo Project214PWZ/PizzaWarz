@@ -76,7 +76,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 fontAlpha -=.05;  //smaller means slower fadeout
 }
-show_debug_message(fontAlpha);
+//show_debug_message(fontAlpha);
 
 </string>
           </argument>
@@ -103,6 +103,7 @@ show_debug_message(fontAlpha);
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
+
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
 draw_text_colour(350, 100, "SPRITES " , c_white, c_orange, c_white, c_orange, fontAlpha);
@@ -111,25 +112,22 @@ draw_text_colour(50, 200, "BULLET HOLES:" , c_white, c_yellow, c_white, c_yellow
 draw_text_colour(50, 250, "WWW://NOBACKS.COM/SET-OF-SIX/" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 320, "DELIVERY DIRECTION:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 320, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 320, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 390, "DELIVERY MARKER:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 390, "TGILLS " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 390, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 460, "MAIN PIZZA:  " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 460, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 460, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 530, "CUSTOM FONT:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 530, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 530, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 600, "PICK UP MORE DELIVERIES:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 600, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 600, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 670, "PIZZA WAR TITLE:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 670, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-
-
+draw_text_colour(600, 670, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_sprite(sprite_bullethole1,0,390,180); 
 draw_sprite(sprite_bullethole1,0,460,180); 

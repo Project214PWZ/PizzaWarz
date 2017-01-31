@@ -10,24 +10,37 @@
       <sound>sound\sound_MoneyEarned</sound>
       <sound>sound\sound_GameStart</sound>
       <sound>sound\sound_TireScreech</sound>
-      <sound>sound\sound_CarCrash</sound>
+      <sound>sound\sound_CarEngine</sound>
       <sound>sound\sound_SuccessfulDelivery</sound>
       <sound>sound\sound_Whaa</sound>
       <sound>sound\sound_Gunfire</sound>
-      <sound>sound\sound_CarStart</sound>
-      <sound>sound\sound_CarStartDriveAway</sound>
+      <sound>sound\sound_PunchEffect</sound>
+      <sound>sound\sound_CarCrash</sound>
     </sounds>
     <sounds name="Music">
       <sound>sound\music_DubstepOne</sound>
       <sound>sound\music_Running</sound>
       <sound>sound\music_DubstepTwo</sound>
       <sound>sound\music_ClassicalOne</sound>
-      <sound>sound\music_EminemOne</sound>
       <sound>sound\music_EasyStreet</sound>
       <sound>sound\music_ClassicalTwo</sound>
-      <sound>sound\sound_FlashSynthezier</sound>
       <sound>sound\music_BuffyEndCredits</sound>
-      <sound>sound\music_LegendofZeldaTheme</sound>
+      <sound>sound\music_InspectorGadgetOpening</sound>
+      <sound>sound\music_BachPianoConcertoinFMinor</sound>
+      <sound>sound\music_MozartRequiem</sound>
+      <sound>sound\music_Mozart5th</sound>
+      <sound>sound\music_ACDCHighwaytoHell</sound>
+      <sound>sound\music_BonJoviLivingOnAPrayer</sound>
+      <sound>sound\music_VanHalenJump</sound>
+      <sound>sound\music_DaftPunkAroundTheWorld</sound>
+      <sound>sound\music_DaftPunkGetLucky</sound>
+      <sound>sound\music_DaftPunkHarderBetterFasterStronger</sound>
+      <sound>sound\music_EminemSuperman</sound>
+      <sound>sound\music_EminemBeautiful</sound>
+      <sound>sound\music_EminemRapGod</sound>
+      <sound>sound\music_ApocalypticaNothingElseMatters</sound>
+      <sound>sound\music_MegaDeathSymphonyofDestruction</sound>
+      <sound>sound\music_KISSDetroitRockCity</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -71,12 +84,14 @@
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
+    <sprite>sprites\sprite_ForEnviroment</sprite>
     <sprite>sprites\sprite_Interscetion</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_Pizza</sprite>
     <sprite>sprites\sprite_PizzaClosing</sprite>
     <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_PizzaWarzTitle</sprite>
+    <sprite>sprites\sprite_TeamLogo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
@@ -98,11 +113,11 @@
     <script>scripts\scriptGenerateDeliveryPoints.gml</script>
     <script>scripts\scriptLogging.gml</script>
     <script>scripts\scriptBackgroundMusic.gml</script>
-    <script>scripts\scriptDeliveryPointer.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptErrorChecking.gml</script>
-    <script>scripts\scriptDISABLE.gml</script>
+    <script>scripts\script10.gml</script>
+    <script>scripts\scriptStationSwitch.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
@@ -111,18 +126,21 @@
     <object>objects\object_BlockParent</object>
     <object>objects\object_DeliveryDestinationMarker</object>
     <object>objects\object_PlayerMovement</object>
-    <object>objects\object_Tutorial</object>
-    <object>objects\object_ReturnToTutorial</object>
+    <object>objects\object_TutorialToStart</object>
+    <object>objects\object_TutorialToGame</object>
     <object>objects\object_BulletHoleGenerator</object>
     <object>objects\object_Pizza</object>
     <object>objects\object_PickUpMoreDeliveries</object>
     <object>objects\object_RoomMoving1</object>
     <object>objects\object_Intersection</object>
     <object>objects\object_SuccessfulDeliveryMessage</object>
+    <object>objects\object_FailedDeliveryMessage</object>
     <object>objects\object_StoryBoard</object>
     <object>objects\object_Generator</object>
     <object>objects\object_Music</object>
+    <object>objects\object_ToggleHelpGame</object>
     <object>objects\object_EndGame</object>
+    <object>objects\object_RadioV2</object>
     <object>objects\object_EndStats</object>
     <object>objects\object_DeliveryPointer</object>
     <objects name="Credits">
@@ -142,7 +160,6 @@
     <objects name="StartScreen">
       <object>objects\objStartController</object>
       <object>objects\objStartScreen</object>
-      <object>objects\objStartTitle</object>
       <object>objects\object_PizzaTitle</object>
     </objects>
     <objects name="Blocks">
@@ -180,7 +197,8 @@
       <room>rooms\room_pizza</room>
     </rooms>
     <room>rooms\room_Start</room>
-    <room>rooms\room_Tutorial</room>
+    <room>rooms\room_TutorialFromStart</room>
+    <room>rooms\room_TutorialFromGame</room>
     <room>rooms\room_PlayAreaLevelOne</room>
     <room>rooms\room_Credit</room>
     <room>rooms\room_Pause</room>
