@@ -110,28 +110,28 @@ draw_text_colour(300, 150, "SPRITES: BLOCKS" , c_white, c_orange, c_white, c_ora
 draw_text_colour(75, 200, "ALL SPRITES IN PIZZA WARS WERE HAND" , c_white, c_orange, c_white, c_orange, fontAlpha);
 draw_text_colour(75, 230, "DRAWN BY THE GROUP MEMBERS" ,c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 300, "BLOCK 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 300, "BLOCK 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 300, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 350, "BLOCK 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 350, "BLOCK 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 350, "TYLER " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 400, "BLOCK 3:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 400, "BLOCK 3:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 400, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 450, "BLOCK 4: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 450, "BLOCK 4: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 450, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 500, "BLOCK 5: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 500, "BLOCK 5: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 500, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 550, "BLOCK 6: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 550, "BLOCK 6: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 550, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 600, "BLOCK 7: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 600, "BLOCK 7: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 600, "CHERYL" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(75, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 650, "NATHAN" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_set_alpha(1);
 </string>

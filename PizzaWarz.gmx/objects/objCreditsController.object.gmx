@@ -25,16 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-alarm[0]=room_speed*1;
-alarm[1]=room_speed*1; 
-alarm[2]=room_speed*5;
-alarm[3]=room_speed*10;
-alarm[4]=room_speed*15;
-alarm[5]=room_speed*20;
-alarm[6]=room_speed*25; 
-alarm[7]=room_speed*30; 
-alarm[8]=room_speed*35; 
+            <string>alarm[0]=room_speed*1;
+alarm[1]=room_speed*5; 
+alarm[2]=room_speed*10;
+alarm[3]=room_speed*15;
+alarm[4]=room_speed*20;
+alarm[5]=room_speed*25;
+alarm[6]=room_speed*30; 
+alarm[7]=room_speed*35; 
+alarm[8]=room_speed*40; 
 alarm[9]=room_speed*45;
 alarm[10]=room_speed*50; 
 alarm[11]=room_speed*60; 
@@ -359,11 +358,8 @@ instance_create(100,100, objCreditsMembers);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(100,100, objCreditsInstructors)
-//with(objCreditsInstructors){
- //   instance_destroy();
-//}
-//instance_create(100,100, objCreditsMembers); 
+            <string>instance_create(100,100, objCreditsInstructors); 
+alarm[1]=60; 
 
 </string>
           </argument>

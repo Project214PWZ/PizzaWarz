@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>		fontAlpha = 1;
-		fadeOut=false;
-		alarm[0]=100;
+            <string>fontAlpha = 1;
+fadeOut=false;
+alarm[0]=150;
 </string>
           </argument>
         </arguments>
@@ -117,10 +117,10 @@ draw_text_colour(295, 400, "%CAR START DRIVE AWAY%" , c_red, c_yellow, c_yellow,
     draw_text_colour(100, 450, "WWW.YOUTUBE.COM/WATCH?v=ELYLK8ACH8U" , c_red, c_yellow, c_yellow, c_red, fontAlpha);    
     
 draw_text_colour(310, 500, "%FAILED DELIVERY%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(75, 550, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+    draw_text_colour(25, 550, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
     
 draw_text_colour(350, 600, "%GAME START%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(75, 650, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+    draw_text_colour(25, 650, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
         
 
     

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>fontAlpha = 1;
-		fadeOut=false;
-		alarm[0]=100;
+fadeOut=false;
+alarm[0]=150;
 </string>
           </argument>
         </arguments>
@@ -117,10 +117,10 @@ draw_text_colour(355, 400, "%PUNCH%" , c_red, c_yellow, c_yellow, c_red, fontAlp
     draw_text_colour(100, 450, "WWW.YOUTUBE.COM/WATCH?V=TP7SDYE5VL" , c_red, c_yellow, c_yellow, c_red, fontAlpha);    
     
 draw_text_colour(315, 500, "%SUCCESSFUL DELIVERY%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(50, 550, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+    draw_text_colour(25, 550, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
     
 draw_text_colour(360, 600, "%WHAA%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-    draw_text_colour(50, 650, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+    draw_text_colour(25, 650, "WWW.SOUNDS-RESOURCES.COM/NES/MEGAMAN2/SOUND/3616" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
     
 
 

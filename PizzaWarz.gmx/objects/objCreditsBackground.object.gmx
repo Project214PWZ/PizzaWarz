@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>fontAlpha = 1;
-		fadeOut=false;
-alarm[0]=60; //bigger means longer delay before fade out
+fadeOut=false;
+alarm[0]=150; //bigger means longer delay before fade out
 </string>
           </argument>
         </arguments>
@@ -102,15 +102,41 @@ show_debug_message(fontAlpha);
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
-draw_text_colour(325, 150, "BACKGROUNDS" , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(75, 250, "OPENING TITLE SCREEN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 250, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 300, "OPENING STOREY BOARD:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 300, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 350, "PAVEMENTS:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 350, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_set_alpha(1);
 
+draw_text_colour(325, 150, "BACKGROUNDS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+
+
+draw_text_colour(25, 200, "PAVEMENT:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(250, 200, "HAND DRAWN BY TYLER" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(25, 250, "SKY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(250,250, "WALLPAPERGALLERY-NET" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+
+
+draw_text_colour(275, 350, "INTRO STOREY BOARD " , c_white, c_orange, c_white, c_orange, fontAlpha);
+
+draw_text_colour(25, 400, "HOUSE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(250, 400, "DOODLEMASTERS.FILES.WORDPRESS.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(25, 450, "PIZZA DELIVERY GUY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(325, 450, "PREVIEWS.123RF.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+
+draw_text_colour(25, 550, "PIZZA TRUCK:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(325, 550, "WWW.//C2.STATICFLICKR.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(25, 600, "OLD MAN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 600, "THUMBS.DREAMSTIME.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+
+
+
+
+
+
+draw_set_alpha(1);
+ 
 </string>
           </argument>
         </arguments>

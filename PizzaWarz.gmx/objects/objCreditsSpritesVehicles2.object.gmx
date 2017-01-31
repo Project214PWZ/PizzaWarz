@@ -113,25 +113,25 @@ draw_text_colour(75, 310, "CLASSMATES AND THE 1ST YRS " , c_white, c_yellow, c_w
 
 draw_text_colour(200, 400, "CONTEST WINNER" , c_white, c_red, c_white, c_red, fontAlpha);
 draw_text_colour(600, 400, "REEMA " , c_white, c_red, c_white, c_red, fontAlpha);
-draw_sprite(sprite_Reema, 0, 400, 400);
+draw_sprite(sprite_Reema, 0, 750, 400);
 
 draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 
 draw_sprite(sprite_KevinTwo, 0, 200, 590);
-draw_text_colour(180, 650, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(150, 680, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
 
 
 draw_sprite(sprite_KevinOne, 0, 400, 600);
-draw_text_colour(480, 650, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(350, 680, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
 
 
 draw_sprite(sprite_Amanda, 0, 600, 590);
-draw_text_colour(580, 650, "AMANDA " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(540, 680, "AMANDA " , c_white, c_red, c_white, c_red, fontAlpha);
 
 
 draw_sprite(sprite_James, 0, 800, 600);
-draw_text_colour(780, 650, "JAMES " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(750, 680, "JAMES " , c_white, c_red, c_white, c_red, fontAlpha);
 
 </string>
           </argument>

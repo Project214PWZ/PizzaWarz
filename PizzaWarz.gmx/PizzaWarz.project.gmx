@@ -129,13 +129,11 @@
       <object>objects\objCreditsBackground</object>
       <object>objects\objCreditsController</object>
       <object>objects\objCreditsSprites</object>
-      <object>objects\objCreditScreen</object>
       <object>objects\objCreditsInstructors</object>
       <object>objects\objCreditsMembers</object>
       <object>objects\objCreditsSpritesBlocks</object>
       <object>objects\objCreditsSpritesVehicles1</object>
       <object>objects\objCreditsSpritesVehicles2</object>
-      <object>objects\objCreditThankyou</object>
       <object>objects\objCreditsSoundEffects</object>
       <object>objects\objCreditsMusic</object>
       <object>objects\objCreditsSoundEffects2</object>

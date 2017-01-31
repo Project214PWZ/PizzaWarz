@@ -105,10 +105,10 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(330, 100, "SPRITES: " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(350, 100, "SPRITES " , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 draw_text_colour(50, 200, "BULLET HOLES:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(390, 225, "WWW://NOBACKS.COM/SET-OF-SIX/" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 250, "WWW://NOBACKS.COM/SET-OF-SIX/" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_text_colour(50, 320, "DELIVERY DIRECTION:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 320, "TGILLS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
@@ -131,9 +131,9 @@ draw_text_colour(600, 670, "TYLER" , c_white, c_yellow, c_white, c_yellow, fontA
 
 
 
-draw_sprite(sprite_bullethole1,0,390,245); 
-draw_sprite(sprite_bullethole1,0,460,245); 
-draw_sprite(sprite_bullethole1,0,520,245); 
+draw_sprite(sprite_bullethole1,0,390,180); 
+draw_sprite(sprite_bullethole1,0,460,180); 
+draw_sprite(sprite_bullethole1,0,520,180); 
 draw_sprite(sprite_DeliveryDirection, 0, 550, 320); 
 draw_sprite(sprite_DeliveryDesinationMarker, 2, 490, 410);
 draw_sprite(sprite_Pizza, 0, 430, 470);
