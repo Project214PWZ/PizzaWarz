@@ -499,6 +499,52 @@ else if(image_angle == 180)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="object_Intersection">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>randomize();
+makeTurn= true;
+number = irandom(1);
+
+
+if(makeTurn == true){
+    makeTurn = false;
+    //go left
+    if(number == 1){
+        
+        
+        
+    }
+    // go right 
+    else{
+        
+        
+        
+    } 
+}
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="object_BlockParent">
       <action>
         <libid>1</libid>

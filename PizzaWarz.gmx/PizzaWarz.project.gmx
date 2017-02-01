@@ -83,6 +83,7 @@
     <sprite>sprites\sprite_DeliveryDirection</sprite>
     <sprite>sprites\sprite_PickUpMoreDeliveries</sprite>
     <sprite>sprites\sprite_DeliveryDesinationMarker</sprite>
+    <sprite>sprites\sprite_PickUpMoreDeliveriesV2</sprite>
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_ForEnviroment</sprite>
     <sprite>sprites\sprite_Interscetion</sprite>
