@@ -110,8 +110,6 @@
     <script>scripts\scriptBackgroundMusic.gml</script>
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
-    <script>scripts\scriptErrorChecking.gml</script>
-    <script>scripts\script10.gml</script>
     <script>scripts\scriptStationSwitch.gml</script>
   </scripts>
   <objects name="objects">

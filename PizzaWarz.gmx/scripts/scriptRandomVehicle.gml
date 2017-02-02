@@ -254,8 +254,7 @@ for(intStreet = 0; intStreet<11; intStreet++){
             global.VerticalCount++;
         }
         else
-        {
-         show_message("In vertical lanes");   
+        { 
             numVehicles--;
         }
 
