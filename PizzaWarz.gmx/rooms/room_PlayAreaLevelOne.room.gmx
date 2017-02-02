@@ -18,7 +18,7 @@ global.intPizzasToDeliver = 0;
 global.intDeliveriesMade = 0;
 global.intPizzaTimer = 0;
 global.intPizzaTimerReset = 45;
-global.intMinutes = 1;
+global.intMinutes = 10;
 global.intSeconds = 00.1;
 global.bolCount = false;
 global.intPlayerSpeed = 0;
@@ -117,7 +117,7 @@ scriptRandomVehicle();</code>
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bckLevel1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -138,20 +138,22 @@ scriptRandomVehicle();</code>
   </views>
   <instances>
     <instance objName="object_HUD" x="64" y="0" name="inst_DE3F06DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Enviroment" x="0" y="0" name="inst_0C07CB04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_RandomVehicleMovement" x="32" y="32" name="inst_1A6C6C19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="844" y="0" name="inst_E7660695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="1688" y="0" name="inst_0428F1D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="2532" y="0" name="inst_9FBF7F72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="3376" y="0" name="inst_F7D71AAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="4420" y="0" name="inst_1E96C541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="5064" y="0" name="inst_903E1FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="5905" y="0" name="inst_DEC7E132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="6752" y="0" name="inst_DD5D921A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="7596" y="0" name="inst_E61242AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_Intersection" x="8440" y="0" name="inst_4F02C724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="104" y="104" name="inst_E7660695" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="948" y="104" name="inst_0428F1D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="1792" y="104" name="inst_9FBF7F72" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="2636" y="104" name="inst_F7D71AAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="3480" y="104" name="inst_1E96C541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="4324" y="104" name="inst_903E1FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="5168" y="104" name="inst_DEC7E132" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="6012" y="104" name="inst_DD5D921A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="6856" y="104" name="inst_E61242AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="7700" y="104" name="inst_4F02C724" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_RadioV2" x="160" y="0" name="inst_009BF59F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_ToggleHelpGame" x="96" y="32" name="inst_952F3D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Enviroment" x="6752" y="-128" name="inst_36670654" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="8544" y="104" name="inst_0AD929B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Enviroment" x="8608" y="8800" name="inst_70919476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

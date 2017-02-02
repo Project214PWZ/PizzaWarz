@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = global.randomImageDirection;
+            <string>canCollide = true;
+image_angle = global.randomImageDirection;
 if(image_angle == 0){
     vspeed = -9;
    //vspeed = 0;

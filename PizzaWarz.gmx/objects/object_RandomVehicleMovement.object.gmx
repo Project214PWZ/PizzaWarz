@@ -26,12 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>canTurn = true;
-/*
+
+
 randomize();
 if(position_meeting(x,y,object_Intersection))
 {
 
-if(image_angle == 0 &amp;&amp; y &lt; 208){
+if(image_angle == 0 &amp;&amp; y &lt; 500){
     intTurn = irandom(1);
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
@@ -57,7 +58,7 @@ if(image_angle == 0 &amp;&amp; y &lt; 208){
 
     }
 }
-else if(image_angle == 90 &amp;&amp; y &lt; 208){
+else if(image_angle == 90 &amp;&amp; y &lt; 500){
     intTurn = irandom(1);
     if(intTurn == 0){
         //need to set alarm so that it doesn't turn again until next intersection
@@ -74,7 +75,7 @@ else if(image_angle == 90 &amp;&amp; y &lt; 208){
                 }        
     }
 }
-else if(image_angle == 270 &amp;&amp; y &lt; 208){
+else if(image_angle == 270 &amp;&amp; y &lt; 500){
     intTurn = irandom(1);
     //heading east(right) ,turning south  ---outer ---same lane
     if(intTurn == 0){
@@ -145,6 +146,52 @@ else if(image_angle == 270){
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canCollide = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canCollide = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -162,9 +209,9 @@ else if(image_angle == 270){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>canTurn = true;
+            <string>
 
-
+alarm[2] = 20
 </string>
           </argument>
         </arguments>
@@ -187,7 +234,7 @@ else if(image_angle == 270){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 randomize();
 lane = global.carLane;
 //intersect = collision_line(x,y,x,y-10,object_RandomVehicleMovement,false,false);
@@ -225,6 +272,7 @@ if(image_angle == 0 ){
                /* image_speed = 0.5;
                 //direction += 2.5;
                 */
+                /*
                 if(lane == 130)
                 {
                     y = 78;
@@ -318,6 +366,8 @@ else if(image_angle == 90){
     }
 }
 */
+
+/*
 else if(image_angle == 180){
     intTurn = irandom(1);
         //heading south ,turning west(left)----same lane
@@ -370,6 +420,7 @@ else if(image_angle == 270){
     }
 }
 */
+/*
         //nothing happen vehicle doesn't turn
         canTurn = false;
         alarm[0]= 30;
@@ -395,6 +446,7 @@ if(position_meeting(x,y,object_RandomVehicleMovement)){
     
     }
     */
+    /*
     if(image_angle == 90)
     {
     y = 26;
@@ -438,6 +490,7 @@ if(position_meeting(x,y,object_RandomVehicleMovement)){
      
      vspeed = -10;
      */
+     /*
     }
     else if(image_angle == 180)
     {
@@ -471,6 +524,7 @@ if(position_meeting(x,y,object_RandomVehicleMovement)){
      vspeed = 10;
     }
     */
+    /*
 }
 if(image_angle == 90)
 {
@@ -494,6 +548,7 @@ else if(image_angle == 180)
 
 
 }
+
 </string>
           </argument>
         </arguments>
@@ -517,29 +572,87 @@ else if(image_angle == 180)
           <argument>
             <kind>1</kind>
             <string>randomize();
-makeTurn= true;
 number = irandom(1);
 
-
-if(makeTurn == true){
-    makeTurn = false;
-    //go left
-    if(number == 1){
-        
-        
-        
-    }
-    // go right 
-    else{
-        
-        
-        
-    } 
+up = 0;
+left = 90;
+down = 180;
+right = 270;
+//Make them all else if statements
+if(canCollide == true){
+//Going up
+//Right turn
+if(image_angle == 0 &amp;&amp; number == 1){
+    image_angle = 270;   
+    direction = 0; 
+    vspeed = 0;
+    hspeed = 10;
+    show_debug_message("Going up - turning right");
 }
+//Left turn
+else{
+    image_angle = 90;
+    direction = 180;
+    vspeed = 0;
+    hspeed = -10;    
+    show_debug_message("Going up - turning left");
+}
+//Going down
+//Right turn
+if(image_angle == 180 &amp;&amp; number == 1){
+    image_angle = 270;
+    direction = 0;
+    vspeed = 0;
+    hspeed = 10;
+    show_debug_message("Going down - turning right");
+}
+//Left turn
+else{
+    image_angle = 90;
+    direction = 180;
+    vspeed = 0;
+    hspeed = -10;
+    show_debug_message("Going down - turning left");
+}
+//Heading left
+//Turning down
+if(image_angle == 90 &amp;&amp; y &lt; 1000){
+    image_angle = 180;
+    direction = 270;
+    vspeed = 10;
+    hspeed = 0;
+    show_debug_message("Going left - turning down");
+}
+//Turning up
+else if(image_angle == 90 &amp;&amp; y &gt; 7000){
+    image_angle = 0;
+    direction = 90;
+    vspeed = -10;
+    hspeed = 0;
+    show_debug_message("Going left - turning up");
+}
+//Heading right
+//Turning down
+if(image_angle == 270 &amp;&amp; y &lt; 1000){
+    image_angle = 180;
+    direction = 270;
+    vspeed = 10;
+    hspeed = 0;
+    show_debug_message("Going right - turning down");
+}
+//Turning up
+else if(image_angle == 270 &amp;&amp; y &gt; 7000){
+    image_angle = 0;
+    direction = 90;
+    vspeed = -10;
+    hspeed = 0;
+    show_debug_message("Going right - turning up");
+}
+canCollide = false;
+show_debug_message("***********************");
 
-
-
-
+}
+alarm[2] = 40;
 </string>
           </argument>
         </arguments>
