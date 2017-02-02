@@ -25,8 +25,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>canCollide = true;
-image_angle = global.randomImageDirection;
+            <string>
+canCollide = true;
+
+goingUpTurnRight = false;
+goingUpTurnleft = false;
+
+goingDownTurnRight = false;
+goingDownTurnLeft = false;
+
+goingLeftTurnUp = false;
+goingLeftTurnDown = false;
+
+goingRightTurnUp = false;
+goingRightTurnDown = false;
+
+image_angle = 0;// global.randomImageDirection;
 if(image_angle == 0){
     vspeed = -15;
     //vspeed = 0;
@@ -43,7 +57,7 @@ else if(image_angle == 270){
     hspeed = 15;
     //hspeed = 0;
 }
-lane = global.carLane;
+lane = 130;//global.carLane;
 </string>
           </argument>
         </arguments>

@@ -26,6 +26,19 @@
           <argument>
             <kind>1</kind>
             <string>canCollide = true;
+goingUpTurnRight = false;
+goingUpTurnleft = false;
+
+goingDownTurnRight = false;
+goingDownTurnLeft = false;
+
+goingLeftTurnUp = false;
+goingLeftTurnDown = false;
+
+goingRightTurnUp = false;
+goingRightTurnDown = false;
+
+
 image_angle = global.randomImageDirection;
 if(image_angle == 0){
     vspeed = -9;

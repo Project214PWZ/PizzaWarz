@@ -181,6 +181,7 @@
       <object>objects\object_KevinOne</object>
       <object>objects\object_KevinTwo</object>
     </objects>
+    <object>objects\object_RoomRestart</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
