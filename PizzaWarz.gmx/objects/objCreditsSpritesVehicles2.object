@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1; 
-fadeOut=false; 
-alarm[0]=150; 
+            <string>fontAlpha = 1;
+fadeOut=false;
+alarm[0]=150; //bigger means longer delay before fade out
 </string>
           </argument>
         </arguments>
@@ -50,7 +50,7 @@ alarm[0]=150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeOut=true; 
+            <string>fadeOut=true;
 </string>
           </argument>
         </arguments>
@@ -104,36 +104,29 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
+draw_text_colour(200, 150, "DRAWING CONTEST - VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(300, 150, "SPRITES - BLOCKS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(50, 200, "WE DECIDED TO THROW A DRAWING CONTEST AND" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 230, "INVITED SPRITE SUBMISSIONS FROM OUR FELLOW" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 260, "CLASSMATES AND THE 1ST YRS " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(50, 200, "MOST OF THE ASSETS IN PIZZA WARS WERE HAND" , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(50, 230, "DRAWN BY THE GROUP MEMBERS" ,c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(200, 380, "CONTEST WINNER" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(600, 380, "REEMA " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_sprite(sprite_Reema, 0, 800, 390);
 
-draw_text_colour(200, 300, "BLOCK 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(175, 480, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(200, 350, "BLOCK 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 350, "TYLER GUILLAUME " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_sprite(sprite_KevinTwo, 0, 200, 590);
+draw_text_colour(150, 680, "KEVIN " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(200, 400, "BLOCK 3:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_sprite(sprite_KevinOne, 0, 400, 600);
+draw_text_colour(350, 680, "KEVIN " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(200, 450, "BLOCK 4: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 450, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_sprite(sprite_Amanda, 0, 600, 590);
+draw_text_colour(540, 680, "AMANDA " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(200, 500, "BLOCK 5: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 500, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-draw_text_colour(200, 550, "BLOCK 6: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 550, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-draw_text_colour(200, 600, "BLOCK 7: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 600, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-draw_text_colour(200, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(450, 650, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
+draw_sprite(sprite_James, 0, 800, 600);
+draw_text_colour(750, 680, "JAMES " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 </string>
           </argument>
@@ -154,3 +147,14 @@ draw_text_colour(450, 650, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yello
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints/>
 </object>
+
+
+
+
+
+
+
+
+
+
+

@@ -105,28 +105,27 @@ draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(300, 140, "SPRITES: VEHICLES" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(300, 140, "SPRITES - VEHICLES" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 250, "PLAYER VEHICLE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
+draw_text_colour(75, 200, "PLAYER VEHICLE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 200, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 250, "RANDOM VEHICLE 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 250, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 300, "RANDOM VEHICLE 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 300, "RANDOM VEHICLE 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 350, "RANDOM VEHICLE 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 350, "RANDOM VEHICLE 3:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 350, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 400, "RANDOM VEHICLE 3:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 450, "RANDOM VEHICLE 4:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 450, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 500, "RANDOM VEHICLE 5:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 500, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha)
+draw_text_colour(75, 400, "RANDOM VEHICLE 4:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 400, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(75, 450, "RANDOM VEHICLE 5:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(600, 450, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha)
 
-draw_sprite(sprite_PlayerVehicle, 0, 125, 590);
-draw_sprite(sprite_RandomVehicleOne, 0, 325, 590);
-draw_sprite(sprite_RandomVehicleTwo, 0, 525, 610);
-draw_sprite(sprite_RandomVehicleThree, 0, 725, 590);
-draw_sprite(sprite_RandomVehicleFour, 0, 925, 590);
-draw_sprite(sprite_RandomVehicleFive, 0, 1125, 590);
+draw_sprite(sprite_PlayerVehicle, 0, 100, 620);
+draw_sprite(sprite_RandomVehicleOne, 0, 260, 620);
+draw_sprite(sprite_RandomVehicleTwo, 0, 420, 620);
+draw_sprite(sprite_RandomVehicleThree, 0, 580, 620);
+draw_sprite(sprite_RandomVehicleFour, 0, 740, 620);
+draw_sprite(sprite_RandomVehicleFive, 0, 900, 620);
 
 </string>
           </argument>

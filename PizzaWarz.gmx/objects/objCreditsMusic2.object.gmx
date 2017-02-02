@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>fontAlpha = 1;
 fadeOut=false;
-alarm[0]=150; 
+alarm[0]=100; 
 </string>
           </argument>
         </arguments>
@@ -74,9 +74,9 @@ alarm[0]=150;
           <argument>
             <kind>1</kind>
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-		fontAlpha -=.05;  //smaller means slower fadeout
-		}
-		show_debug_message(fontAlpha);
+fontAlpha -=.05;  //smaller means slower fadeout
+}
+
 </string>
           </argument>
         </arguments>
@@ -104,22 +104,31 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(400, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
+draw_text_colour(150, 100, "MUSIC - SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
+ 
 
-draw_text_colour(420, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha); 
+draw_text_colour(290, 150, "%HIGHWAY TO HELL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-//draw_text_colour(375, 250, "%FLASH GORDON%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-//draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=ALWLHSCL71E" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(350, 200, "%REQUIEM%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(290, 250, "%FLIGHT OF VALKYRIES%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=3YOYLGVL1UE" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(375, 250, "%5TH%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(375, 350, "%LIGHTS%:" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 400, "YOUTUBE.COM/WATCH?V=QJSFIETOXSQ " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(220, 300, "%BAC PIANO CONCERTO IN F MINOR%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(290, 450, "%RUNNING IN THE 90S% " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 500, "YOUTUBE.COM/WATCH?V=BJ0XBCWKG3E" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
+draw_text_colour(275, 350, "%LIVING ON A PRAYER%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(375, 600, "THANK YOU" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(375, 400, "%JUMP%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(300, 450, "%AROUND THE WORLD%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(350, 500, "%GET LUCKY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(220, 550, "%HARDER BETTER FASTER STRONGER%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(375, 600, "%SUPERMAN%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+
+
 
 
 
