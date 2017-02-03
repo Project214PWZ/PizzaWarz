@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>fontAlpha = 1;
 fadeOut=false;
-alarm[0]=150; //bigger means longer delay before fade out
+alarm[0]= 150; //bigger means longer delay before fade out
 
 </string>
           </argument>
@@ -120,7 +120,7 @@ draw_text_colour(575, 400, "RINCY MARY VARGHESE" , c_white, c_yellow, c_white, c
 draw_text_colour(100, 350, "BUSINESS ANALYST:  " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(575, 350, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_set_alpha(1);
+
 </string>
           </argument>
         </arguments>

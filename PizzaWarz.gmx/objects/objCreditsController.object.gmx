@@ -36,7 +36,7 @@ alarm[7]=room_speed*30;
 alarm[8]=room_speed*35; 
 alarm[9]=room_speed*45;
 alarm[10]=room_speed*50; 
-alarm[11]=room_speed*60; 
+alarm[11]=room_speed*55; 
 </string>
           </argument>
         </arguments>
@@ -62,10 +62,8 @@ alarm[11]=room_speed*60;
             <string>with(objCreditsMusic2){
     instance_destroy();
 }
-room_goto(room_Start);
 audio_stop_all();
-//audio_play_sound(sound_FlashSynthezier,10,false);
-game_restart();
+room_goto(room_Start);
 </string>
           </argument>
         </arguments>
@@ -92,8 +90,6 @@ game_restart();
     instance_destroy();
 }
 instance_create(100,100,objCreditsMusic2);
-
-
 </string>
           </argument>
         </arguments>
@@ -120,9 +116,6 @@ instance_create(100,100,objCreditsMusic2);
     instance_destroy();
 }
 instance_create(100,100,objCreditsMusic);
-
-
-
 </string>
           </argument>
         </arguments>
@@ -357,7 +350,7 @@ instance_create(100,100, objCreditsMembers);
           <argument>
             <kind>1</kind>
             <string>instance_create(100,100, objCreditsInstructors); 
-alarm[1]=60; 
+alarm[1]= 100;
 
 </string>
           </argument>
@@ -384,7 +377,7 @@ alarm[1]=60;
             <string>room_goto(room_Start);
 audio_stop_all();
 //audio_play_sound(sound_FlashSynthezier,10,false);
-game_restart();
+//game_restart();
 </string>
           </argument>
         </arguments>

@@ -76,7 +76,7 @@ alarm[0]=150; //bigger means longer delay before fade out
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
 fontAlpha -=.05;  //smaller means slower fadeout
 }
-//show_debug_message(fontAlpha);
+
 </string>
           </argument>
         </arguments>
@@ -104,32 +104,29 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
-draw_text_colour(210, 150, "DRAWING CONTEST: VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(200, 150, "DRAWING CONTEST - VEHICLE SPRITE" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 250, "WE DECIDED TO THROW A DRAWING CONTEST AND" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 280, "INVITED SUBMISSIONS FROM OUR FELLOW" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(75, 310, "CLASSMATES AND THE 1ST YRS " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 200, "WE DECIDED TO THROW A DRAWING CONTEST AND" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 230, "INVITED SPRITE SUBMISSIONS FROM OUR FELLOW" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(50, 260, "CLASSMATES AND THE 1ST YRS " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(200, 400, "CONTEST WINNER" , c_white, c_red, c_white, c_red, fontAlpha);
-draw_text_colour(600, 400, "REEMA " , c_white, c_red, c_white, c_red, fontAlpha);
-draw_sprite(sprite_Reema, 0, 750, 400);
+draw_text_colour(200, 380, "CONTEST WINNER" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(600, 380, "REEMA " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_sprite(sprite_Reema, 0, 800, 390);
 
-draw_text_colour(175, 500, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(175, 480, "THANK YOU ALL FOR PARTICIPATING" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_sprite(sprite_KevinTwo, 0, 200, 590);
-draw_text_colour(150, 680, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
-
+draw_text_colour(150, 680, "KEVIN " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_sprite(sprite_KevinOne, 0, 400, 600);
-draw_text_colour(350, 680, "KEVIN " , c_white, c_red, c_white, c_red, fontAlpha);
-
+draw_text_colour(350, 680, "KEVIN " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_sprite(sprite_Amanda, 0, 600, 590);
-draw_text_colour(540, 680, "AMANDA " , c_white, c_red, c_white, c_red, fontAlpha);
-
+draw_text_colour(540, 680, "AMANDA " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 draw_sprite(sprite_James, 0, 800, 600);
-draw_text_colour(750, 680, "JAMES " , c_white, c_red, c_white, c_red, fontAlpha);
+draw_text_colour(750, 680, "JAMES " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 </string>
           </argument>

@@ -105,36 +105,36 @@ draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(300, 150, "SPRITES: BLOCKS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(300, 150, "SPRITES - BLOCKS" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(75, 200, "MOST OF THE ASSETS IN PIZZA WARS WERE HAND" , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(75, 230, "DRAWN BY THE GROUP MEMBERS" ,c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(50, 200, "MOST OF THE ASSETS IN PIZZA WARS WERE HAND" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(50, 230, "DRAWN BY THE GROUP MEMBERS" ,c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(300, 300, "BLOCK 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 300, "BLOCK 1:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 300, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 350, "BLOCK 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 350, "TYLER GUILLAUME " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 350, "BLOCK 2:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 350, "TYLER GUILLAUME " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 400, "BLOCK 3:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 400, "BLOCK 3:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 450, "BLOCK 4: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 450, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 450, "BLOCK 4: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 450, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 500, "BLOCK 5: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 500, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 500, "BLOCK 5: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 500, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 550, "BLOCK 6: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 550, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 550, "BLOCK 6: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 550, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 600, "BLOCK 7: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 600, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 600, "BLOCK 7: " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 600, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(300, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 650, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 650, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_set_alpha(1);
+
 </string>
           </argument>
         </arguments>

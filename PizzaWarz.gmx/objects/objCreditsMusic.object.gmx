@@ -74,9 +74,9 @@ alarm[0]=150;
           <argument>
             <kind>1</kind>
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-fontAlpha -=.05;  //smaller means slower fadeout
+fontAlpha -=.05;  
 }
-//show_debug_message(fontAlpha);
+
 </string>
           </argument>
         </arguments>
@@ -104,24 +104,20 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(400, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(420, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(180, 100, "MUSIC - SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(375, 250, "%AWOLNATION%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 300, "YOUTUBE.COM/WATCH?V=LGT1AIDRWM" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-draw_text_colour(375, 350, "%BEAUTIFUL$" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 400, "YOUTUBE.COM/WATCH?V=IGT1AIDZRWM " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-draw_text_colour(370, 450, "%BUFFY ENDING%  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 500, "YOUTUBE.COM/WATCH?V=KSCPWUHOG0L :" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-draw_text_colour(370, 550, "%CON TE PARTIRO%  " , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 600, "YOUTUBE.COM/WATCH?V=WDX5NGPHMA1" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-draw_text_colour(375, 650, "%EASY STREET%" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-draw_text_colour(100, 700, "YOUTUBE.COM/WATCH?V=1UGQ1MGOFR4" , c_red, c_yellow, c_yellow, c_red, fontAlpha);
-
-
+draw_text_colour(375, 150, "%AWOLNATION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 200, "%BEAUTIFUL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(360, 250, "%BUFFY ENDING%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(350, 300, "%CON TE PARTIRO%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 350, "%EASY STREET%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(290, 400, "%FLIGHT OF VALKYRIES%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 450, "%LIGHTS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(270, 500, "%RUNNING IN THE 90S% " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(380, 550, "%GOLD%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(220, 600, "%NOTHING ELSE MATTERS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(205, 650, "%SYMPHONY OF DESTRUCTION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 700, "%DETROIT ROCK CITY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 </string>
           </argument>
         </arguments>

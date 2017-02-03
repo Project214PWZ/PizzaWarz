@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>SelectedStationIndex = 1;
-
+            <string>SelectedStationIndex = irandom(4)+1;
 
 //Classic
 song0 = music_BachPianoConcertoinFMinor;
@@ -52,12 +51,11 @@ song14 = music_KISSDetroitRockCity;
 
 
 //Defining the stations
-station1=audio_play_sound(choose(song0,song1,song2),10,false);
-station2=audio_play_sound(choose(song3,song4,song5),10,false);
-station3=audio_play_sound(choose(song6,song7,song8),10,false);
-station4=audio_play_sound(choose(song9,song10,song11),10,false);
-station5=audio_play_sound(choose(song12,song13,song14),10,false);
-
+station1=audio_play_sound(choose(song0,song1,song2),10,true);
+station2=audio_play_sound(choose(song3,song4,song5),10,true);
+station3=audio_play_sound(choose(song6,song7,song8),10,true);
+station4=audio_play_sound(choose(song9,song10,song11),10,true);
+station5=audio_play_sound(choose(song12,song13,song14),10,true);
 stationCount = 5;
 
 </string>
