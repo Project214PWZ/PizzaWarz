@@ -11,7 +11,9 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>//Might not be replaying
-audio_play_sound(music_InspectorGadgetOpening,10,true);</code>
+audio_play_sound(music_InspectorGadgetOpening,10,true);
+
+global.creditsFaderTimer = 250;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

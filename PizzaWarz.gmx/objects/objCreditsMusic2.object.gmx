@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>fontAlpha = 1;
 fadeOut=false;
-alarm[0]=100; 
+alarm[0]=global.creditsFaderTimer;
 </string>
           </argument>
         </arguments>
@@ -74,7 +74,7 @@ alarm[0]=100;
           <argument>
             <kind>1</kind>
             <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
-fontAlpha -=.05;  //smaller means slower fadeout
+fontAlpha -=.05;
 }
 
 </string>
@@ -108,32 +108,15 @@ draw_text_colour(150, 100, "MUSIC - SOURCED FROM YOUTUBE.COM" , c_white, c_orang
  
 
 draw_text_colour(290, 150, "%HIGHWAY TO HELL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(350, 200, "%REQUIEM%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(375, 250, "%5TH%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(220, 300, "%BAC PIANO CONCERTO IN F MINOR%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(275, 350, "%LIVING ON A PRAYER%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(375, 400, "%JUMP%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(300, 450, "%AROUND THE WORLD%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(350, 500, "%GET LUCKY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(220, 550, "%HARDER BETTER FASTER STRONGER%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
 draw_text_colour(375, 600, "%SUPERMAN%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-
-
-
-
-
-
-
 </string>
           </argument>
         </arguments>

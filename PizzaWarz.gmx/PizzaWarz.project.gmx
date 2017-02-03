@@ -195,7 +195,6 @@
     <room>rooms\room_TutorialFromGame</room>
     <room>rooms\room_PlayAreaLevelOne</room>
     <room>rooms\room_Credit</room>
-    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

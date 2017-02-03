@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>fontAlpha = 1;
 fadeOut=false;
-alarm[0]=150;
+alarm[0]=global.creditsFaderTimer;
 </string>
           </argument>
         </arguments>

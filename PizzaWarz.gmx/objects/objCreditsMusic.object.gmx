@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fontAlpha = 1;
+            <string>show_debug_message("Credits music created");
+fontAlpha = 1;
 fadeOut=false;
-alarm[0]=150; 
+show_debug_message("Fader Timer " + string(global.creditsFaderTimer));
+alarm[0]=global.creditsFaderTimer;
 </string>
           </argument>
         </arguments>
@@ -50,7 +52,7 @@ alarm[0]=150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeout=true; 
+            <string>fadeOut=true; 
 </string>
           </argument>
         </arguments>
