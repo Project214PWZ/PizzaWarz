@@ -180,9 +180,12 @@
       <object>objects\object_KevinTwo</object>
     </objects>
     <object>objects\object_RoomRestart</object>
+    <object>objects\obj_input</object>
+    <object>objects\obj_log</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
+      <room>rooms\room_HighScore</room>
       <room>rooms\room_StoryBoard1</room>
       <room>rooms\room_StoryBoard2</room>
       <room>rooms\room_StoryBoard3</room>
