@@ -26,39 +26,183 @@
           <argument>
             <kind>1</kind>
             <string>canCollide = true;
-
+readyToTurn = false;
+lane = 182;//global.carLane;
+/*
 goingUpTurnRight = false;
 goingUpTurnleft = false;
-
 goingDownTurnRight = false;
 goingDownTurnLeft = false;
-
 goingLeftTurnUp = false;
 goingLeftTurnDown = false;
-
 goingRightTurnUp = false;
 goingRightTurnDown = false;
-
-
-image_angle = global.randomImageDirection;
+*/
+image_angle = 0;// global.randomImageDirection;
+/*
 if(image_angle == 0){
     vspeed = -10;
-    //vspeed = 0;
+    hspeed = 0;
 }
 else if(image_angle == 90){
     hspeed = -10;
-    //hspeed = 0;
+    vspeed = 0;
 }
 else if(image_angle == 180){
     vspeed = 10;
-    //vspeed = 0;
+    hspeed = 0;
 }
 else if(image_angle == 270){
     hspeed = 10;
-   //hspeed = 0;
+    vspeed = 0;
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>randomize();
+//Make them all else if statements
+if(canCollide == true){
+    inst = scriptCheckCollisionWIntersections(object_RandomVehicleOne);
+    if(inst){
+        turningDirection = irandom(1);
+        canCollide = false;
+        readyToTurn = true;
+//Going up
+//West turn
+        if(image_angle == 0 &amp;&amp; turningDirection == 1){ 
+            if(lane == 182){
+                yy = 182;
+            }
+            else if(lane == 130){
+                yy = 130;
+            }
+            newImage_angle = 270;
+        }
+//East turn
+        else if(image_angle == 0 &amp;&amp; turningDirection != 1){
+            if(lane == 130){
+                yy = 78;
+            }
+            else if(lane == 182){
+                yy = 26;
+            }
+            newImage_angle = 90;
+        }
+//Going down
+//Right turn
+        if(image_angle == 180 &amp;&amp; turningDirection == 1){
+            vspeed = 5;
+            if(lane == 26){
+                image_angle = 270;
+                vspeed = 0;
+                hspeed = 10;
+                yy = 8807;
+            }
+            else if(lane == 78){
+                image_angle = 270;
+                vspeed = 0;
+                hspeed = 10;
+                yy = 8755;
+            }
+        }
+//Left turn
+        else if(image_angle == 180 &amp;&amp; turningDirection != 1 ){
+            vspeed = 5;
+            if(lane == 78){
+                image_angle = 90;
+                vspeed = 0;
+                hspeed = -10;
+                yy = 8703;
+            }
+            else if(lane == 26){
+                image_angle = 90;
+                vspeed = 0;
+                hspeed = -10;
+                yy = 8651;
+            }
+        }
+//Heading left
+//Turning down
+        else if(image_angle == 90 &amp;&amp; y &lt; 1000){
+            image_angle = 180;
+            vspeed = 10;
+            hspeed = 0;
+            xx = x - lane;
+        }
+//Turning up
+        else if(image_angle == 90 &amp;&amp; y &gt; 7000){
+            image_angle = 0;
+            vspeed = -10;
+            hspeed = 0;
+            xx = x - lane;
+        }
+//Heading right
+//Turning down
+        else if(image_angle == 270 &amp;&amp; y &lt; 1000){
+            image_angle = 180;
+            vspeed = 10;
+            hspeed = 0;
+            xx = x + lane;
+        }
+//Turning up
+        else if(image_angle == 270 &amp;&amp; y &gt; 7000){
+            image_angle = 0;
+            vspeed = -10;
+            hspeed = 0;
+            xx = x + lane;
+        }
+    }
 }
-lane = global.carLane;
-
+if(readyToTurn = true){
+    while((yy+9)&gt;y &amp;&amp; (yy-9)&lt;y){
+        lane = yy;
+        readyToTurn = false;
+        image_angle = newImage_angle;
+        break;
+    }
+}
+inst = scriptCheckCollisionWIntersections(object_RandomVehicleOne);
+if(inst){
+    canCollide = false;
+}
+else{
+    canCollide = true;
+}
+if(image_angle == 0){
+    vspeed = -10;
+    hspeed = 0;
+}
+else if(image_angle == 90){
+    hspeed = -10;
+    vspeed = 0;
+}
+else if(image_angle == 180){
+    vspeed = 10;
+    hspeed = 0;
+}
+else if(image_angle == 270){
+    hspeed = 10;
+    vspeed = 0;
+}
 </string>
           </argument>
         </arguments>

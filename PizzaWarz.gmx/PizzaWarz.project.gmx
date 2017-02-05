@@ -81,6 +81,7 @@
     <sprite>sprites\sprite_RoadBackground</sprite>
     <sprite>sprites\sprite_ForEnviroment</sprite>
     <sprite>sprites\sprite_Interscetion</sprite>
+    <sprite>sprites\spriteSmallIntersection</sprite>
     <sprite>sprites\sprite_bullethole1</sprite>
     <sprite>sprites\sprite_Pizza</sprite>
     <sprite>sprites\sprite_PizzaClosing</sprite>
@@ -111,6 +112,7 @@
     <script>scripts\scriptRandomVehicle.gml</script>
     <script>scripts\scriptEndGame.gml</script>
     <script>scripts\scriptStationSwitch.gml</script>
+    <script>scripts\scriptCheckCollisionWIntersections.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\object_Enviroment</object>
