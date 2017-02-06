@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>caret_flash = 0;
+            <string>io_clear();
+caret_flash = 0;
 caret_flash_rate = 15;
 caret_move = 0;
 caret_move_rate = 7;

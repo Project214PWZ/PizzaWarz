@@ -99,6 +99,7 @@
       <background>background\bckSB_4</background>
       <background>background\bckSB_5</background>
     </backgrounds>
+    <background>background\bckAdvisory</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -188,9 +189,12 @@
       <object>objects\object_Log</object>
       <object>objects\object_DrawScores</object>
     </objects>
+    <object>objects\object_ParentalWarning</object>
+    <object>objects\object_TeamLogo</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
+      <room>rooms\room_Advisory</room>
       <room>rooms\room_StoryBoard1</room>
       <room>rooms\room_StoryBoard2</room>
       <room>rooms\room_StoryBoard3</room>

@@ -8,6 +8,80 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>fontAlpha = 1;
+fadeOut=false;
+alarm[0]=100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+instance_create(512,384, object_TeamLogo);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(fontAlpha &gt; 0 &amp;&amp; fadeOut==true){
+fontAlpha -=.05;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,51 +101,10 @@
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_9,36,false,1);
 draw_set_font(sprite_FontSize_9);
-draw_text_colour(20,20,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
 
-draw_text_colour(20,100,"USE THE ARROW KEYS TO MOVE AROUND THE MAP",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,140,"USE THE A AND D KEY TO CHANGE LANES",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,180,"USE THE R KEY TO CHANGE RADIO STATION",c_white,c_lime,c_white,c_lime,1);
-
-draw_text_colour(20,260,"AT GAME START ARROWS WILL POINT IN THE",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,300," DIRECTION TO COMPLETE DELIVERY",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,340,"WHEN STOPPED AT THE DELIVERY POINT",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,380," TIPS WILL BE AWARDED",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,420,"WHEN DELIVERY ARROW TURNS BLUE RETURN",c_white,c_lime,c_white,c_lime,1);
-draw_text_colour(20,460," TO PIZZERIA FOR ADDITIONAL DELIVERIES",c_white,c_lime,c_white,c_lime,1);
-
-
-draw_text_colour(20,window_get_height()-50,"PRESS SPACE BAR TO GO BACK TO MAIN MENU",c_white,c_teal,c_white,c_teal,1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(audio_is_playing(music_InspectorGadgetOpening)){
-    room_goto(room_Start);
-}
-else{
-    room_goto(room_Start);
-    audio_stop_all();   
-    audio_play_sound(music_InspectorGadgetOpening,10,true);
-}
+draw_text_colour(310,207," P A R E N T A L ",c_white,c_white,c_white,c_white,1);
+draw_text_colour(310,363," A D V I S O R Y ",c_black,c_black,c_black,c_black,1);
+draw_text_colour(330,519,"EXPLICIT CONTENT",c_white,c_white,c_white,c_white,1);
 </string>
           </argument>
         </arguments>

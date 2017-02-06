@@ -29,7 +29,7 @@
 draw_set_font(sprite_FontSize_9);
 draw_text_colour(20,20,"PIZZA WARZ TUTORIAL",c_white,c_teal,c_white,c_teal,1);
 
-draw_text_colour(20,100,"USE THE ARROW KEYS TO MOVE AROUND THE MAP.",c_white,c_lime,c_white,c_lime,1);
+draw_text_colour(20,100,"USE THE ARROW KEYS TO MOVE AROUND THE MAP",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,140,"USE THE A AND D KEY TO CHANGE LANES",c_white,c_lime,c_white,c_lime,1);
 draw_text_colour(20,180,"USE THE R KEY TO CHANGE RADIO STATION",c_white,c_lime,c_white,c_lime,1);
 
@@ -41,7 +41,6 @@ draw_text_colour(20,420,"WHEN DELIVERY ARROW TURNS BLUE RETURN",c_white,c_lime,c
 draw_text_colour(20,460," TO PIZZERIA FOR ADDITIONAL DELIVERIES",c_white,c_lime,c_white,c_lime,1);
 
 draw_text_colour(20,window_get_height()-80,"IN GAMEPLAY PRESS F1 TO TOGGLE BETWEEN GAME AND TUTORIAL",c_white,c_teal,c_white,c_teal,1);
-
 </string>
           </argument>
         </arguments>
