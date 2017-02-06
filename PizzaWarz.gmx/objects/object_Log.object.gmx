@@ -63,7 +63,7 @@ p = 0;
 for (i = 0; i &lt; length; i += 1) {
     draw_set_alpha(1 - i / length);
     p += string_height("\\");
-    draw_text(x, y - p, text[i]);
+    draw_text_colour(x, y - p, text[i],c_white,c_purple,c_white,c_purple,1);
 }
 draw_set_alpha(1.0);
 
