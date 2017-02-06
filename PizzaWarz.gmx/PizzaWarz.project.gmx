@@ -137,6 +137,7 @@
     <object>objects\object_EndGame</object>
     <object>objects\object_RadioV2</object>
     <object>objects\object_EndStats</object>
+    <object>objects\object_RoomRestart</object>
     <object>objects\object_DeliveryPointer</object>
     <objects name="Credits">
       <object>objects\objCreditsBackground</object>
@@ -181,9 +182,11 @@
       <object>objects\object_KevinOne</object>
       <object>objects\object_KevinTwo</object>
     </objects>
-    <object>objects\object_RoomRestart</object>
-    <object>objects\obj_input</object>
-    <object>objects\obj_log</object>
+    <objects name="HighScore Stuff">
+      <object>objects\object_Input</object>
+      <object>objects\object_Log</object>
+      <object>objects\object_DrawScores</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
@@ -197,10 +200,6 @@
     <room>rooms\room_Start</room>
     <room>rooms\room_TutorialFromStart</room>
     <room>rooms\room_TutorialFromGame</room>
-    <room>rooms\room_PlayAreaLevelOne</room>
-    <room>rooms\room_Credit</room>
-    <room>rooms\room_HighScore</room>
-    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

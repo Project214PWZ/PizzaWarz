@@ -28,7 +28,7 @@
             <string>//
 length = 1;
 maxlength = 10;
-text[0] = "Type something...";
+text[0] = "ENTER YOUR NAME:";
 
 
 
