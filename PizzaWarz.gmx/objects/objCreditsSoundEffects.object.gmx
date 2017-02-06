@@ -107,19 +107,19 @@ draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlp
 
 draw_text_colour(325, 150, "SOUND EFFECTS" , c_white, c_orange, c_white, c_orange, fontAlpha);    
     
-draw_text_colour(350, 200, "%CAR CRASH%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(350, 210, "%CAR CRASH%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     draw_text_colour(100, 250, "WWW.YOUTUBE.COM/WATCH?V=K6QM01JXRGK" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     
-draw_text_colour(360, 300, "%CAR START%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(360, 310, "%CAR START%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     draw_text_colour(100, 350, "WWW.YOUTUBE.COM/WATCH?v=F5Z13DTCMRO" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     
-draw_text_colour(295, 400, "%CAR START DRIVE AWAY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(295, 410, "%CAR START DRIVE AWAY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     draw_text_colour(100, 450, "WWW.YOUTUBE.COM/WATCH?v=ELYLK8ACH8U" , c_white, c_yellow, c_white, c_yellow, fontAlpha);    
     
-draw_text_colour(310, 500, "%FAILED DELIVERY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(310, 510, "%FAILED DELIVERY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     draw_text_colour(220, 550, "WWW.SOUNDS-RESOURCES.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     
-draw_text_colour(350, 600, "%GAME START%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(350, 610, "%GAME START%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
     draw_text_colour(220, 650, "WWW.SOUNDS-RESOURCES.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
         
 

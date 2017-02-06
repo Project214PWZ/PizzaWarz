@@ -106,20 +106,21 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 draw_text_colour(400, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(180, 100, "MUSIC - SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(180, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(120, 190, "SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(375, 150, "%AWOLNATION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(375, 200, "%BEAUTIFUL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(360, 250, "%BUFFY ENDING%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(350, 300, "%CON TE PARTIRO%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(375, 350, "%EASY STREET%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(290, 400, "%FLIGHT OF VALKYRIES%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(375, 450, "%LIGHTS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(270, 500, "%RUNNING IN THE 90S% " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(380, 550, "%GOLD%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(220, 600, "%NOTHING ELSE MATTERS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(205, 650, "%SYMPHONY OF DESTRUCTION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(300, 700, "%DETROIT ROCK CITY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 250, "%AWOLNATION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 300, "%BEAUTIFUL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(360, 350, "%BUFFY ENDING%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(350, 400, "%CON TE PARTIRO%  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 450, "%EASY STREET%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(290, 500, "%FLIGHT OF VALKYRIES%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(375, 550, "%LIGHTS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(270, 600, "%RUNNING IN THE 90S% " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(380, 650, "%GOLD%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(220, 700, "%NOTHING ELSE MATTERS%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(205, 750, "%SYMPHONY OF DESTRUCTION%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 800, "%DETROIT ROCK CITY%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 </string>
           </argument>
         </arguments>
