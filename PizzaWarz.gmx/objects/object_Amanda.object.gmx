@@ -26,37 +26,383 @@
           <argument>
             <kind>1</kind>
             <string>canCollide = true;
-
-goingUpTurnRight = false;
-goingUpTurnleft = false;
-
-goingDownTurnRight = false;
-goingDownTurnLeft = false;
-
-goingLeftTurnUp = false;
-goingLeftTurnDown = false;
-
-goingRightTurnUp = false;
-goingRightTurnDown = false;
-
+readyToTurn = false;
+toLane = 0;
+turnPoint = 0;
+lane = global.carLane;
 image_angle = global.randomImageDirection;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>randomize();
+//Make them all else if statements
+if(canCollide == true){
+    bolInst = scriptCheckCollisionWIntersections(object_index);
+    if(bolInst){
+        canCollide = false;
+        readyToTurn = true;
+        turningDirection = irandom(1);
+        show_debug_message("Y Position: " + string(y));
+        show_debug_message("X Position: " + string(x));
+//Going North
+//In NW Corner must turn East
+        if(image_angle == 0 &amp;&amp; x &lt; 300){ 
+            if(lane == 182){
+                toLane = 182;
+                turnPoint = 182;
+            }
+            else if(lane == 130){
+                toLane = 130;
+                turnPoint = 130;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading North turning East");
+            newImage_angle = 270;
+        }
+//Going North 
+//In NE Corner must turn West
+        else if(image_angle == 0 &amp;&amp; x &gt; 8348){ 
+            if(lane == 182){
+                toLane = 26;
+                turnPoint = 26;
+            }
+            else if(lane == 130){
+                toLane = 78;
+                turnPoint = 78;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading North turning West");
+            newImage_angle = 90;
+        }
+//Going North
+//Random Direction Choice
+//East turn
+        else if(image_angle == 0 &amp;&amp; turningDirection != 1){
+            if(lane == 182){
+                toLane = 182;
+                turnPoint = 182;
+            }
+            else if(lane == 130){
+                toLane = 130;
+                turnPoint = 130;
+            }
+            newImage_angle = 270;
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading North turning East");
+        }
+//West turn
+        else if(image_angle == 0 &amp;&amp; turningDirection == 1){
+            if(lane == 182){
+                toLane = 26;
+                turnPoint = 26;
+            }
+            else if(lane == 130){
+                toLane = 78;
+                turnPoint = 78;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading North turning West");
+            newImage_angle = 90;
+        }
+//Going South
+//In SW Corner must turn East
+        else if(image_angle == 180 &amp;&amp; x &lt; 300){
+            if(lane == 26){
+                toLane = 182;
+                turnPoint = 8807;
+            }
+            else if(lane == 78){
+                toLane = 130;
+                turnPoint = 8755;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading South turning East");
+            newImage_angle = 270;
+        }
+//Going South
+//In SE Corner must turn West
+        else if(image_angle == 180 &amp;&amp; x &gt; 8348){
+            if(lane == 26){
+                toLane = 26;
+                turnPoint = 8651;
+            }
+            else if(lane == 78){
+                toLane = 78;
+                turnPoint = 8703;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading South turning West");
+            newImage_angle = 90;
+        }
+//Going South
+//Random Direction Choice
+//East turn
+        if(image_angle == 180 &amp;&amp; turningDirection != 1){
+            if(lane == 26){
+                toLane = 182;
+                turnPoint = 8807;
+            }
+            else if(lane == 78){
+                toLane = 130;
+                turnPoint = 8755;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading South turning East");
+            newImage_angle = 270;
+        }
+//West turn
+        if(image_angle == 180 &amp;&amp; turningDirection == 1){
+            if(lane == 26){
+                toLane = 26;
+                turnPoint = 8651;
+            }
+            else if(lane == 78){
+                toLane = 78;
+                turnPoint = 8703;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading South turning West");
+            newImage_angle = 90;
+        }
+//Going West
+//In NW Corner must turn South
+        else if(image_angle == 90 &amp;&amp; x &lt; 300 &amp;&amp; y &lt; 300){
+            if(lane == 26){
+                toLane = 26;
+                turnPoint = 26;
+            }
+            else if(lane == 78){
+                toLane = 78;
+                turnPoint = 78;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading West turning South");
+            newImage_angle = 180;
+        }
+//Going West
+//In SW Corner must turn North
+        else if(image_angle == 90 &amp;&amp; x &lt; 300 &amp;&amp; y &gt; 8533){
+            if(lane == 26){
+                toLane = 182;
+                turnPoint = 182;
+            }
+            else if(lane == 78){
+                toLane = 130;
+                turnPoint = 130;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading West turning North");
+            newImage_angle = 0;
+        }
+//Going West in the North
+        else if(image_angle == 90 &amp;&amp; y &lt; 300){
+            //Random Direction Choice
+            //Turn South
+            if(turningDirection != 1){
+                if(lane == 26){
+                    toLane = 26;
+                    turnPoint = (x - 52 - (208-toLane));
+                }
+                else if(lane == 78){
+                    toLane = 78
+                    turnPoint = (x - 52 - (208-toLane));
+                }
+                show_debug_message("The turnPoint is: " + string(turnPoint));
+                show_debug_message("Heading West turning South");
+                newImage_angle = 180;
+            }
+            //Go Straight
+            else if(turningDirection == 1){
+                show_debug_message("Going Straight");
+                toLane = lane;
+                turnPoint = x;
+                newImage_angle = 90;
+            }
+        }
+//Going West in the South
+        else if(image_angle == 90 &amp;&amp; y &gt; 8533){
+            //Random Direction Choice
+            //Turn North
+            if(turningDirection != 1){
+                if(lane == 26){
+                    toLane = 182;
+                    turnPoint = (x - 52 - (208-toLane));
+                }
+                else if(lane == 78){
+                    toLane = 130
+                    turnPoint = (x - 52 - (208-toLane));
+                }
+                show_debug_message("The turnPoint is: " + string(turnPoint));
+                show_debug_message("Heading West turning North");
+                newImage_angle = 0;
+            }
+            //Go Straight
+            else if(turningDirection == 1){
+                show_debug_message("Going Straight");
+                toLane = lane;
+                turnPoint = x;
+                newImage_angle = 90;
+
+            }
+        }
+//Going East
+//In NE Corner must turn South
+        else if(image_angle == 270 &amp;&amp; x &gt; 8348 &amp;&amp; y &lt; 300){
+            if(lane == 130){
+                toLane = 78;
+                turnPoint = 8518;
+            }
+            else if(lane == 182){
+                toLane = 26;
+                turnPoint = 8466;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading East turning South");
+            newImage_angle = 180;
+        }
+//Going East
+//In SE Corner must turn North
+        else if(image_angle == 270 &amp;&amp; x &gt; 8348 &amp;&amp; y &gt; 8533){
+            if(lane == 130){
+                toLane = 130;
+                turnPoint = 8570;
+            }
+            else if(lane == 182){
+                toLane = 182;
+                turnPoint = 8622;
+            }
+            show_debug_message("The turnPoint is: " + string(turnPoint));
+            show_debug_message("Heading East turning North");
+            newImage_angle = 0;
+        }
+//Going East in the North
+        else if(image_angle == 270 &amp;&amp; y &lt; 300){
+            //Random Direction Choice
+            //Turn South
+            if(turningDirection != 1){
+                if(lane == 130){
+                    toLane = 78;
+                    turnPoint = (x + 52 + toLane);
+                }
+                else if(lane == 182){
+                    toLane = 26;
+                    turnPoint = (x + 52 + toLane);
+                }
+                show_debug_message("The turnPoint is: " + string(turnPoint));
+                show_debug_message("Heading East turning South");
+                newImage_angle = 180;
+            }
+            //Go Straight
+            else if(turningDirection == 1){
+                show_debug_message("Going Straight");
+                toLane = lane;
+                turnPoint = x;
+                newImage_angle = 270;
+
+            }
+        }
+//Going East in the South
+        else if(image_angle == 270 &amp;&amp; y &gt; 8533){
+            //Random Direction Choice
+            //Turn North
+            if(turningDirection != 1){
+                if(lane == 130){
+                    toLane = 130;
+                    turnPoint = (x + 52 + toLane);
+                }
+                else if(lane == 182){
+                    toLane = 182;
+                    turnPoint = (x + 52 + toLane);
+                }
+                show_debug_message("The turnPoint is: " + string(turnPoint));
+                show_debug_message("Heading East turning North");
+                newImage_angle = 0;
+            }
+            //Go Straight
+            else if(turningDirection == 1){
+                show_debug_message("Going Straight");
+                toLane = lane;
+                turnPoint = x;
+                newImage_angle = 270;
+
+            }
+        }
+        //show_debug_message("The turnPoint is: " + string(turnPoint));
+    }
+}
+if(readyToTurn = true){
+    //show_debug_message("The turnPoint is: " + string(turnPoint));
+    //show_debug_message("The imageAngle is: " + string(image_angle));
+    //show_debug_message("The X value is: " + string(x));
+    //show_debug_message("The Y value is: " + string(y));
+    if(image_angle == 0 || image_angle == 180){
+        while((turnPoint+9)&gt;y &amp;&amp; (turnPoint-9)&lt;y){
+            lane = toLane;
+            y = turnPoint;
+            readyToTurn = false;
+            image_angle = newImage_angle;
+            //turnPoint = 0;
+            show_debug_message("******");
+            show_debug_message("Made Turn");
+            show_debug_message("*********");
+            break;
+        }
+    }
+    else if(image_angle == 90 || image_angle == 270){
+        while((turnPoint+9)&gt;x &amp;&amp; (turnPoint-9)&lt;x){
+            lane = toLane;
+            x = turnPoint;
+            readyToTurn = false;
+            image_angle = newImage_angle;
+            //turnPoint = 0;
+            show_debug_message("Made Turn");
+            show_debug_message("*********");
+            break;
+        }
+    }
+}
+bolInst2 = scriptCheckCollisionWIntersections(object_index);
+if(bolInst2){
+    canCollide = false;
+}
+else{
+    canCollide = true;
+}
 if(image_angle == 0){
     vspeed = -10;
-    //vspeed = 0;
+    hspeed = 0;
 }
 else if(image_angle == 90){
     hspeed = -10;
-   //hspeed = 0;
+    vspeed = 0;
 }
 else if(image_angle == 180){
     vspeed = 10;
-    //vspeed = 0;
+    hspeed = 0;
 }
 else if(image_angle == 270){
     hspeed = 10;
-    //hspeed = 0;
+    vspeed = 0;
 }
-lane = global.carLane;
 </string>
           </argument>
         </arguments>

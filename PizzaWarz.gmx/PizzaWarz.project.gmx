@@ -187,7 +187,6 @@
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
-      <room>rooms\room_HighScore</room>
       <room>rooms\room_StoryBoard1</room>
       <room>rooms\room_StoryBoard2</room>
       <room>rooms\room_StoryBoard3</room>
@@ -200,6 +199,8 @@
     <room>rooms\room_TutorialFromGame</room>
     <room>rooms\room_PlayAreaLevelOne</room>
     <room>rooms\room_Credit</room>
+    <room>rooms\room_HighScore</room>
+    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

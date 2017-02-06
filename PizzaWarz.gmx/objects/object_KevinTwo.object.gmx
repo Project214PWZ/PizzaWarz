@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>object_RandomVehicleMovement</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -29,35 +29,8 @@
 readyToTurn = false;
 toLane = 0;
 turnPoint = 0;
-lane = 130;//global.carLane;
-/*
-goingUpTurnRight = false;
-goingUpTurnleft = false;
-goingDownTurnRight = false;
-goingDownTurnLeft = false;
-goingLeftTurnUp = false;
-goingLeftTurnDown = false;
-goingRightTurnUp = false;
-goingRightTurnDown = false;
-*/
-image_angle = 0;// global.randomImageDirection;
-/*
-if(image_angle == 0){
-    vspeed = -15;
-    hspeed = 0;
-}
-else if(image_angle == 90){
-    hspeed = -15;
-    vspeed = 0;
-}
-else if(image_angle == 180){
-    vspeed = 15;
-    hspeed = 0;
-}
-else if(image_angle == 270){
-    hspeed = 15;
-    vspeed = 0;
-}*/
+lane = global.carLane;
+image_angle = global.randomImageDirection;
 </string>
           </argument>
         </arguments>
@@ -83,7 +56,7 @@ else if(image_angle == 270){
             <string>randomize();
 //Make them all else if statements
 if(canCollide == true){
-    bolInst = scriptCheckCollisionWIntersections(object_KevinTwo);
+    bolInst = scriptCheckCollisionWIntersections(object_index);
     if(bolInst){
         canCollide = false;
         readyToTurn = true;
@@ -92,7 +65,7 @@ if(canCollide == true){
         show_debug_message("X Position: " + string(x));
 //Going North
 //In NW Corner must turn East
-        if(image_angle == 0 &amp;&amp; x &lt; 250){ 
+        if(image_angle == 0 &amp;&amp; x &lt; 300){ 
             if(lane == 182){
                 toLane = 182;
                 turnPoint = 182;
@@ -107,7 +80,7 @@ if(canCollide == true){
         }
 //Going North 
 //In NE Corner must turn West
-        else if(image_angle == 0 &amp;&amp; x &gt; 8428){ 
+        else if(image_angle == 0 &amp;&amp; x &gt; 8348){ 
             if(lane == 182){
                 toLane = 26;
                 turnPoint = 26;
@@ -152,7 +125,7 @@ if(canCollide == true){
         }
 //Going South
 //In SW Corner must turn East
-        else if(image_angle == 180 &amp;&amp; x &lt; 250){
+        else if(image_angle == 180 &amp;&amp; x &lt; 300){
             if(lane == 26){
                 toLane = 182;
                 turnPoint = 8807;
@@ -167,7 +140,7 @@ if(canCollide == true){
         }
 //Going South
 //In SE Corner must turn West
-        else if(image_angle == 180 &amp;&amp; x &gt; 8428){
+        else if(image_angle == 180 &amp;&amp; x &gt; 8348){
             if(lane == 26){
                 toLane = 26;
                 turnPoint = 8651;
@@ -212,7 +185,7 @@ if(canCollide == true){
         }
 //Going West
 //In NW Corner must turn South
-        else if(image_angle == 90 &amp;&amp; x &lt; 300 &amp;&amp; y &lt; 250){
+        else if(image_angle == 90 &amp;&amp; x &lt; 300 &amp;&amp; y &lt; 300){
             if(lane == 26){
                 toLane = 26;
                 turnPoint = 26;
@@ -227,7 +200,7 @@ if(canCollide == true){
         }
 //Going West
 //In SW Corner must turn North
-        else if(image_angle == 90 &amp;&amp; x &lt; 250 &amp;&amp; y &gt; 8613){
+        else if(image_angle == 90 &amp;&amp; x &lt; 300 &amp;&amp; y &gt; 8533){
             if(lane == 26){
                 toLane = 182;
                 turnPoint = 182;
@@ -238,10 +211,10 @@ if(canCollide == true){
             }
             show_debug_message("The turnPoint is: " + string(turnPoint));
             show_debug_message("Heading West turning North");
-            newImage_angle = 180;
+            newImage_angle = 0;
         }
 //Going West in the North
-        else if(image_angle == 90 &amp;&amp; y &lt; 220){
+        else if(image_angle == 90 &amp;&amp; y &lt; 300){
             //Random Direction Choice
             //Turn South
             if(turningDirection != 1){
@@ -266,7 +239,7 @@ if(canCollide == true){
             }
         }
 //Going West in the South
-        else if(image_angle == 90 &amp;&amp; y &gt; 8613){
+        else if(image_angle == 90 &amp;&amp; y &gt; 8533){
             //Random Direction Choice
             //Turn North
             if(turningDirection != 1){
@@ -293,7 +266,7 @@ if(canCollide == true){
         }
 //Going East
 //In NE Corner must turn South
-        else if(image_angle == 270 &amp;&amp; x &gt; 8428 &amp;&amp; y &lt; 250){
+        else if(image_angle == 270 &amp;&amp; x &gt; 8348 &amp;&amp; y &lt; 300){
             if(lane == 130){
                 toLane = 78;
                 turnPoint = 8518;
@@ -308,7 +281,7 @@ if(canCollide == true){
         }
 //Going East
 //In SE Corner must turn North
-        else if(image_angle == 270 &amp;&amp; x &gt; 8428 &amp;&amp; y &gt; 8613){
+        else if(image_angle == 270 &amp;&amp; x &gt; 8348 &amp;&amp; y &gt; 8533){
             if(lane == 130){
                 toLane = 130;
                 turnPoint = 8570;
@@ -322,7 +295,7 @@ if(canCollide == true){
             newImage_angle = 0;
         }
 //Going East in the North
-        else if(image_angle == 270 &amp;&amp; y &lt; 220){
+        else if(image_angle == 270 &amp;&amp; y &lt; 300){
             //Random Direction Choice
             //Turn South
             if(turningDirection != 1){
@@ -348,7 +321,7 @@ if(canCollide == true){
             }
         }
 //Going East in the South
-        else if(image_angle == 270 &amp;&amp; y &gt; 8613){
+        else if(image_angle == 270 &amp;&amp; y &gt; 8533){
             //Random Direction Choice
             //Turn North
             if(turningDirection != 1){
@@ -407,7 +380,7 @@ if(readyToTurn = true){
         }
     }
 }
-bolInst2 = scriptCheckCollisionWIntersections(object_KevinTwo);
+bolInst2 = scriptCheckCollisionWIntersections(object_index);
 if(bolInst2){
     canCollide = false;
 }

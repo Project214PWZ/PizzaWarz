@@ -91,8 +91,7 @@ audio_sound_gain(sound_CarCrash, .75, 0);
 
 scriptGenerateMap();
 scriptGenerateDeliveryPoints();
-
-//scriptRandomVehicle();</code>
+scriptRandomVehicle();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -113,7 +112,7 @@ scriptGenerateDeliveryPoints();
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bckLevel1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -138,10 +137,8 @@ scriptGenerateDeliveryPoints();
     <instance objName="object_RadioV2" x="0" y="0" name="inst_009BF59F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_ToggleHelpGame" x="0" y="0" name="inst_952F3D39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_RoomRestart" x="0" y="0" name="inst_AB6AAE09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_KevinTwo" x="130" y="8480" name="inst_52B998E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="130" y="216" name="inst_D7C1381B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="182" y="216" name="inst_C290046C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object_RandomVehicleOne" x="182" y="8480" name="inst_C14C67E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="974" y="218" name="inst_5A09C3BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="1026" y="218" name="inst_7DB408CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="1818" y="216" name="inst_9B2FC373" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -262,6 +259,8 @@ scriptGenerateDeliveryPoints();
     <instance objName="object_Intersection" x="7588" y="8807" name="inst_1FA37F48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="8432" y="8755" name="inst_F69ABF00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object_Intersection" x="8432" y="8807" name="inst_87E22F90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="8432" y="130" name="inst_7F2868EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object_Intersection" x="8432" y="182" name="inst_5F3491DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
