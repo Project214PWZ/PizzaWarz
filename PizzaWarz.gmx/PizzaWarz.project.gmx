@@ -88,6 +88,8 @@
     <sprite>sprites\sprite_MainPizza</sprite>
     <sprite>sprites\sprite_PizzaWarzTitle</sprite>
     <sprite>sprites\sprite_TeamLogo</sprite>
+    <sprite>sprites\sprite_Mage</sprite>
+    <sprite>sprites\sprite_TeamName</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckLevel1</background>
