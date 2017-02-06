@@ -13,12 +13,12 @@
   <code>randomize();
 global.intScore = 0;
 global.intTipEarned = 0;
-global.intHealth = 120;
+global.intHealth = 60;
 global.intPizzasToDeliver = 0;
 global.intDeliveriesMade = 0;
 global.intPizzaTimer = 0;
 global.intPizzaTimerReset = 45;
-global.intMinutes = 15;
+global.intMinutes = 3;
 global.intSeconds = 00.1;
 global.bolCount = false;
 global.intPlayerSpeed = 0;

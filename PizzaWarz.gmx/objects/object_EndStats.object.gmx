@@ -61,7 +61,7 @@ alarm[0] = 200;
             <string>room_goto(room_Credit);
 audio_stop_all();
 //Easter Egg
-if(global.intScore &gt; 500){
+if(global.intScore &gt; 200){
     audio_play_sound(music_EasyStreet, 10, true); 
 }
 else{
@@ -134,7 +134,7 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
             <string>room_goto(room_Credit);
 audio_stop_all();
 //Easter Egg
-if(global.intScore &gt; 500){
+if(global.intScore &gt; 200){
     audio_play_sound(music_EasyStreet, 10, true); 
 }
 else{

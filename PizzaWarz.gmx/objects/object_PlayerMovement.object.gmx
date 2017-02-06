@@ -113,45 +113,6 @@ canIncrease = true;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//Check to see if all deliveries that have been generated have now been delivered 
-//Asd well as if the return to HQ script has already run
-if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries == true){
-    //Creates the Pick Up deliveries object at the HQ
-    instance_create(global.HQDeliveryCoor[0],global.HQDeliveryCoor[1],object_PickUpMoreDeliveries);
-    //Sets need more deliveries to false
-    //This will prevent this loop from being entered again
-    global.bolMoreDeliveries = false;
-}
-
-
-
-if x&lt;80{x = 80;}
-if x&gt;room_width - 80{x = room_width - 80;}
-//0 being the top of the room
-if y&lt;80{y = 80;}
-else if y &gt; room_height - 80{y = room_height - 80;}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="object_PickUpMoreDeliveries">
       <action>
         <libid>1</libid>
@@ -198,7 +159,10 @@ if(vspeed = 0 &amp;&amp; hspeed = 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Determines if the player vehicle is moving
+            <string>show_debug_message("Deliveries made: " + string(global.intDeliveriesMade));
+show_debug_message("To Deliver: " + string(global.intPizzasToDeliver));
+show_debug_message("Need more deliveries: " + string(global.bolMoreDeliveries));
+//Determines if the player vehicle is moving
 //If it is not then the collision with the Destination Marker is successful
 //This will make a delivery
 if(vspeed = 0 &amp;&amp; hspeed = 0){

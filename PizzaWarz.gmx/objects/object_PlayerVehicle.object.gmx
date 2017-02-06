@@ -25,7 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// show_debug_message("Delivery Vehicle: " + string(y));
+            <string>//Check to see if all deliveries that have been generated have now been delivered 
+//Asd well as if the return to HQ script has already run
+if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries == true){
+    //Creates the Pick Up deliveries object at the HQ
+    instance_create(global.HQDeliveryCoor[0],global.HQDeliveryCoor[1],object_PickUpMoreDeliveries);
+    //Sets need more deliveries to false
+    //This will prevent this loop from being entered again
+    global.bolMoreDeliveries = false;
+}
+
+if x&lt;80{x = 80;}
+if x&gt;room_width - 80{x = room_width - 80;}
+//0 being the top of the room
+if y&lt;80{y = 80;}
+else if y &gt; room_height - 80{y = room_height - 80;}
 </string>
           </argument>
         </arguments>
