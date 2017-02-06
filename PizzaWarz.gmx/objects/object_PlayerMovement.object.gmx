@@ -159,10 +159,7 @@ if(vspeed = 0 &amp;&amp; hspeed = 0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message("Deliveries made: " + string(global.intDeliveriesMade));
-show_debug_message("To Deliver: " + string(global.intPizzasToDeliver));
-show_debug_message("Need more deliveries: " + string(global.bolMoreDeliveries));
-//Determines if the player vehicle is moving
+            <string>//Determines if the player vehicle is moving
 //If it is not then the collision with the Destination Marker is successful
 //This will make a delivery
 if(vspeed = 0 &amp;&amp; hspeed = 0){

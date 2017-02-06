@@ -232,7 +232,7 @@ if(canCollide == true){
             }
             //Go Straight
             else if(turningDirection == 1){
-                show_debug_message("Going Straight");
+//                show_debug_message("Going Straight");
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 90;
