@@ -106,7 +106,7 @@ draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(375, 150, "SPRITES " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(375, 100, "SPRITES " , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 draw_text_colour(50, 180, "MOST OF THE ASSETS IN PIZZA WARS WERE HAND" , c_white, c_orange, c_white, c_orange, fontAlpha);
 draw_text_colour(50, 210, "DRAWN BY THE GROUP MEMBERS" ,c_white, c_orange, c_white, c_orange, fontAlpha);

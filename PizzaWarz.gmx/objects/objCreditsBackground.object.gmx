@@ -105,7 +105,7 @@ draw_set_alpha(fontAlpha);
 
 draw_text_colour(375, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
 
-draw_text_colour(325, 150, "BACKGROUNDS" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(325, 100, "BACKGROUNDS" , c_white, c_orange, c_white, c_orange, fontAlpha);
 draw_text_colour(25, 200, "PAVEMENTS:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(300, 200, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
@@ -114,23 +114,23 @@ draw_text_colour(300, 250, "WALLPAPERGALLERY-NET" , c_white, c_yellow, c_white, 
 
 draw_text_colour(275, 350, "INTRO STOREY BOARD " , c_white, c_orange, c_white, c_orange, fontAlpha);
 
-draw_text_colour(25, 400, "TITLE SCREEN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(400, 400, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-
-draw_text_colour(25, 450, "OPENING STOREY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(25, 450, "TITLE SCREEN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(400, 450, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(25, 500, "HOUSE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(200, 500, "DOODLEMASTERS.FILES.WORDPRESS.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(25, 500, "OPENING STOREY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(400, 500, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(25, 550, "PIZZA DELIVERY GUY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(500, 550, "PREVIEWS.123RF.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(25, 550, "HOUSE:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(200, 550, "DOODLEMASTERS.FILES.WORDPRESS.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(25, 600, "PIZZA TRUCK:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(325, 600, "WWW.//C2.STATICFLICKR.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(25, 600, "PIZZA DELIVERY GUY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(500, 600, "PREVIEWS.123RF.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(25, 650, "OLD MAN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(300, 650, "THUMBS.DREAMSTIME.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(25, 650, "PIZZA TRUCK:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(325, 650, "WWW.//C2.STATICFLICKR.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+
+draw_text_colour(25, 700, "OLD MAN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(300, 700, "THUMBS.DREAMSTIME.COM" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
 
 draw_set_alpha(1);
