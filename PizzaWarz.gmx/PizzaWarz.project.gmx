@@ -200,6 +200,10 @@
     <room>rooms\room_Start</room>
     <room>rooms\room_TutorialFromStart</room>
     <room>rooms\room_TutorialFromGame</room>
+    <room>rooms\room_PlayAreaLevelOne</room>
+    <room>rooms\room_HighScore</room>
+    <room>rooms\room_Scores</room>
+    <room>rooms\Room_Credit</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -125,7 +125,9 @@ draw_set_color(make_color_rgb(163, 166, 204));
 var i;
 var h;
 var ptext;
+//Setting the score
 score = global.intTipEarned;
+
 
 ptext = string_replace_all(text, '#', '�');
 draw_text(x, y, (ptext));
