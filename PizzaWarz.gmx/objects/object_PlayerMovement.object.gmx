@@ -132,7 +132,7 @@ canIncrease = true;
             <kind>1</kind>
             <string>//Check to see if all deliveries that have been generated have now been delivered 
 //Asd well as if the return to HQ script has already run
-if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries = true){
+if(global.intDeliveriesMade == global.intPizzasToDeliver &amp;&amp; global.bolMoreDeliveries == true){
     //Creates the Pick Up deliveries object at the HQ
     instance_create(global.HQDeliveryCoor[0],global.HQDeliveryCoor[1],object_PickUpMoreDeliveries);
     //Sets need more deliveries to false

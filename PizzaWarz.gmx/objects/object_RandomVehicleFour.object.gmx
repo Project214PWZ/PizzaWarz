@@ -61,8 +61,8 @@ if(canCollide == true){
         canCollide = false;
         readyToTurn = true;
         turningDirection = irandom(1);
-        show_debug_message("Y Position: " + string(y));
-        show_debug_message("X Position: " + string(x));
+//        show_debug_message("Y Position: " + string(y));
+//        show_debug_message("X Position: " + string(x));
 //Going North
 //In NW Corner must turn East
         if(image_angle == 0 &amp;&amp; x &lt; 300){ 
@@ -74,8 +74,8 @@ if(canCollide == true){
                 toLane = 130;
                 turnPoint = 130;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading North turning East");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading North turning East");
             newImage_angle = 270;
         }
 //Going North 
@@ -89,8 +89,8 @@ if(canCollide == true){
                 toLane = 78;
                 turnPoint = 78;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading North turning West");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading North turning West");
             newImage_angle = 90;
         }
 //Going North
@@ -106,8 +106,8 @@ if(canCollide == true){
                 turnPoint = 130;
             }
             newImage_angle = 270;
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading North turning East");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading North turning East");
         }
 //West turn
         else if(image_angle == 0 &amp;&amp; turningDirection == 1){
@@ -119,8 +119,8 @@ if(canCollide == true){
                 toLane = 78;
                 turnPoint = 78;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading North turning West");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading North turning West");
             newImage_angle = 90;
         }
 //Going South
@@ -134,8 +134,8 @@ if(canCollide == true){
                 toLane = 130;
                 turnPoint = 8755;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading South turning East");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading South turning East");
             newImage_angle = 270;
         }
 //Going South
@@ -149,8 +149,8 @@ if(canCollide == true){
                 toLane = 78;
                 turnPoint = 8703;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading South turning West");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading South turning West");
             newImage_angle = 90;
         }
 //Going South
@@ -165,8 +165,8 @@ if(canCollide == true){
                 toLane = 130;
                 turnPoint = 8755;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading South turning East");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading South turning East");
             newImage_angle = 270;
         }
 //West turn
@@ -179,8 +179,8 @@ if(canCollide == true){
                 toLane = 78;
                 turnPoint = 8703;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading South turning West");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading South turning West");
             newImage_angle = 90;
         }
 //Going West
@@ -194,8 +194,8 @@ if(canCollide == true){
                 toLane = 78;
                 turnPoint = 78;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading West turning South");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading West turning South");
             newImage_angle = 180;
         }
 //Going West
@@ -209,8 +209,8 @@ if(canCollide == true){
                 toLane = 130;
                 turnPoint = 130;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading West turning North");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading West turning North");
             newImage_angle = 0;
         }
 //Going West in the North
@@ -226,13 +226,13 @@ if(canCollide == true){
                     toLane = 78
                     turnPoint = (x - 62 - (208-toLane));
                 }
-                show_debug_message("The turnPoint is: " + string(turnPoint));
-                show_debug_message("Heading West turning South");
+//                show_debug_message("The turnPoint is: " + string(turnPoint));
+//                show_debug_message("Heading West turning South");
                 newImage_angle = 180;
             }
             //Go Straight
             else if(turningDirection == 1){
-                show_debug_message("Going Straight");
+//                show_debug_message("Going Straight");
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 90;
@@ -251,13 +251,13 @@ if(canCollide == true){
                     toLane = 130
                     turnPoint = (x - 62 - (208-toLane));
                 }
-                show_debug_message("The turnPoint is: " + string(turnPoint));
-                show_debug_message("Heading West turning North");
+//                show_debug_message("The turnPoint is: " + string(turnPoint));
+//                show_debug_message("Heading West turning North");
                 newImage_angle = 0;
             }
             //Go Straight
             else if(turningDirection == 1){
-                show_debug_message("Going Straight");
+//                show_debug_message("Going Straight");
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 90;
@@ -274,8 +274,8 @@ if(canCollide == true){
                 toLane = 26;
                 turnPoint = 8466;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading East turning South");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading East turning South");
             newImage_angle = 180;
         }
 //Going East
@@ -289,8 +289,8 @@ if(canCollide == true){
                 toLane = 182;
                 turnPoint = 8622;
             }
-            show_debug_message("The turnPoint is: " + string(turnPoint));
-            show_debug_message("Heading East turning North");
+//            show_debug_message("The turnPoint is: " + string(turnPoint));
+//            show_debug_message("Heading East turning North");
             newImage_angle = 0;
         }
 //Going East in the North
@@ -306,13 +306,13 @@ if(canCollide == true){
                     toLane = 26;
                     turnPoint = (x + 62 + toLane);
                 }
-                show_debug_message("The turnPoint is: " + string(turnPoint));
-                show_debug_message("Heading East turning South");
+//                show_debug_message("The turnPoint is: " + string(turnPoint));
+//                show_debug_message("Heading East turning South");
                 newImage_angle = 180;
             }
             //Go Straight
             else if(turningDirection == 1){
-                show_debug_message("Going Straight");
+//                show_debug_message("Going Straight");
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 270;
@@ -331,13 +331,13 @@ if(canCollide == true){
                     toLane = 182;
                     turnPoint = (x + 62 + toLane);
                 }
-                show_debug_message("The turnPoint is: " + string(turnPoint));
-                show_debug_message("Heading East turning North");
+//                show_debug_message("The turnPoint is: " + string(turnPoint));
+//                show_debug_message("Heading East turning North");
                 newImage_angle = 0;
             }
             //Go Straight
             else if(turningDirection == 1){
-                show_debug_message("Going Straight");
+//                show_debug_message("Going Straight");
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 270;
@@ -358,9 +358,9 @@ if(readyToTurn = true){
             readyToTurn = false;
             image_angle = newImage_angle;
             //turnPoint = 0;
-            show_debug_message("******");
-            show_debug_message("Made Turn");
-            show_debug_message("*********");
+//            show_debug_message("******");
+//            show_debug_message("Made Turn");
+//            show_debug_message("*********");
             break;
         }
     }
@@ -371,8 +371,8 @@ if(readyToTurn = true){
             readyToTurn = false;
             image_angle = newImage_angle;
             //turnPoint = 0;
-            show_debug_message("Made Turn");
-            show_debug_message("*********");
+//            show_debug_message("Made Turn");
+//            show_debug_message("*********");
             break;
         }
     }

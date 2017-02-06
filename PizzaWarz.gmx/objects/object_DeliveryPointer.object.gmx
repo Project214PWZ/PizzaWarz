@@ -37,6 +37,7 @@ if(global.intPizzasToDeliver != 0){
     else{    
         image_index = 1;
         image_angle = point_direction(xx,yy,global.HQDeliveryCoor[0],global.HQDeliveryCoor[1]) - 90;
+        //image_angle = point_direction(xx,yy,object_PickUpMoreDeliveries.x,object_PickUpMoreDeliveries.y) - 90;
     }
 }
 </string>

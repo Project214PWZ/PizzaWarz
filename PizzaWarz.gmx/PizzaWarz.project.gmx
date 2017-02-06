@@ -203,7 +203,8 @@
     <room>rooms\room_PlayAreaLevelOne</room>
     <room>rooms\room_HighScore</room>
     <room>rooms\room_Scores</room>
-    <room>rooms\Room_Credit</room>
+    <room>rooms\room_Credit</room>
+    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

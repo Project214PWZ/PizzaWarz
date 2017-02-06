@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>SelectedStationIndex = irandom(4)+1;
+            <string>randomize();
+SelectedStationIndex = irandom(4)+1;
 
 //Classic
 song0 = music_BachPianoConcertoinFMinor;
