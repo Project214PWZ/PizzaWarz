@@ -58,7 +58,8 @@ alarm[0] = 200;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Credit);
+            <string>room_goto(room_HighScore);
+/*
 audio_stop_all();
 //Easter Egg
 if(global.intScore &gt; 200){
@@ -131,7 +132,8 @@ draw_text_colour(240,240,"YOU EARNED $" + string(global.intScore),c_white,c_red,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_Credit);
+            <string>room_goto(room_HighScore);
+/*
 audio_stop_all();
 //Easter Egg
 if(global.intScore &gt; 200){

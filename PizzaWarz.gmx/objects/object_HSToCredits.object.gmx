@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="9" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,23 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xx = room_width/2 - 150;
-yy = 100;
-
-
-font_add_sprite(sprite_FontSize_9,36,false,1); 
-draw_set_font(sprite_FontSize_9);
-draw_set_halign(fa_left);
-draw_set_valign(fa_center);
-draw_text_colour(((room_width/2)-100), 40, "HIGH SCORES",c_white,c_purple,c_white,c_purple,1);
-for (i = 0; i&lt;10; i++)
-{
-    yy += 50;
-    draw_text_colour(xx, yy, string(global.score_array[i, 0]),c_white,c_purple,c_white,c_purple,1);
-
-    draw_text_colour(xx + 200, yy, string(global.score_array[i, 1]),c_white,c_purple,c_white,c_purple,1);
-
+            <string>room_goto(room_Credit);
+audio_stop_all();
+//Easter Egg
+if(global.intScore &gt; 200){
+    audio_play_sound(music_EasyStreet, 10, true); 
 }
+else{
+    audio_play_sound(music_BuffyEndCredits, 10, true);
+}
+//Deletes file after use
+if file_exists((working_directory + "\Screens\Screen_Pause.png"))
+   {
+   file_delete((working_directory + "\Screens\Screen_Pause.png"));
+   } 
+
 </string>
           </argument>
         </arguments>

@@ -72,6 +72,8 @@ if (keyboard_check_pressed(vk_end)) caret = string_length(text);
 if (keyboard_check_pressed(vk_delete)) {
     text = string_delete(text, caret + 1, 1);
 }
+
+
 // actual input:
 if (keyboard_string != filltext &amp;&amp; keyboard_string != "") {
     var n, l, t;
@@ -121,16 +123,15 @@ caret = max(0, min(caret, string_length(text)));
             <kind>1</kind>
             <string>font_add_sprite(sprite_FontSize_9,36,false,1); 
 draw_set_font(sprite_FontSize_9);
-draw_set_color(make_color_rgb(163, 166, 204));
 var i;
 var h;
 var ptext;
 //Setting the score
-score = global.intTipEarned;
+score = global.intScore;
 
 
 ptext = string_replace_all(text, '#', '�');
-draw_text(x, y, (ptext));
+draw_text_colour(x, y, (ptext),c_white,c_purple,c_white,c_purple,1);
 
 //Add lines below the input:
 i = string_width(string_copy(ptext, 1, caret));

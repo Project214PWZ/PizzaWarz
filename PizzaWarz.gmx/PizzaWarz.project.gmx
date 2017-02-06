@@ -138,6 +138,7 @@
     <object>objects\object_RadioV2</object>
     <object>objects\object_EndStats</object>
     <object>objects\object_RoomRestart</object>
+    <object>objects\object_HSToCredits</object>
     <object>objects\object_DeliveryPointer</object>
     <objects name="Credits">
       <object>objects\objCreditsBackground</object>
@@ -201,10 +202,10 @@
     <room>rooms\room_TutorialFromStart</room>
     <room>rooms\room_TutorialFromGame</room>
     <room>rooms\room_PlayAreaLevelOne</room>
+    <room>rooms\room_Pause</room>
     <room>rooms\room_HighScore</room>
     <room>rooms\room_Scores</room>
     <room>rooms\room_Credit</room>
-    <room>rooms\room_Pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
