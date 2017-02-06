@@ -156,7 +156,7 @@ if(canCollide == true){
 //Going South
 //Random Direction Choice
 //East turn
-        if(image_angle == 180 &amp;&amp; turningDirection != 1){
+        else if(image_angle == 180 &amp;&amp; turningDirection != 1){
             if(lane == 26){
                 toLane = 182;
                 turnPoint = 8807;
@@ -170,7 +170,7 @@ if(canCollide == true){
             newImage_angle = 270;
         }
 //West turn
-        if(image_angle == 180 &amp;&amp; turningDirection == 1){
+        else if(image_angle == 180 &amp;&amp; turningDirection == 1){
             if(lane == 26){
                 toLane = 26;
                 turnPoint = 8651;
@@ -317,7 +317,6 @@ if(canCollide == true){
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 270;
-
             }
         }
 //Going East in the South
@@ -343,7 +342,6 @@ if(canCollide == true){
                 toLane = lane;
                 turnPoint = x;
                 newImage_angle = 270;
-
             }
         }
         //show_debug_message("The turnPoint is: " + string(turnPoint));
