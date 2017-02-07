@@ -193,6 +193,8 @@
     </objects>
     <object>objects\object_ParentalWarning</object>
     <object>objects\object_TeamLogo</object>
+    <object>objects\object_TeamLogo2_1</object>
+    <object>objects\object_TeamLogo2_2</object>
   </objects>
   <rooms name="rooms">
     <rooms name="StoryBoard">
