@@ -22,5 +22,9 @@
   <frames>
     <frame index="0">images\sprite_TeamName_0.png</frame>
     <frame index="1">images\sprite_TeamName_1.png</frame>
+    <frame index="2">images\sprite_TeamName_2.png</frame>
+    <frame index="3">images\sprite_TeamName_3.png</frame>
+    <frame index="4">images\sprite_TeamName_4.png</frame>
+    <frame index="5">images\sprite_TeamName_5.png</frame>
   </frames>
 </sprite>
