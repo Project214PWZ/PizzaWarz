@@ -104,8 +104,8 @@ draw_set_font(sprite_FontSize_9);
 draw_set_alpha(fontAlpha);
 
 draw_text_colour(400, 50,"CREDITS", c_white, c_orange, c_white, c_orange,fontAlpha);
-draw_text_colour(375, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha);
-draw_text_colour(120, 190, "MUSIC SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(400, 150, "MUSIC" , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(200, 190, "SOURCED FROM YOUTUBE.COM" , c_white, c_orange, c_white, c_orange, fontAlpha);
  
 
 draw_text_colour(290, 250, "%HIGHWAY TO HELL%" , c_white, c_yellow, c_white, c_yellow, fontAlpha);

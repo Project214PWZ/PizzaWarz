@@ -103,7 +103,9 @@
     </backgrounds>
     <background>background\bckAdvisory</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scriptTipCalculation.gml</script>
     <script>scripts\scriptApplyDamage.gml</script>

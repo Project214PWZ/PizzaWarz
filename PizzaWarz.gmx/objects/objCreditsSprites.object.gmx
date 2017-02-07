@@ -129,12 +129,9 @@ draw_text_colour(600, 530, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_ye
 draw_text_colour(50, 600, "PICK UP MORE DELIVERIES:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(600, 600, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(50, 670, "PIZZA WAR TITLE:  " , c_white, c_yellow, c_white, c_yellow, fontAlpha);
-draw_text_colour(600, 670, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_sprite(sprite_bullethole1,0,390,245); 
-draw_sprite(sprite_bullethole1,0,460,245); 
-draw_sprite(sprite_bullethole1,0,520,245); 
+
+draw_sprite(sprite_bullethole1,0,390,245);
 draw_sprite(sprite_DeliveryDirection, 0, 550, 325); 
 draw_sprite(sprite_DeliveryDesinationMarker, 2, 490, 410);
 draw_sprite(sprite_Pizza, 0, 430, 470);
@@ -142,7 +139,7 @@ draw_sprite(sprite_FontSize_9, 29, 400, 540);
 draw_sprite(sprite_FontSize_9, 30, 430, 540); 
 draw_sprite(sprite_FontSize_9, 31, 460, 540);
 draw_sprite(sprite_FontSize_9, 32, 490, 540);
-
+draw_sprite(sprite_PickUpMoreDeliveriesV2, 0, 610, 700);
 </string>
           </argument>
         </arguments>

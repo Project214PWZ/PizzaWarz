@@ -134,7 +134,8 @@ draw_text_colour(450, 600, "CHERYL HEINRICHS" , c_white, c_yellow, c_white, c_ye
 draw_text_colour(200, 650, "BLOCK 8: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(450, 650, "NATHAN SCHERR" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-
+draw_text_colour(200, 700, "BLOCK 9: " ,c_white, c_yellow, c_white, c_yellow, fontAlpha);
+draw_text_colour(450, 700, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 </string>
           </argument>
         </arguments>
