@@ -112,7 +112,7 @@ draw_text_colour(300, 200, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yel
 draw_text_colour(25, 250, "SKY:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(300, 250, "WALLPAPERGALLERY-NET" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 
-draw_text_colour(275, 350, "INTRO STOREY BOARD " , c_white, c_orange, c_white, c_orange, fontAlpha);
+draw_text_colour(275, 350, "INTRO STORY BOARD " , c_white, c_orange, c_white, c_orange, fontAlpha);
 
 draw_text_colour(25, 450, "TITLE SCREEN:" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
 draw_text_colour(400, 450, "TYLER GUILLAUME" , c_white, c_yellow, c_white, c_yellow, fontAlpha);
