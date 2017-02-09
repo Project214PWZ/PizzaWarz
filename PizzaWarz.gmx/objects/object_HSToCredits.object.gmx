@@ -28,7 +28,7 @@
             <string>room_goto(room_Credit);
 audio_stop_all();
 //Easter Egg
-if(global.intScore &gt; 200){
+if(global.intScore &gt; 750){
     audio_play_sound(music_EasyStreet, 10, true); 
 }
 else{
